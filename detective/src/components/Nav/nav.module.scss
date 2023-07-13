@@ -1,0 +1,14 @@
+.vector {
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.vector:hover {
+  transform: rotate(180deg);
+  & path {
+    fill: #fff2d8;
+  }
+  .profile {
+    display: block;
+  }
+}
