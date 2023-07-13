@@ -12,3 +12,15 @@
     display: block;
   }
 }
+
+@media screen and (min-width: 1880px) {
+  .nav {
+    padding-right: 40rem;
+  }
+}
+
+@media screen and (max-width: 1879px) {
+  .nav {
+    padding-right: 3rem;
+  }
+}

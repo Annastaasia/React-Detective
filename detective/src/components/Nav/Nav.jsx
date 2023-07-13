@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Vectordown from "../../assets/svg/Vectordown.jsx";
 import styled from "styled-components";
 import style from "./nav.module.scss";
@@ -7,12 +8,30 @@ const Ul = styled.ul`
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
+  column-gap: 1rem;
 
-  li {
-    padding: 18px 10px;
+  a {
+    text-decoration: none;
   }
 
-  @media (max-width: 768px) {
+  li {
+    display: flex;
+    flex-flow: row nowrap;
+    column-gap: 0.5rem;
+    padding: 18px 10px;
+    color: #fff;
+    font-family: "Geologica";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+  }
+
+  li:hover {
+    color: #fff2d8;
+  }
+
+  @media (max-width: 1230px) {
     flex-flow: column nowrap;
     background-color: #0d2538;
     position: fixed;
@@ -32,24 +51,36 @@ const Ul = styled.ul`
 
 const Nav = ({ open }) => {
   return (
-    <nav>
+    <nav className={style.nav}>
       <Ul open={open}>
-        <li>
-          Для частных лиц
-          <div className={style.vector}>
-            <Vectordown />
-          </div>
-        </li>
-        <li>
-          Для бизнеса
-          <div className={style.vector}>
-            <Vectordown />
-          </div>
-        </li>
-        <li>Цены</li>
-        <li>Блог</li>
-        <li>Отзывы</li>
-        <li>Контакты</li>
+        <Link to="/">
+          <li>
+            Для частных лиц
+            <div className={style.vector}>
+              <Vectordown />
+            </div>
+          </li>
+        </Link>
+        <Link to="/">
+          <li>
+            Для бизнеса
+            <div className={style.vector}>
+              <Vectordown />
+            </div>
+          </li>
+        </Link>
+        <Link to="/Price">
+          <li>Цены</li>
+        </Link>
+        <Link to="/Blog">
+          <li>Блог</li>
+        </Link>
+        <Link to="/Review">
+          <li>Отзывы</li>
+        </Link>
+        <Link to="/Contacts">
+          <li>Контакты</li>
+        </Link>
       </Ul>
     </nav>
   );

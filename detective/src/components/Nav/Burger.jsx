@@ -2,16 +2,21 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import Nav from "./Nav";
 
-const StyledBurger = styled.div`
-  width: 2rem;
-  height: 2rem;
+const StyledBurger = styled.button`
+  height: 48px;
+  padding: 16px;
+  align-items: center;
+  gap: 8px;
   position: fixed;
-  top: 15px;
-  right: 20px;
+  left: 20%;
+  border-radius: 48px;
+  color: #fff2d8;
+  background-color: #110f0f;
+  border: 1px solid rgba(255, 255, 255, 0.5);
   z-index: 20;
   display: none;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1230px) {
     display: flex;
     justify-content: space-around;
     flex-flow: column nowrap;
@@ -46,9 +51,7 @@ const Burger = () => {
   return (
     <>
       <StyledBurger open={open} onClick={() => setOpen(!open)}>
-        <div />
-        <div />
-        <div />
+        Меню
       </StyledBurger>
       <Nav open={open} />
     </>
