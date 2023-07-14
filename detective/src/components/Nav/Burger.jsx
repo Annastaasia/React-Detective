@@ -1,37 +1,42 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import style from "./nav.module.scss";
 import Nav from "./Nav";
 
-const StyledBurger = styled.button`
+const StyledBurger = styled.div`
   height: 48px;
-  padding: 16px;
+  padding: 4px 20px;
   align-items: center;
   gap: 8px;
   position: fixed;
-  left: 20%;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
   border-radius: 48px;
-  color: #fff2d8;
+  color: #fff;
   background-color: #110f0f;
   border: 1px solid rgba(255, 255, 255, 0.5);
   z-index: 20;
   display: none;
 
-  @media (max-width: 1230px) {
+  @media screen and (max-width: 1230px) and (min-width: 675px) {
     display: flex;
     justify-content: space-around;
-    flex-flow: column nowrap;
+    flex-flow: row nowrap;
+    left: 15%;
+  }
+
+  @media screen and (max-width: 674px) {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row nowrap;
+    right: 5%;
   }
 
   div {
-    width: 2rem;
-    height: 0.25rem;
-    background-color: ${({ open }) => (open ? "#ccc" : "#333")};
-    border-radius: 10px;
-    transform-origin: 1px;
-    transition: all 0.3s linear;
-
     &:nth-child(1) {
-      transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};
+      transform: ${({ open }) => (open ? "rotate(38deg)" : "rotate(0)")};
     }
 
     &:nth-child(2) {
@@ -40,7 +45,8 @@ const StyledBurger = styled.button`
     }
 
     &:nth-child(3) {
-      transform: ${({ open }) => (open ? "rotate(-45deg)" : "rotate(0)")};
+      transform: ${({ open }) =>
+        open ? "rotate(-38deg) scaleX(2)" : "rotate(0) scaleX(1)"};
     }
   }
 `;
@@ -51,6 +57,11 @@ const Burger = () => {
   return (
     <>
       <StyledBurger open={open} onClick={() => setOpen(!open)}>
+        <section className={style.menu}>
+          <div className={style.div1} />
+          <div className={style.div2} />
+          <div className={style.div3} />
+        </section>
         Меню
       </StyledBurger>
       <Nav open={open} />

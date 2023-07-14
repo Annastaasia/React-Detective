@@ -5,12 +5,12 @@
 
 .vector:hover {
   transform: rotate(180deg);
-  & path {
-    fill: #fff2d8;
-  }
-  .profile {
-    display: block;
-  }
+}
+.vector:hover path {
+  fill: #fff2d8;
+}
+.vector:hover .profile {
+  display: block;
 }
 
 @media screen and (min-width: 1880px) {
@@ -18,15 +18,11 @@
     padding-right: 40rem;
   }
 }
-
 @media screen and (max-width: 1879px) {
   .nav {
     padding-right: 3rem;
   }
 }
-
-
-
 .menu {
   display: flex;
   flex-direction: column;
@@ -55,4 +51,4 @@
   background-color: #fff;
   transform-origin: 1px;
   transition: all 0.3s linear;
-}
+}/*# sourceMappingURL=nav.module.css.map */
