@@ -1,24 +1,24 @@
 // import logo from './logo.svg';
 import React from "react";
 import './App.css';
-// import {
-//   Routes,
-//   Route,
-// } from "react-router-dom";
+import {
+  Routes,
+  Route,
+} from "react-router-dom";
 import Header from "./components/Header/Header.jsx";
+import Main from "./pages/Main/Main.jsx";
 
 
 function App() {
   return (
     <div className="App">
       <Header />
-      
-      {/* <Routes>
-        <Route exact path="/game" element={<CardLearn />} />
-        <Route exact path="/English-words-card" element={<TableMap />} />
 
-        <Route path="*" element={<NoMatch />} />
-      </Routes> */}
+      <Routes>
+        <Route exact path="/" element={<Main />} />
+
+        {/* <Route path="*" element={<NoMatch />} /> */}
+      </Routes>
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
