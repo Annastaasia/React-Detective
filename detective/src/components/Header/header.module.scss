@@ -8,6 +8,7 @@
 .header {
   height: 64px;
   background-color: #110f0f;
+  border-color: #110f0f;
   padding: 12px 24px;
   display: flex;
   justify-content: space-between;
@@ -32,7 +33,7 @@
 
 .timevisit {
   color: #fff;
-  font-family: "Geologica";
+  font-family: Geologica;
   font-size: 11px;
   font-style: normal;
   font-weight: 500;
