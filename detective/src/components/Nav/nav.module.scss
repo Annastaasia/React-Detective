@@ -3,13 +3,15 @@
   overflow: hidden;
 }
 
-.vector:hover {
-  transform: rotate(180deg);
-  & path {
-    fill: #fff2d8;
-  }
-  .profile {
-    display: block;
+.li:hover {
+  .vector {
+    transform: rotate(180deg);
+    & path {
+      fill: #fff2d8;
+    }
+    .profile {
+      display: block;
+    }
   }
 }
 
@@ -24,8 +26,6 @@
     padding-right: 3rem;
   }
 }
-
-
 
 .menu {
   display: flex;

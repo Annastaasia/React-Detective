@@ -29,6 +29,7 @@ const Ul = styled.ul`
 
   li:hover {
     color: #fff2d8;
+    
   }
 
   @media (max-width: 1230px) {
@@ -54,7 +55,7 @@ const Nav = ({ open }) => {
     <nav className={style.nav}>
       <Ul open={open}>
         <Link to="/">
-          <li>
+          <li className={style.li}>
             Для частных лиц
             <div className={style.vector}>
               <Vectordown />
@@ -62,7 +63,7 @@ const Nav = ({ open }) => {
           </li>
         </Link>
         <Link to="/">
-          <li>
+          <li className={style.li}>
             Для бизнеса
             <div className={style.vector}>
               <Vectordown />
