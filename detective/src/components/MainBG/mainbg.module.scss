@@ -227,7 +227,7 @@
   display: flex;
   flex: 1 0 0;
   height: 64px;
-  padding: 17px 0px;
+  // padding: 17px 0px;
   align-items: center;
   gap: 16px;
   align-self: stretch;
@@ -244,6 +244,29 @@
 
 .name::placeholder {
   color: #fff;
+}
+
+.name:hover {
+  border-bottom: 1px solid rgba(255, 255, 255);
+  cursor: pointer;
+}
+
+input:focus {
+  outline: none !important;
+}
+
+input:focus::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #ffffff;
+  transition: background-color 5000s ease-in-out 0s;
+  box-shadow: inset 0 0 20px 20px #23232329;
 }
 
 .number {
@@ -269,6 +292,11 @@
   color: #fff;
 }
 
+.number:hover {
+  border-bottom: 1px solid rgba(255, 255, 255);
+  cursor: pointer;
+}
+
 .question {
   display: flex;
   flex: 1 0 0;
@@ -292,6 +320,11 @@
   color: #fff;
 }
 
+.question:hover {
+  border-bottom: 1px solid rgba(255, 255, 255);
+  cursor: pointer;
+}
+
 .button {
   display: flex;
   height: 56px;
@@ -307,4 +340,16 @@
   font-style: normal;
   font-weight: 500;
   line-height: 140%;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+  flex-direction: row;
+}
+
+.icon {
+  height: 24px;
+  width: 24px;
 }
