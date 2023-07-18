@@ -1,0 +1,154 @@
+@media screen and (max-width: 1999px) {
+  .container {
+    display: flex;
+    padding: 160px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+  }
+
+  .left {
+    display: flex;
+    max-width: 600px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 32px;
+    flex: 1 0 0;
+  }
+
+  .right {
+    display: flex;
+    max-width: 600px;
+    align-items: center;
+    gap: 24px;
+    flex: 1 0 0;
+  }
+}
+
+@media screen and (max-width: 744px) {
+  .container {
+    display: flex;
+    padding: 80px 24px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .container {
+    display: flex;
+    padding: 80px 24px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+  }
+
+  .right {
+    display: flex;
+    max-width: 600px;
+    align-items: flex-end;
+    gap: 1px;
+    flex: 1 0 0;
+  }
+
+  .blok {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-template-rows: 40% 1fr;
+    column-gap: 3%;
+    grid-template-areas:
+      "number title "
+      ". smalltext";
+    justify-items: start;
+    align-items: center;
+  }
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 32px;
+  flex: 1 0 0;
+}
+
+.blok {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  grid-template-rows: 40% 1fr;
+  grid-template-areas:
+    "number title "
+    ". smalltext";
+  justify-items: start;
+  align-items: center;
+}
+
+.number {
+  grid-area: number;
+  margin: 0%;
+  color: #e9c394;
+  font-family: Geologica;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+.title {
+  grid-area: title;
+  margin: 0%;
+  color: #403531;
+  font-family: Geologica;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.smalltext {
+  grid-area: smalltext;
+  margin: 0%;
+  color: #484848;
+  font-family: Geologica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 140%;
+}
+
+.h3 {
+  flex: 1 0 0;
+  color: #403531;
+  font-family: Geologica;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  text-transform: uppercase;
+  margin: 0%;
+}
+
+.p {
+  color: var(--grey-1, #484848);
+  align-self: stretch;
+  font-family: Geologica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 140%;
+  margin: 0%;
+}
+
+.partners {
+  color: #403531;
+  font-family: Geologica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+}
