@@ -3,7 +3,8 @@ import { useForm } from "react-hook-form";
 import InputMask from "react-input-mask";
 import Vectorright from "../../assets/svg/Vectorright.jsx";
 import style from "./mainbg.module.scss";
-import FormCheck from "../../assets/svg/FormCheck.jsx";
+// import FormCheck from "../../assets/svg/FormCheck.jsx";
+import FormError from "../../assets/svg/FormError.jsx";
 
 function MainBG() {
   // const [error, setError] = useState(false);
@@ -44,7 +45,6 @@ function MainBG() {
 
   return (
     <>
-      <main>
         <div className={style.background}>
           <div className={style.container}>
             <h1 className={style.h1}>perhin & partners</h1>
@@ -53,39 +53,60 @@ function MainBG() {
             <form className={style.form} onSubmit={handleSubmit(onSubmit)}>
               <div className={style.wrapper}>
                 <input
-                  {...register("firstName", {
+                  {...register("name", {
                     required: true,
                   })}
                   className={style.name}
                   type="text"
                   placeholder="Как к вам обращаться?"
-                  name="name"
                 ></input>
-                {errors?.firstName?.type === "required" && (
+                {errors?.name?.type === "required" && (
                   <div className={style.icon}>
-                    <FormCheck />
+                    <FormError />
                   </div>
                 )}
-                {/* {errors?.firstName?.type === "pattern" && (
-                  <p>Alphabetical characters only</p>
-                )} */}
               </div>
 
-              <InputMask
-                className={style.number}
-                type="text"
-                placeholder="Номер телефона"
-                name="number"
-                mask="+7 (999) 999-99-99"
-                maskChar="_"
-              />
+              <div className={style.wrapper}>
+                <InputMask
+                  {...register("number", {
+                    required: true,
+                    minLength: 18,
+                  })}
+                  className={style.number}
+                  type="text"
+                  placeholder="Номер телефона"
+                  mask="+7 (999) 999-99-99"
+                  maskChar=""
+                />
+                {errors?.number?.type === "required" && (
+                  <div className={style.icon}>
+                    <FormError />
+                  </div>
+                )}
+                {errors?.number?.type === "minLength" && (
+                  <div className={style.iconnumber}>
+                    {/* <p className={style.p}>Неверно введен номер</p> */}
+                    <FormError />
+                  </div>
+                )}
+              </div>
 
-              <input
-                className={style.question}
-                type="aria-text"
-                placeholder="Какой вопрос вас беспокоит?"
-                name="question"
-              ></input>
+              <div className={style.wrapper}>
+                <input
+                  {...register("question", {
+                    required: true,
+                  })}
+                  className={style.question}
+                  type="text"
+                  placeholder="Какой вопрос вас беспокоит?"
+                ></input>
+                {errors?.question?.type === "required" && (
+                  <div className={style.icon}>
+                    <FormError />
+                  </div>
+                )}
+              </div>
 
               <button type="submit" className={style.button}>
                 Оставить заявку
@@ -105,7 +126,6 @@ function MainBG() {
             </button>
           </div>
         </div>
-      </main>
     </>
   );
 }

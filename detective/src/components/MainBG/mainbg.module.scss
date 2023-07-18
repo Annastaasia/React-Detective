@@ -2,7 +2,7 @@
   .background {
     background-image: url("../../assets/images/main-bg-1920.png");
     max-width: 100%;
-    height: 100vh;
+    height: 1010px;
     background-repeat: no-repeat;
     background-position: top center;
     overflow: hidden;
@@ -52,7 +52,7 @@
   .background {
     background-image: url("../../assets/images/main-bg-1280.png");
     max-width: 100%;
-    height: 100vh;
+    height: 832px;
     background-repeat: no-repeat;
     background-position: top center;
     overflow: hidden;
@@ -102,7 +102,7 @@
   .background {
     background-image: url("../../assets/images/main-bg-744.png");
     max-width: 100%;
-    height: 100vh;
+    height: 800px;
     background-repeat: no-repeat;
     background-position: top center;
     overflow: hidden;
@@ -153,7 +153,7 @@
   .background {
     background-image: url("../../assets/images/main-bg-375.png");
     max-width: 100%;
-    height: 100vh;
+    height: 513px;
     background-repeat: no-repeat;
     background-position: top center;
     overflow: hidden;
@@ -273,7 +273,6 @@ input:-webkit-autofill:active {
   display: flex;
   flex: 1 0 0;
   height: 64px;
-  padding: 17px 0px;
   align-items: center;
   gap: 16px;
   align-self: stretch;
@@ -283,7 +282,7 @@ input:-webkit-autofill:active {
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255);
   border: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
@@ -301,7 +300,6 @@ input:-webkit-autofill:active {
   display: flex;
   flex: 1 0 0;
   height: 64px;
-  padding: 17px 0px;
   align-items: center;
   gap: 16px;
   align-self: stretch;
@@ -342,6 +340,19 @@ input:-webkit-autofill:active {
   line-height: 140%;
 }
 
+.button:hover {
+  background: #fff2d8;
+  cursor: pointer;
+  transition-duration: 0.3s;
+
+  .vector {
+    & path {
+      fill: #403531;
+      transition-duration: 0.3s;
+    }
+  }
+}
+
 .wrapper {
   display: flex;
   align-items: center;
@@ -352,4 +363,24 @@ input:-webkit-autofill:active {
 .icon {
   height: 24px;
   width: 24px;
+}
+
+// .iconnumber {
+//   position: absolute;
+//   padding: 8px;
+//   height: 29px;
+//   width: 190px;
+//   left: 40.6%;
+//   top: 74.5%;
+// }
+
+.p {
+  background-color: #fff;
+  color: #000;
+  font-family: Geologica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  height: 26px;
 }
