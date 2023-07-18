@@ -1,3 +1,4 @@
+import React, { useRef, useLayoutEffect } from "react";
 import { Link } from "react-router-dom";
 import Burger from "../Nav/Burger.jsx";
 import Logo from "../../assets/images/logo.svg";
@@ -5,11 +6,33 @@ import Phone from "../../assets/images/phone.svg";
 import Telegram from "../../assets/images/telegram.svg";
 import WhatsApp from "../../assets/images/whatsapp.svg";
 import style from "./header.module.scss";
+import "./sticky.scss";
 
 function Header() {
+  const headerRef = useRef();
+
+  useLayoutEffect(() => {
+    const handleScroll = () => {
+      const headerElement = headerRef.current;
+      const isSticky = window.scrollY > headerElement.offsetTop;
+
+      if (isSticky) {
+        headerElement.classList.add("sticky");
+      } else {
+        headerElement.classList.remove("sticky");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
-      <header>
+      <header ref={headerRef}>
         <div className={style.header}>
           <Link to="/">
             <img src={Logo} alt="logo" className={style.logo} />

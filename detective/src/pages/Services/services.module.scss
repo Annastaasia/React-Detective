@@ -1,7 +1,21 @@
-.container {
-  width: 100%;
+.background {
+  // width: 1920px;
   height: 869px;
-  background-image: url(../../assets/images/services_bg.png);
-  background-repeat: no-repeat;
+  background-image: url(../../assets/images/services-bg-1920.png);
   background-size: contain;
+  max-width: 100%;
+  background-position: top center;
+  overflow: hidden;
 }
+
+// @media screen and (max-width: 1280px) {
+//   .background {
+//     // width: 1920px;
+//     height: 869px;
+//     background-image: url(../../assets/images/services-bg-1920.png);
+//     background-size: contain;
+//     max-width: 100%;
+//     background-position: top center;
+//     overflow: hidden;
+//   }
+// }
