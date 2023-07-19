@@ -1,4 +1,5 @@
 .sticky {
-    position: fixed;
-    top: 0;
-  }
+  position: fixed;
+  z-index: 30;
+  top: 0;
+}

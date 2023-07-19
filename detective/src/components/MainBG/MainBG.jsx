@@ -7,28 +7,6 @@ import style from "./mainbg.module.scss";
 import FormError from "../../assets/svg/FormError.jsx";
 
 function MainBG() {
-  // const [error, setError] = useState(false);
-
-  // const handleInputChange = (event) => {
-  //   const inputValue = event.target.value;
-  //   const hasError = inputValue.length === 0;
-  //   setError(hasError);
-  // };
-
-  // const [inputValue, setInputValue] = useState("");
-  // const [hasError, setHasError] = useState(false);
-
-  // const handleInputChange = (event) => {
-  //   let value = event.target.value;
-  //   setInputValue(value);
-
-  //   // Проверка наличия ошибки
-  //   if ((value = "")) {
-  //     setHasError(true);
-  //   } else {
-  //     setHasError(false);
-  //   }
-  // };
 
   const {
     register,
