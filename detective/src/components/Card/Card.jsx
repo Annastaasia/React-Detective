@@ -1,39 +1,23 @@
 import styles from "./card.module.scss";
-const cards = [
-  {
-    icon: URL("../../assets/images/icon_foot.svg"),
-    title: "Взыскание дебиторской задолжености",
-    text: "Досье на человека — полная информация о конкретной личности, которую собирает частный детектив из различных источников. Документ может содержать сведения о трудовой деятельности, финансовом состоянии, здоровье, хобби, вредных привычках, семейных отношениях и о многих ...",
-    price: "от 500 000 руб",
-  },
-  {
-    icon: URL("../../assets/images/icon_camera.svg"),
-    title: "Взыскание дебиторской задолжености",
-    text: "Досье на человека — полная информация о конкретной личности, которую собирает частный детектив из различных источников. Документ может содержать сведения о трудовой деятельности, финансовом состоянии, здоровье, хобби, вредных привычках, семейных отношениях и о многих ...",
-    price: "от 500 000 руб",
-  },
-  {
-    icon: URL("../../assets/images/icon_camera.svg"),
-    title: "Взыскание дебиторской задолжености",
-    text: "Досье на человека — полная информация о конкретной личности, которую собирает частный детектив из различных источников. Документ может содержать сведения о трудовой деятельности, финансовом состоянии, здоровье, хобби, вредных привычках, семейных отношениях и о многих ...",
-    price: "от 500 000 руб",
-  },
-  {
-    icon: URL("../../assets/images/icon_head.svg"),
-    title: "Взыскание дебиторской задолжености",
-    text: "Досье на человека — полная информация о конкретной личности, которую собирает частный детектив из различных источников. Документ может содержать сведения о трудовой деятельности, финансовом состоянии, здоровье, хобби, вредных привычках, семейных отношениях и о многих ...",
-    price: "от 500 000 руб",
-  },
-];
 
-export default function Card() {
+export default function Card(props) {
   return (
-    <div className="card_container">
-      <div className={`${styles.card}`}>
-        <p className={`${styles.title}`}>{cards.title}</p>
-        {/* <p className={`${styles.price}`} style={{ backgroundColor: props.color }}>руб <span className={`${styles.numbers}`}>{props.price}</span>/мес</p> */}
-        <p className={`${styles.text}`}></p>
+    // <div className="card_container">
+    <a href="/" className={`${styles.card}`} key={`${props.id}`}>
+      <img src={props.icon} className={`${styles.card_icon}`} alt="" />
+      <p className={`${styles.card_title}`}>{props.title}</p>
+      <p className={`${styles.card_text}`}>{props.text}</p>
+      <div className={`${styles.card_price_container}`}>
+        <p className={`${styles.card_price}`}>{props.price}</p>
+        <div>
+          <span>Подробнее</span>
+          <img
+            src="images/biege_arrow_right.svg"
+            alt="Нажмите, чтобы узнать подробнее"
+          />
+        </div>
       </div>
-    </div>
+    </a>
+    // </div>
   );
 }
