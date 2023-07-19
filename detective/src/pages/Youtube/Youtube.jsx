@@ -11,7 +11,11 @@ export default function Youtube() {
     <div className={`${styles.container}`}>
       <header className={`${styles.youtube_header}`}>
         <h3>ПОЗНАКОМЬТЕСЬ С P&P НА YOUTUBE</h3>
-        <a href="https://www.youtube.com/@pershin_detective">
+        <a
+          href="https://www.youtube.com/@pershin_detective"
+          target="_blank"
+          rel="noreferrer"
+        >
           Наш блог на YouTube
           <img src={`${icon}`} alt="YouTube"></img>
         </a>
@@ -29,7 +33,11 @@ export default function Youtube() {
         }}
       >
         <SplideSlide>
-          <a href="https://www.youtube.com/watch?v=Ipz85rqjzJU&amp;t=28s">
+          <a
+            href="https://www.youtube.com/watch?v=Ipz85rqjzJU&amp;t=28s"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img
               className={`${styles.video}`}
               src={`${preview1}`}
@@ -38,7 +46,11 @@ export default function Youtube() {
           </a>
         </SplideSlide>
         <SplideSlide>
-          <a href="https://www.youtube.com/watch?v=yAYJnED2nRc&amp;t=58s">
+          <a
+            href="https://www.youtube.com/watch?v=yAYJnED2nRc&amp;t=58s"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img
               className={`${styles.video}`}
               src={`${preview2}`}
@@ -47,7 +59,11 @@ export default function Youtube() {
           </a>
         </SplideSlide>
         <SplideSlide>
-          <a href="https://www.youtube.com/watch?v=Ltecs0t_dJo&amp;t=6s">
+          <a
+            href="https://www.youtube.com/watch?v=Ltecs0t_dJo&amp;t=6s"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img
               className={`${styles.video}`}
               src={`${preview3}`}

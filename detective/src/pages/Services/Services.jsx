@@ -80,11 +80,6 @@ export default function Services() {
           {/* </div> */}
           {/* </SplideTrack> */}
         </Splide>
-
-        <div className="splide__arrows">
-          <button className="splide__arrow splide__arrow--prev">Prev</button>
-          <button className="splide__arrow splide__arrow--next">Next</button>
-        </div>
       </div>
     </>
   );

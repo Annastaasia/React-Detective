@@ -1,5 +1,6 @@
 import MainBG from "../../components/MainBG/MainBG.jsx";
 import About from "../../pages/About/About.jsx";
+import FirstVisit from "../FirstVisit/FirstVisit.jsx";
 import License from "../License/License.jsx";
 import Services from "../Services/Services.jsx";
 import Youtube from "../Youtube/Youtube.jsx";
@@ -13,6 +14,7 @@ function Main() {
         <Services />
         <License />
         <Youtube />
+        <FirstVisit />
       </main>
     </>
   );

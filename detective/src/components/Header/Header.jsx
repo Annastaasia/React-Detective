@@ -46,10 +46,18 @@ function Header() {
                 <p className={style.timevisit}>Ежедневно с 8:00 до 22:00</p>
               </div>
             </div>
-            <a href="https://www.kinoafisha.info/releases/archive/">
+            <a
+              href="https://www.kinoafisha.info/releases/archive/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src={Telegram} alt="Telegram" className={style.telegram} />
             </a>
-            <a href="https://www.kinoafisha.info/releases/archive/">
+            <a
+              href="https://www.kinoafisha.info/releases/archive/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src={WhatsApp} alt="WhatsApp" className={style.whatsapp} />
             </a>
           </div>
