@@ -1,0 +1,62 @@
+.container {
+  width: auto;
+  height: 589px;
+  background-image: linear-gradient(
+      360deg,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0) 15%
+    ),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 15%),
+    url(../../assets/images/services-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 120px 64px;
+  font-family: Geologica;
+  line-height: 140%;
+  color: #fff;
+
+  h3 {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  a {
+    text-decoration: none;
+    color: rgba(255, 255, 255);
+  }
+
+  .youtube_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+      width: 210px;
+      height: 24px;
+      font-weight: 700;
+      font-size: 16px;
+      display: flex;
+      padding: 15px;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      border-radius: 40px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(2px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      transition-duration: 0.3s;
+      cursor: pointer;
+    }
+
+    a:hover {
+      background: rgba(255, 255, 255, 0.5);
+    }
+  }
+}
+
+.video {
+  height: 469px;
+  width: 833px;
+}
