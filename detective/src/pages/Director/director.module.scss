@@ -1,0 +1,215 @@
+@media screen and (min-width: 1281px) {
+  .background {
+    background-image: url("../../assets/images/director-bg-1920.png");
+    height: 800px;
+    flex: 1 0 0;
+    width: 1120px;
+    background-position: top center;
+    overflow: hidden;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    max-height: 800px;
+  }
+
+  .blok {
+    display: flex;
+    max-width: 800px;
+    padding: 64px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    flex: 1 0 0;
+    background: #161211;
+    box-shadow: 30px 4px 56px 0px rgba(0, 0, 0, 0.8);
+  }
+
+  .h3 {
+    font-size: 38px;
+  }
+
+  .background_small {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1380px) {
+  .background {
+    background-image: url("../../assets/images/director-bg-1280.png");
+    height: 800px;
+    width: 600px;
+    background-repeat: no-repeat;
+    background-position: top left;
+    overflow: hidden;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    max-height: 800px;
+  }
+
+  .blok {
+    display: flex;
+    max-width: 620px;
+    padding: 64px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    flex: 1 0 0;
+    background: #161211;
+    box-shadow: 30px 4px 56px 0px rgba(0, 0, 0, 0.8);
+  }
+
+  .h3 {
+    font-size: 38px;
+  }
+
+  .background_small {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1145px) {
+  .backgroundsmall {
+    background-image: url("../../assets/images/director-bg-744.png");
+    background-repeat: repeat;
+    height: 485px;
+    max-width: 1221px;
+    background-position: top center;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    max-height: 1100px;
+  }
+
+  .blok {
+    display: flex;
+    max-width: 1221px;
+    padding: 64px 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 34px;
+  }
+
+  .h3 {
+    font-size: 38px;
+  }
+
+  .background {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 553px) {
+  .backgroundsmall {
+    background-image: url("../../assets/images/director-bg-375.png");
+    background-repeat: repeat;
+    height: 263px;
+    background-position: top center;
+  }
+
+  .container {
+    display: flex;
+    max-width: 800px;
+    max-height: 1330px;
+  }
+
+  .blok {
+    display: flex;
+    max-width: 1221px;
+    padding: 64px 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 34px;
+  }
+
+  .h3 {
+    font-size: 28px;
+  }
+
+  .background {
+    display: none;
+  }
+}
+
+.title {
+  color: #fff;
+  font-family: Geologica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  margin: 0;
+}
+
+.h3 {
+  color: #fff;
+  font-family: Geologica;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  margin: 0;
+}
+
+.about {
+  gap: 8px;
+}
+
+.text {
+  color: #fff;
+  font-family: Geologica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.p {
+  color: #fff;
+  font-family: Geologica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.containerwork {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.button {
+  display: flex;
+  height: 56px;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 40px;
+  background: #fff;
+  color: #403531;
+  font-family: Geologica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+}
+
+.button:hover {
+  background: #fff2d8;
+  cursor: pointer;
+  transition-duration: 0.3s;
+
+  .vector {
+    & path {
+      fill: #403531;
+      transition-duration: 0.3s;
+    }
+  }
+}
