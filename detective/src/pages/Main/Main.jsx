@@ -1,6 +1,7 @@
 import MainBG from "../../components/MainBG/MainBG.jsx";
 import About from "../../pages/About/About.jsx";
 import Director from "../Director/Director.jsx";
+import FAQ from "../FAQ/FAQ.jsx";
 import FirstVisit from "../FirstVisit/FirstVisit.jsx";
 import License from "../License/License.jsx";
 import Safety from "../Safety/Safety.jsx";
@@ -19,6 +20,7 @@ function Main() {
         <FirstVisit />
         <Director />
         <Safety />
+        <FAQ />
       </main>
     </>
   );

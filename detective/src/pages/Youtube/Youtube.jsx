@@ -30,6 +30,7 @@ export default function Youtube() {
           pagination: false,
           arrows: true,
           type: "loop",
+          gap: 20,
         }}
       >
         <SplideSlide>

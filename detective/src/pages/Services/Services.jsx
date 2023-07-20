@@ -46,14 +46,12 @@ export default function Services() {
             pagination: false,
             arrows: true,
             type: "loop",
+            gap: 20,
           }}
           className={style.custom_splide}
-          // className={style.splide}
           aria-label="My Favorite Images"
           onMoved={(splide, newIndex) => {
-            // eslint-disable-next-line
             console.log("moved", newIndex);
-            // eslint-disable-next-line
             console.log("length", splide.length);
           }}
         >

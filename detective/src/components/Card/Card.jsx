@@ -2,7 +2,6 @@ import styles from "./card.module.scss";
 
 export default function Card(props) {
   return (
-    // <div className="card_container">
     <a href="/" className={`${styles.card}`} key={`${props.id}`}>
       <img src={props.icon} className={`${styles.card_icon}`} alt="" />
       <p className={`${styles.card_title}`}>{props.title}</p>
@@ -18,6 +17,5 @@ export default function Card(props) {
         </div>
       </div>
     </a>
-    // </div>
   );
 }
