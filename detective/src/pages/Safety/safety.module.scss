@@ -1,0 +1,124 @@
+@media screen and (min-width: 1481px) {
+  .container {
+    background-image: url("../../assets/images/safety-bg-1920.png");
+    background-repeat: repeat;
+    background-position: top center;
+    overflow: hidden;
+    display: flex;
+    padding: 200px 164px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+  }
+
+  .blok {
+    font-size: 16px;
+  }
+
+  .h3 {
+    font-size: 56px;
+    width: 600px;
+    text-align: right;
+  }
+}
+
+@media screen and (max-width: 1480px) {
+  .container {
+    background-image: url("../../assets/images/safety-bg-1920.png");
+    background-repeat: repeat;
+    background-position: top center;
+    overflow: hidden;
+    display: flex;
+    padding: 200px 64px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+  }
+
+  .blok {
+    font-size: 16px;
+  }
+
+  .h3 {
+    font-size: 56px;
+    width: 550px;
+    text-align: right;
+  }
+}
+
+@media screen and (max-width: 1086px) {
+  .container {
+    background-image: url("../../assets/images/safety-bg-744.png");
+    background-size: 100% auto;
+    background-repeat: repeat;
+    background-position: top center;
+    overflow: hidden;
+    display: flex;
+    padding: 200px 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 60px;
+  }
+
+  .blok {
+    font-size: 16px;
+  }
+
+  .h3 {
+    font-size: 56px;
+    text-align: left;
+    width: 650px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .container {
+    background-image: none;
+    background-color: black;
+    display: flex;
+    padding: 64px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .blok {
+    font-size: 16px;
+  }
+
+  .h3 {
+    font-size: 24px;
+    text-align: left;
+    max-width: 300px;
+  }
+}
+
+.h3 {
+  color: #fff;
+  font-family: Geologica;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.blok {
+  color: #fff;
+  font-family: Geologica;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  max-width: 600px;
+  flex: 1 0 0;
+}
+
+.li {
+  color: #fff;
+  line-height: 160%;
+}
+
+ul {
+  margin: 0;
+  padding-left: 20px;
+}
