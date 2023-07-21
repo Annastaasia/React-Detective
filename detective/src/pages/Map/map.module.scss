@@ -1,0 +1,91 @@
+@media screen and (min-width: 1142px) {
+  .container {
+    display: flex;
+    padding-top: 120px;
+    flex-direction: column;
+    gap: 64px;
+  }
+
+  .blok {
+    display: flex;
+    padding: 0px 64px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .h3 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 1141px) {
+  .container {
+    display: flex;
+    padding-top: 80px;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .blok {
+    display: flex;
+    padding: 0px 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .button {
+    width: 80vw;
+  }
+
+  .h3 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 553px) {
+  .h3 {
+    font-size: 24px;
+  }
+}
+
+.h3 {
+  color: #403531;
+  font-family: Geologica;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.button {
+  display: flex;
+  height: 56px;
+  padding: 16px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+  border-radius: 40px;
+  background: #fff;
+  color: #403531;
+  font-family: Geologica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+}
+
+.button:hover {
+  background: #fff2d8;
+  cursor: pointer;
+  transition-duration: 0.3s;
+
+  .vector {
+    & path {
+      fill: #403531;
+      transition-duration: 0.3s;
+    }
+  }
+}
