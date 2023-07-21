@@ -85,6 +85,14 @@ export default function Services() {
             </SplideSlide>
           ))}
         </Splide>
+        <Link to="/services">
+            <button type="submit" className={style.buttonmobile}>
+              Смотреть все
+              <div className={style.vector}>
+                <Vectorright />
+              </div>
+            </button>
+          </Link>
       </div>
     </>
   );
