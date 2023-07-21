@@ -6,13 +6,11 @@ import FormError from "../../assets/svg/FormError.jsx";
 import "./faq.scss";
 import { FiPlus } from "react-icons/fi";
 import FormPhoto from "../../assets/images/form-foto.png";
-// import FormCheck from "../../assets/svg/FormCheck.jsx";
 
 export default function FAQ() {
   const {
     register,
     handleSubmit,
-    watch,
     formState: { errors },
   } = useForm();
 
@@ -20,9 +18,7 @@ export default function FAQ() {
     alert(JSON.stringify(data));
   };
 
-  console.log(watch("register"));
   const [active, setActive] = useState(false);
-
   const contentRef = useRef(null);
 
   useEffect(() => {

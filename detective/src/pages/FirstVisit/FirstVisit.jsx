@@ -9,7 +9,6 @@ export default function FirstVisit() {
     <>
       <div className={style.container}>
         <h3 className={style.h3}>Первичное взаимодействие с нами</h3>
-
         <div className={style.right}>
           <div className={style.about}>
             <p className={style.p}>

@@ -1,5 +1,4 @@
 import React from "react";
-import './App.css';
 import {
   Routes,
   Route,
@@ -14,12 +13,9 @@ function App() {
   return (
     <div className="App">
       <Header />
-
       <Routes>
         <Route exact path="/" element={<Main />} />
         <Route exact path="/form" element={<FAQ />} />
-
-        {/* <Route path="*" element={<NoMatch />} /> */}
       </Routes>
       <Footer />
     </div>
