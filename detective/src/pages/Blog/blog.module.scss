@@ -1,0 +1,68 @@
+.container {
+  color: #403531;
+  background-color: white;
+  font-family: Geologica;
+  line-height: 140%;
+  padding: 120px 64px;
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 45px;
+    height: 56px;
+
+    h3 {
+      font-size: 40px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    a {
+      color: #14100f;
+      font-size: 16px;
+      font-weight: 700;
+      border-radius: 40px;
+      border: 1px solid #14100f;
+      padding: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      gap: 8px;
+      transition-duration: 0.3s;
+    }
+
+    a:hover {
+      color: white;
+      background-color: #110f0f;
+    }
+  }
+}
+
+.custom_splide {
+  display: flex;
+}
+
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 744px) {
+  .container {
+    padding: 80px 40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 56px 16px;
+    position: relative;
+
+    header a {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      bottom: 50px;
+    }
+  }
+}
