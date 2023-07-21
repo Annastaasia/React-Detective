@@ -1,13 +1,13 @@
-import styles from "./card.module.scss";
+import style from "./card.module.scss";
 
 export default function Card(props) {
   return (
-    <a href="/" className={`${styles.card}`} key={`${props.id}`}>
-      <img src={props.icon} className={`${styles.card_icon}`} alt="" />
-      <p className={`${styles.card_title}`}>{props.title}</p>
-      <p className={`${styles.card_text}`}>{props.text}</p>
-      <div className={`${styles.card_price_container}`}>
-        <p className={`${styles.card_price}`}>{props.price}</p>
+    <a href="/" className={`${style.card}`} key={`${props.id}`}>
+      <img src={props.icon} className={`${style.card_icon}`} alt="" />
+      <p className={`${style.card_title}`}>{props.title}</p>
+      <p className={`${style.card_text}`}>{props.text}</p>
+      <div className={`${style.card_price_container}`}>
+        <p className={`${style.card_price}`}>{props.price}</p>
         <div>
           <span>Подробнее</span>
           <img
