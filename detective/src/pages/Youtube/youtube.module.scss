@@ -15,14 +15,14 @@
   line-height: 140%;
   color: #fff;
 
-  h3 {
+  .h3 {
     margin: 0;
     font-size: 40px;
     font-weight: 700;
     text-transform: uppercase;
   }
 
-  a {
+  .a {
     text-decoration: none;
     color: rgba(255, 255, 255);
   }
@@ -33,7 +33,7 @@
     align-items: center;
     margin-bottom: 55px;
 
-    a {
+    .a {
       width: 210px;
       height: 24px;
       font-weight: 700;
@@ -45,7 +45,6 @@
       gap: 8px;
       border-radius: 40px;
       background: rgba(255, 255, 255, 0.1);
-      backdrop-filter: blur(2px);
       border: 1px solid rgba(255, 255, 255, 0.2);
       transition-duration: 0.3s;
       cursor: pointer;
@@ -92,27 +91,98 @@
 .custom_splide {
   display: flex;
   align-items: center;
+  position: relative;
+  z-index: 0;
+  margin-right: -64px;
+  margin-left: -64px;
 }
 
-@media screen and (max-width: 376px) {
+.custom_splide button {
+  filter: invert(90%) sepia(31%) saturate(2%) hue-rotate(194deg)
+    brightness(107%) contrast(100%);
+  opacity: 0.5;
+  background-color: transparent;
+  height: 100%;
+  width: 100px;
+  transition-duration: 0.3s;
+}
+
+.custom_splide::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  width: 100px;
+  height: 100%;
+  background: linear-gradient(90deg, #261c1a 0%, rgba(38, 28, 26, 0) 100%);
+  cursor: pointer;
+}
+
+.custom_splide::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  width: 128px;
+  height: 100%;
+  background: linear-gradient(270deg, #261c1a 0%, rgba(38, 28, 26, 0) 100%);
+  cursor: pointer;
+}
+
+// @media screen and (min-width: 1281px) {}
+
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 744px) {
+  .container {
+    padding: 80px 40px;
+    position: relative;
+
+    .youtube_header {
+      .a {
+        position: absolute;
+        bottom: 80px;
+        left: 40px;
+        width: 90%;
+      }
+    }
+
+    .video {
+      width: 541px;
+      height: 304px;
+    }
+
+    .custom_splide {
+      margin-right: -40px;
+      margin-left: -38px;
+    }
+
+    .custom_splide::before,
+    .custom_splide::after {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
   .container {
     padding: 52px 16px;
     position: relative;
 
-    h3 {
+    .h3 {
       font-size: 24px;
-    }
-
-    .youtube_header {
-      a {
-        position: absolute;
-        bottom: 50px;
-      }
     }
   }
 
   .video {
     width: 305px;
     height: 171px;
+  }
+
+  .custom_splide {
+    margin-right: -16px;
+    margin-left: -14px;
   }
 }

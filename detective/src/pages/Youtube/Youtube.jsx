@@ -10,9 +10,10 @@ import play from "../../assets/images/play_button.svg";
 export default function Youtube() {
   return (
     <div className={`${style.container}`}>
-      <header className={`${style.youtube_header}`}>
-        <h3>ПОЗНАКОМЬТЕСЬ С P&P НА YOUTUBE</h3>
+      <div className={`${style.youtube_header}`}>
+        <h3 className={style.h3}>ПОЗНАКОМЬТЕСЬ С P&P НА YOUTUBE</h3>
         <a
+          className={style.a}
           href="https://www.youtube.com/@pershin_detective"
           target="_blank"
           rel="noreferrer"
@@ -20,19 +21,35 @@ export default function Youtube() {
           Наш блог на YouTube
           <img src={`${icon}`} alt="YouTube"></img>
         </a>
-      </header>
+      </div>
       <Splide
         options={{
           perPage: 2,
+          breakpoints: {
+            1280: {
+              perPage: 3,
+            },
+            744: {
+              perPage: 2,
+              arrows: false,
+            },
+            480: {
+              perPage: 1,
+              height: 475,
+              gap: 16,
+              arrows: false,
+            },
+          },
           perMove: 1,
           rewind: true,
           autoWidth: true,
-          height: 560,
+          height: 487,
           pagination: false,
           arrows: true,
           type: "loop",
-          gap: 20,
+          gap: 10,
         }}
+        className={`${style.custom_splide}`}
       >
         <SplideSlide>
           <a

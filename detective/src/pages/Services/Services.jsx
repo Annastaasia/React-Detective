@@ -39,6 +39,21 @@ export default function Services() {
         <Splide
           options={{
             perPage: 4,
+            breakpoints: {
+              1280: {
+                perPage: 3,
+              },
+              744: {
+                perPage: 2,
+                arrows: false,
+              },
+              480: {
+                perPage: 1,
+                height: 475,
+                gap: 16,
+                arrows: false,
+              },
+            },
             perMove: 1,
             rewind: true,
             autoWidth: true,
@@ -48,15 +63,9 @@ export default function Services() {
             type: "loop",
             gap: 20,
           }}
+          aria-label="Services"
           className={style.custom_splide}
-          aria-label="My Favorite Images"
-          onMoved={(splide, newIndex) => {
-            console.log("moved", newIndex);
-            console.log("length", splide.length);
-          }}
         >
-          {/* <div className={style.slider_container}> */}
-          {/* <SplideTrack> */}
           {cards.map((card) => (
             <SplideSlide
               key={card.id}
@@ -75,8 +84,6 @@ export default function Services() {
               ></Card>
             </SplideSlide>
           ))}
-          {/* </div> */}
-          {/* </SplideTrack> */}
         </Splide>
       </div>
     </>
