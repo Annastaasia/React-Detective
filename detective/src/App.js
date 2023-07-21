@@ -1,4 +1,3 @@
-// import logo from './logo.svg';
 import React from "react";
 import './App.css';
 import {
@@ -8,6 +7,7 @@ import {
 import Header from "./components/Header/Header.jsx";
 import Main from "./pages/Main/Main.jsx";
 import FAQ from "./pages/FAQ/FAQ";
+import Footer from "./components/Footer/Footer";
 
 
 function App() {
@@ -21,6 +21,7 @@ function App() {
 
         {/* <Route path="*" element={<NoMatch />} /> */}
       </Routes>
+      <Footer />
     </div>
   );
 }

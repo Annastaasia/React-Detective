@@ -1,0 +1,309 @@
+@media screen and (min-width: 1250px) {
+  .container {
+    background-image: url("../../assets/images/bg-footer-1920.png");
+    background-repeat: repeat;
+    background-position: top center;
+    overflow: hidden;
+    display: flex;
+    padding: 0px 64px;
+    flex-direction: column;
+  }
+
+  .blokheader {
+    display: flex;
+    padding: 24px 0px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .bloksocnet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .blokmain {
+    display: flex;
+    padding: 80px 0px;
+    gap: 48px;
+  }
+
+  .blokmain1 {
+    display: flex;
+    min-width: 400px;
+    max-width: 480px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 1 0 0;
+  }
+
+  .blokmain2 {
+    display: flex;
+    max-width: 340px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex: 1 0 0;
+  }
+
+  .blokmain3 {
+    display: flex;
+    max-width: 340px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex: 1 0 0;
+  }
+
+  .blokmain4 {
+    display: flex;
+    max-width: 340px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex: 1 0 0;
+  }
+
+  .blokfooter {
+    display: flex;
+    padding: 0px 0px 10px 0px;
+    justify-content: space-between;
+    align-items: flex-start;
+    opacity: 0.4000000059604645;
+  }
+
+  .politic {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .blokmobile {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .container {
+    background-image: url("../../assets/images/bg-footer-744.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% auto;
+    overflow: hidden;
+    display: flex;
+    padding: 0px 64px;
+    flex-direction: column;
+  }
+
+  .blokheader {
+    display: flex;
+    padding: 24px 0px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .bloksocnet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .blokmain {
+    display: flex;
+    padding: 48px 0px;
+    flex-wrap: wrap;
+    gap: 44px 94px;
+  }
+
+  .blokmain1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 0 0;
+    gap: 48px;
+    order: 1;
+  }
+
+  .blokmain2 {
+    display: flex;
+    max-width: 340px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex: 1 0 0;
+    order: 3;
+  }
+
+  .blokmain3 {
+    display: flex;
+    max-width: 340px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex: 1 0 0;
+    order: 4;
+  }
+
+  .blokmain4 {
+    display: flex;
+    max-width: 340px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex: 1 0 0;
+    order: 2;
+  }
+
+  .blokfooter {
+    display: flex;
+    padding: 24px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding: 0px 0px 10px 0px;
+    opacity: 0.4000000059604645;
+  }
+
+  .politic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blokmobile {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .logo {
+    display: none;
+  }
+
+  .blokheader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .bloksocnet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .container {
+    background-image: url("../../assets/images/bg-footer-375.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% auto;
+    overflow: hidden;
+    display: flex;
+    padding: 0px 16px;
+    flex-direction: column;
+  }
+
+  .blokmobile {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+  }
+
+  .blokmain {
+    display: flex;
+    flex-direction: column;
+    padding: 48px 0px;
+    flex-wrap: wrap;
+    gap: 14px 74px;
+  }
+
+  .blokfooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 0px 0px 10px 0px;
+    opacity: 0.4000000059604645;
+  }
+  .p {
+    text-align: center;
+  }
+}
+
+.p {
+  overflow: hidden;
+  color: #fff;
+  text-overflow: ellipsis;
+  font-family: Geologica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  margin: 8px 0px;
+}
+
+.bloknet {
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 6px 8px 4px;
+}
+
+.bloknet:hover {
+  background-color: #fff2d8;
+  cursor: pointer;
+}
+
+.bloknet2 {
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 9px 10px 6px;
+}
+
+.bloknet2:hover {
+  background-color: #fff2d8;
+  cursor: pointer;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.title {
+  overflow: hidden;
+  color: #fff;
+  text-overflow: ellipsis;
+  font-family: Geologica;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  align-items: center;
+  gap: 14px;
+}
+
+.card {
+  display: flex;
+  align-items: flex-end;
+  gap: 40px;
+}
