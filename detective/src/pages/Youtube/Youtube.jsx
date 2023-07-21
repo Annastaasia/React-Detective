@@ -5,6 +5,7 @@ import "@splidejs/react-splide/css";
 import preview1 from "../../assets/images/video_preview_1.png";
 import preview2 from "../../assets/images/video_preview_2.png";
 import preview3 from "../../assets/images/video_preview_3.png";
+import play from "../../assets/images/play_button.svg";
 
 export default function Youtube() {
   return (
@@ -44,6 +45,11 @@ export default function Youtube() {
               src={`${preview1}`}
               alt="video"
             ></img>
+            <img
+              className={`${styles.play}`}
+              src={`${play}`}
+              alt="play video"
+            ></img>
           </a>
         </SplideSlide>
         <SplideSlide>
@@ -57,6 +63,11 @@ export default function Youtube() {
               src={`${preview2}`}
               alt="video"
             ></img>
+            <img
+              className={`${styles.play}`}
+              src={`${play}`}
+              alt="play video"
+            ></img>
           </a>
         </SplideSlide>
         <SplideSlide>
@@ -69,6 +80,11 @@ export default function Youtube() {
               className={`${styles.video}`}
               src={`${preview3}`}
               alt="video"
+            ></img>
+            <img
+              className={`${styles.play}`}
+              src={`${play}`}
+              alt="play video"
             ></img>
           </a>
         </SplideSlide>

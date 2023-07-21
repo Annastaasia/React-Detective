@@ -31,6 +31,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 55px;
 
     a {
       width: 210px;
@@ -57,6 +58,61 @@
 }
 
 .video {
+  margin-top: 9px;
   height: 469px;
   width: 833px;
+  transition-duration: 0.3s;
+  margin-left: 14px;
+  position: relative;
+  z-index: 0;
+}
+
+.play {
+  width: 60px;
+  height: 60px;
+  padding: 20px;
+  border-radius: 60px;
+  background: #fff;
+  position: absolute;
+  z-index: 999;
+  top: 203px;
+  left: 393px;
+  opacity: 0;
+  transition-duration: 0.3s;
+}
+
+.video:hover {
+  scale: 1.03;
+}
+
+.video:hover + .play {
+  opacity: 1;
+}
+
+.custom_splide {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 376px) {
+  .container {
+    padding: 52px 16px;
+    position: relative;
+
+    h3 {
+      font-size: 24px;
+    }
+
+    .youtube_header {
+      a {
+        position: absolute;
+        bottom: 50px;
+      }
+    }
+  }
+
+  .video {
+    width: 305px;
+    height: 171px;
+  }
 }
