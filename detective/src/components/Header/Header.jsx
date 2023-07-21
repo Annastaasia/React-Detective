@@ -47,14 +47,14 @@ function Header() {
               </div>
             </div>
             <a
-              href="https://www.kinoafisha.info/releases/archive/"
+              href="https://t.me/pershin_detective"
               target="_blank"
               rel="noreferrer"
             >
               <img src={Telegram} alt="Telegram" className={style.telegram} />
             </a>
             <a
-              href="https://www.kinoafisha.info/releases/archive/"
+              href="https://api.whatsapp.com/send?phone=79686868685&text=Доброго%20времени%20суток!"
               target="_blank"
               rel="noreferrer"
             >
