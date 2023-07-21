@@ -1,9 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import InputMask from "react-input-mask";
 import Vectorright from "../../assets/svg/Vectorright.jsx";
 import style from "./mainbg.module.scss";
-// import FormCheck from "../../assets/svg/FormCheck.jsx";
 import FormError from "../../assets/svg/FormError.jsx";
 
 function MainBG() {
@@ -16,9 +16,9 @@ function MainBG() {
 
   const onSubmit = (data) => {
     alert(JSON.stringify(data));
-  }; // your form submit function which will invoke after successful validation
+  };
 
-  console.log(watch("register")); // you can watch individual input by pass the name of the input
+  console.log(watch("register"));
 
   return (
     <>
@@ -94,12 +94,14 @@ function MainBG() {
         </div>
 
         <div className={style.button_mobile}>
-          <button type="submit" className={style.button}>
-            Оставить заявку
-            <div className={style.vector}>
-              <Vectorright />
-            </div>
-          </button>
+          <Link to="/form">
+            <button type="submit" className={style.button}>
+              Оставить заявку
+              <div className={style.vector}>
+                <Vectorright />
+              </div>
+            </button>
+          </Link>
         </div>
       </div>
     </>

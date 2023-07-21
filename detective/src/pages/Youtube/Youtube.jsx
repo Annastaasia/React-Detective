@@ -1,4 +1,4 @@
-import styles from "./youtube.module.scss";
+import style from "./youtube.module.scss";
 import icon from "../../assets/images/icon_youtube.svg";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
@@ -9,8 +9,8 @@ import play from "../../assets/images/play_button.svg";
 
 export default function Youtube() {
   return (
-    <div className={`${styles.container}`}>
-      <header className={`${styles.youtube_header}`}>
+    <div className={`${style.container}`}>
+      <header className={`${style.youtube_header}`}>
         <h3>ПОЗНАКОМЬТЕСЬ С P&P НА YOUTUBE</h3>
         <a
           href="https://www.youtube.com/@pershin_detective"
@@ -41,12 +41,12 @@ export default function Youtube() {
             rel="noreferrer"
           >
             <img
-              className={`${styles.video}`}
+              className={`${style.video}`}
               src={`${preview1}`}
               alt="video"
             ></img>
             <img
-              className={`${styles.play}`}
+              className={`${style.play}`}
               src={`${play}`}
               alt="play video"
             ></img>
@@ -59,12 +59,12 @@ export default function Youtube() {
             rel="noreferrer"
           >
             <img
-              className={`${styles.video}`}
+              className={`${style.video}`}
               src={`${preview2}`}
               alt="video"
             ></img>
             <img
-              className={`${styles.play}`}
+              className={`${style.play}`}
               src={`${play}`}
               alt="play video"
             ></img>
@@ -77,12 +77,12 @@ export default function Youtube() {
             rel="noreferrer"
           >
             <img
-              className={`${styles.video}`}
+              className={`${style.video}`}
               src={`${preview3}`}
               alt="video"
             ></img>
             <img
-              className={`${styles.play}`}
+              className={`${style.play}`}
               src={`${play}`}
               alt="play video"
             ></img>
