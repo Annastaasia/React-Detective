@@ -24,6 +24,10 @@
     gap: 24px;
     flex: 1 0 0;
   }
+
+  .h3 {
+    font-size: 40px;
+  }
 }
 
 @media screen and (max-width: 744px) {
@@ -35,9 +39,13 @@
     align-items: center;
     gap: 64px;
   }
+
+  .h3 {
+    font-size: 40px;
+  }
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 576px) {
   .container {
     display: flex;
     padding: 80px 24px;
@@ -65,6 +73,10 @@
       ". smalltext";
     justify-items: start;
     align-items: center;
+  }
+
+  .h3 {
+    font-size: 24px;
   }
 }
 
@@ -125,7 +137,6 @@
   flex: 1 0 0;
   color: #403531;
   font-family: Geologica;
-  font-size: 40px;
   font-style: normal;
   font-weight: 700;
   line-height: 140%;
