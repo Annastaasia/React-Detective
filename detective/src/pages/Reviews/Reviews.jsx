@@ -45,7 +45,7 @@ export default function Reviews() {
               1280: {
                 perPage: 3,
               },
-              744: {
+              920: {
                 perPage: 2,
                 arrows: false,
               },

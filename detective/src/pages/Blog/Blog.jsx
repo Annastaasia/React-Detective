@@ -32,8 +32,9 @@ export default function Blog() {
               },
               480: {
                 perPage: 1,
-                height: 563,
-              }
+                height: 570,
+                gap: 16,
+              },
             },
             rewind: false,
             autoWidth: true,
@@ -69,5 +70,5 @@ export default function Blog() {
         </Splide>
       </div>
     </>
-  )
+  );
 }

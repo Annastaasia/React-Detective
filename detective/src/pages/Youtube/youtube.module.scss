@@ -16,6 +16,7 @@
   color: #fff;
 
   .h3 {
+    line-height: normal;
     margin: 0;
     font-size: 40px;
     font-weight: 700;
@@ -38,16 +39,22 @@
       height: 24px;
       font-weight: 700;
       font-size: 16px;
-      display: flex;
       padding: 15px;
-      justify-content: center;
-      align-items: center;
       gap: 8px;
       border-radius: 40px;
       background: rgba(255, 255, 255, 0.1);
       border: 1px solid rgba(255, 255, 255, 0.2);
       transition-duration: 0.3s;
       cursor: pointer;
+      flex-shrink: 0;
+
+      span {
+        gap: 8px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
     }
 
     a:hover {
@@ -130,14 +137,8 @@
   cursor: pointer;
 }
 
-// @media screen and (min-width: 1281px) {}
-
-@media screen and (max-width: 1280px) {
-}
-
-@media screen and (max-width: 744px) {
+@media screen and (max-width: 968px) {
   .container {
-    padding: 80px 40px;
     position: relative;
 
     .youtube_header {
@@ -145,7 +146,29 @@
         position: absolute;
         bottom: 80px;
         left: 40px;
+        transform: translateY(48px);
         width: 90%;
+        margin: auto;
+
+        span {
+          margin: auto;
+          display: flex;
+          gap: 8px;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 744px) {
+  .container {
+    padding: 80px 40px;
+
+    .youtube_header {
+      .a {
+        transform: translateY(-28px);
+        width: 85%;
       }
     }
 
@@ -166,23 +189,34 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
   .container {
     padding: 52px 16px;
     position: relative;
+    height: 384px;
 
     .h3 {
       font-size: 24px;
     }
-  }
 
-  .video {
-    width: 305px;
-    height: 171px;
-  }
+    .youtube_header {
+      margin-bottom: 24px;
 
-  .custom_splide {
-    margin-right: -16px;
-    margin-left: -14px;
+      .a {
+        transform: translateY(10px);
+        left: 16px;
+        width: 83%;
+      }
+    }
+
+    .video {
+      width: 305px;
+      height: 171px;
+    }
+
+    .custom_splide {
+      margin-right: -16px;
+      margin-left: -14px;
+    }
   }
 }

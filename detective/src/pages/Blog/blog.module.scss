@@ -9,7 +9,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 45px;
+    margin-bottom: 52px;
     height: 56px;
 
     h3 {
@@ -42,27 +42,71 @@
 
 .custom_splide {
   display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 0;
+  margin-right: -64px;
+  margin-left: -62px;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1160px) {
 }
 
 @media screen and (max-width: 744px) {
   .container {
     padding: 80px 40px;
+    height: 800px;
+    position: relative;
+
+    header {
+      margin-bottom: 16px;
+
+      a {
+        position: absolute;
+        left: 40px;
+        bottom: 80px;
+        width: 85%;
+        transform: translateY(-10px);
+      }
+    }
+
+    .custom_splide {
+      margin-right: -40px;
+      margin-left: -38px;
+    }
+  }
+}
+
+@media screen and (max-width: 688px) {
+  .container {
+    header {
+      a {
+        width: 83%;
+      }
+    }
   }
 }
 
 @media screen and (max-width: 480px) {
   .container {
     padding: 56px 16px;
-    position: relative;
+    height: 700px;
 
-    header a {
-      position: absolute;
-      display: flex;
-      flex-direction: column;
-      bottom: 50px;
+    header {
+      h3 {
+        font-size: 24px;
+      }
+
+      a {
+        left: 16px;
+        bottom: 56px;
+        transform: translateY(30px);
+      }
+    }
+
+    .custom_splide {
+      margin-right: -16px;
+      margin-left: -15px;
     }
   }
 }

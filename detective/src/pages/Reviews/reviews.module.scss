@@ -18,6 +18,7 @@
     cursor: pointer;
     gap: 8px;
     transition-duration: 0.3s;
+    flex-shrink: 0;
   }
 
   .a:hover {
@@ -86,22 +87,30 @@
   cursor: pointer;
 }
 
-
-@media screen and (max-width: 1280px) {
-}
-
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 920px) {
   .container {
-    .blok {
+    position: relative;
+
+    .blok_buttons {
+      position: absolute;
       gap: 16px;
+      bottom: 80px;
+      left: 40px;
+      justify-content: space-between;
+      align-items: center;
+      transform: translateY(40px);
+      width: 90%;
+
+      .a {
+        width: 40%;
+      }
     }
   }
 }
 
-@media screen and (max-width: 744px) {
+@media screen and (max-width: 800px) {
   .container {
     padding: 80px 40px;
-    position: relative;
     height: 624px;
 
     .blok {
@@ -109,20 +118,36 @@
     }
 
     .blok_buttons {
-      position: absolute;
-      bottom: 80px;
-      left: 40px;
       justify-content: space-between;
+    }
 
-      .a {
-        width: 300px;
-      }
+    .custom_splide {
+      margin-right: -40px;
+      margin-left: -38px;
+    }
+
+    .custom_splide::before,
+    .custom_splide::after {
+      display: none;
     }
   }
+}
 
-  .custom_splide::before,
-  .custom_splide::after {
-    display: none;
+@media screen and (max-width: 680px) {
+  .container {
+    .blok_buttons {
+      flex-direction: column;
+      gap: 16px;
+      left: 16px;
+      bottom: 16px;
+      justify-content: center;
+      align-items: center;
+      transform: translateY(-5px);
+
+      .a {
+        width: 311px;
+      }
+    }
   }
 }
 
@@ -142,16 +167,7 @@
     }
 
     .blok_buttons {
-      flex-direction: column;
-      gap: 16px;
-      left: 16px;
-      bottom: 16px;
-      justify-content: center;
-      align-items: center;
-
-      .a {
-        width: 311px;
-      }
+      transform: translateY(-30px);
     }
 
     .custom_splide {

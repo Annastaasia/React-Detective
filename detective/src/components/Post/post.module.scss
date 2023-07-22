@@ -92,12 +92,16 @@
   transform: translateY(-12px);
 }
 
-
-@media screen and (max-width: 1280px) {
-}
-
-@media screen and (max-width: 744px) {
-}
-
 @media screen and (max-width: 480px) {
+  .post {
+    width: 320px;
+    height: 563px;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    img {
+      height: 240px;
+      object-fit: cover;
+    }
+  }
 }
