@@ -1,0 +1,514 @@
+@media screen and (min-width: 1469px) {
+  .h1 {
+    margin: 30px 0px;
+    font-size: 51px;
+  }
+
+  .h2 {
+    margin: 30px 0px;
+    font-size: 51px;
+  }
+
+  .h3 {
+    font-size: 51px;
+    margin: 30px 0px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "blokmoscow blokspb"
+      "bloksms blokblogs";
+  }
+
+  .blokmoscow {
+    background-image: url("../../assets/images/moscow.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    grid-area: blokmoscow;
+    box-sizing: border-box;
+    max-width: 960px;
+    max-height: 472px;
+    overflow: hidden;
+    display: flex;
+    padding: 64px;
+    flex-direction: column;
+    flex: 1 0 0;
+    color: #fff;
+    gap: 24px;
+  }
+
+  .blokmoscow:hover {
+    background-image: none;
+    color: #403531;
+    cursor: pointer;
+
+    .section {
+      border-bottom: 1px solid #dbdbdb;
+      color: #403531;
+    }
+
+    .icon * {
+      fill: #403531;
+      opacity: 1;
+    }
+  }
+
+  .section {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    justify-content: space-between;
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .blokspb {
+    background-image: url("../../assets/images/spb.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    grid-area: blokspb;
+    box-sizing: border-box;
+    max-width: 960px;
+    max-height: 472px;
+    overflow: hidden;
+    display: flex;
+    padding: 64px;
+    flex-direction: column;
+    flex: 1 0 0;
+    color: #fff;
+    gap: 24px;
+  }
+
+  .blokspb:hover {
+    background-image: none;
+    color: #403531;
+    cursor: pointer;
+
+    .section {
+      border-bottom: 1px solid #dbdbdb;
+      color: #403531;
+    }
+
+    .icon * {
+      fill: #403531;
+      opacity: 1;
+    }
+  }
+
+  .bloksms {
+    grid-area: bloksms;
+    background: #110f0f;
+    max-width: 960px;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    padding: 64px;
+    flex-direction: column;
+    flex: 1 0 0;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .bloksms:hover {
+    background-image: none;
+    background: #fff;
+    color: #403531;
+    cursor: pointer;
+
+    .section2 {
+      border-bottom: 1px solid #dbdbdb;
+      color: #403531;
+    }
+
+    .icon * {
+      fill: #403531;
+      opacity: 1;
+    }
+  }
+
+  .section2 {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    justify-content: space-between;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .blokblogs {
+    grid-area: blokblogs;
+    background: #110f0f;
+    max-width: 960px;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    padding: 64px;
+    flex-direction: column;
+    flex: 1 0 0;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .blokblogs:hover {
+    background-image: none;
+    background: #fff;
+    color: #403531;
+    cursor: pointer;
+
+    .section2 {
+      border-bottom: 1px solid #dbdbdb;
+      color: #403531;
+    }
+
+    .icon * {
+      fill: #403531;
+      opacity: 1;
+    }
+  }
+}
+
+@media screen and (max-width: 1468px) {
+  .h1 {
+    margin: 0px 0px 30px 0px;
+    font-size: 51px;
+  }
+
+  .h2 {
+    margin: 0px 0px 30px 0px;
+    font-size: 51px;
+  }
+
+  .h3 {
+    font-size: 51px;
+    margin: 30px 0px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "blokmoscow blokspb"
+      "bloksms blokblogs";
+  }
+
+  .blokmoscow {
+    background-image: url("../../assets/images/moscow.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    grid-area: blokmoscow;
+    box-sizing: border-box;
+    max-width: 960px;
+    max-height: 472px;
+    overflow: hidden;
+    display: flex;
+    padding: 64px;
+    flex-direction: column;
+    flex: 1 0 0;
+    color: #fff;
+    gap: 24px;
+  }
+
+  .blokmoscow:hover {
+    background-image: none;
+    color: #403531;
+    cursor: pointer;
+
+    .section {
+      border-bottom: 1px solid #dbdbdb;
+      color: #403531;
+    }
+
+    .icon * {
+      fill: #403531;
+      opacity: 1;
+    }
+  }
+
+  .section {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    justify-content: space-between;
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .blokspb {
+    background-image: url("../../assets/images/spb.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    grid-area: blokspb;
+    box-sizing: border-box;
+    max-width: 960px;
+    max-height: 472px;
+    overflow: hidden;
+    display: flex;
+    padding: 64px;
+    flex-direction: column;
+    flex: 1 0 0;
+    color: #fff;
+    gap: 24px;
+  }
+
+  .blokspb:hover {
+    background-image: none;
+    color: #403531;
+    cursor: pointer;
+
+    .section {
+      border-bottom: 1px solid #dbdbdb;
+      color: #403531;
+    }
+
+    .icon * {
+      fill: #403531;
+      opacity: 1;
+    }
+  }
+
+  .bloksms {
+    grid-area: bloksms;
+    background: #110f0f;
+    max-width: 960px;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    padding: 64px;
+    flex-direction: column;
+    flex: 1 0 0;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .bloksms:hover {
+    background-image: none;
+    background: #fff;
+    color: #403531;
+    cursor: pointer;
+
+    .section2 {
+      border-bottom: 1px solid #dbdbdb;
+      color: #403531;
+    }
+
+    .icon * {
+      fill: #403531;
+      opacity: 1;
+    }
+  }
+
+  .section2 {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    justify-content: space-between;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .blokblogs {
+    grid-area: blokblogs;
+    background: #110f0f;
+    max-width: 960px;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    padding: 64px;
+    flex-direction: column;
+    flex: 1 0 0;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .blokblogs:hover {
+    background-image: none;
+    background: #fff;
+    color: #403531;
+    cursor: pointer;
+
+    .section2 {
+      border-bottom: 1px solid #dbdbdb;
+      color: #403531;
+    }
+
+    .icon * {
+      fill: #403531;
+      opacity: 1;
+    }
+  }
+}
+
+@media screen and (max-width: 1127px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .blokmoscow {
+    background-image: none;
+    max-width: 100%;
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    flex: 1 0 0;
+    color: #403531;
+  }
+
+  .section {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    justify-content: space-between;
+    text-decoration: none;
+    color: #403531;
+    border-bottom: 1px solid #dbdbdb;
+  }
+
+  .icon * {
+    fill: #403531;
+    opacity: 1;
+  }
+
+  .blokspb {
+    background-image: none;
+    max-width: 100%;
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    flex: 1 0 0;
+    color: #403531;
+  }
+
+  .bloksms {
+    background-image: none;
+    background: #fff;
+    max-width: 100%;
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    flex: 1 0 0;
+    color: #403531;
+  }
+
+  .section2 {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    justify-content: space-between;
+    text-decoration: none;
+    color: #403531;
+    border-bottom: 1px solid #dbdbdb;
+  }
+
+  .blokblogs {
+    background-image: none;
+    background: #fff;
+    max-width: 100%;
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    flex: 1 0 0;
+    color: #403531;
+  }
+}
+
+@media screen and (max-width: 518px) {
+  .h1 {
+    margin: 0px;
+    font-size: 28px;
+  }
+
+  .h2 {
+    margin: 0px;
+    font-size: 28px;
+  }
+
+  .h3 {
+    font-size: 28px;
+    margin: 0px;
+  }
+
+  .blokmoscow {
+    padding: 40px 16px;
+  }
+
+  .blokspb {
+    padding: 40px 16px;
+  }
+  .bloksms {
+    padding: 40px 16px;
+  }
+  .blokblogs {
+    padding: 40px 16px;
+  }
+}
+
+.smallsection {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  justify-content: space-between;
+}
+
+.smallsection2 {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  justify-content: space-between;
+}
+
+.smallsection3 {
+  display: flex;
+  align-items: center;
+  gap: 47px;
+  justify-content: space-between;
+}
+
+.h3 {
+  font-family: Geologica;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.title {
+  font-family: Geologica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 140%;
+}
+
+.p {
+  font-family: Geologica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.h1 {
+  font-family: Geologica;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.h2 {
+  font-family: Geologica;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
