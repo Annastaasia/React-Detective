@@ -9,7 +9,7 @@ export default function Blog() {
   return (
     <>
       <div className={`${style.container}`}>
-        <header>
+        <div className={style.header_blog}>
           <h3>Блог</h3>
           <Link to="/blog">
             Смотреть все
@@ -18,7 +18,7 @@ export default function Blog() {
               alt="Нажмите, чтобы перейти и посмотреть все посты"
             />
           </Link>
-        </header>
+        </div>
         <Splide
           options={{
             perPage: 4,

@@ -10,15 +10,12 @@ function MainBG() {
   const {
     register,
     handleSubmit,
-    watch,
     formState: { errors },
   } = useForm();
 
   const onSubmit = (data) => {
     alert(JSON.stringify(data));
   };
-
-  console.log(watch("register"));
 
   return (
     <>

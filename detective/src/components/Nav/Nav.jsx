@@ -29,7 +29,6 @@ const Ul = styled.ul`
 
   li:hover {
     color: #fff2d8;
-    
   }
 
   @media (max-width: 1230px) {
@@ -70,16 +69,16 @@ const Nav = ({ open }) => {
             </div>
           </li>
         </Link>
-        <Link to="/Price">
+        <Link to="/price">
           <li>Цены</li>
         </Link>
-        <Link to="/Blog">
+        <Link to="/blog">
           <li>Блог</li>
         </Link>
-        <Link to="/Review">
+        <Link to="/Rrview">
           <li>Отзывы</li>
         </Link>
-        <Link to="/Contacts">
+        <Link to="/contacts">
           <li>Контакты</li>
         </Link>
       </Ul>

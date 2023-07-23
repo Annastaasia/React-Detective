@@ -5,7 +5,7 @@
   line-height: 140%;
   padding: 120px 64px;
 
-  header {
+  .header_blog {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -49,16 +49,13 @@
   margin-left: -62px;
 }
 
-@media screen and (max-width: 1160px) {
-}
-
 @media screen and (max-width: 744px) {
   .container {
     padding: 80px 40px;
     height: 800px;
     position: relative;
 
-    header {
+    .header_blog {
       margin-bottom: 16px;
 
       a {
@@ -79,7 +76,7 @@
 
 @media screen and (max-width: 688px) {
   .container {
-    header {
+    .header_blog {
       a {
         width: 83%;
       }
@@ -92,7 +89,7 @@
     padding: 56px 16px;
     height: 700px;
 
-    header {
+    .header_blog {
       h3 {
         font-size: 24px;
       }

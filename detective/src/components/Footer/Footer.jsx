@@ -22,42 +22,42 @@ export default function Footer() {
           <div className={style.bloksocnet}>
             <p className={style.p}>Мы в социальных сетях</p>
 
-<div className={style.blokmobile}>
-            <a
-              className={style.bloknet}
-              href="https://t.me/pershin_detective"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={Telegram} alt="Telegram" className={style.socnet} />
-            </a>
+            <div className={style.blokmobile}>
+              <a
+                className={style.bloknet}
+                href="https://t.me/pershin_detective"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={Telegram} alt="Telegram" className={style.socnet} />
+              </a>
 
-            <a
-              className={style.bloknet2}
-              href="https://tenchat.ru/0323735?utm_source=8c7f5dcb-f757-4668-94a9-e0f145c517ff"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={Techat} alt="Techat" className={style.socnet} />
-            </a>
+              <a
+                className={style.bloknet2}
+                href="https://tenchat.ru/0323735?utm_source=8c7f5dcb-f757-4668-94a9-e0f145c517ff"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={Techat} alt="Techat" className={style.socnet} />
+              </a>
 
-            <a
-              className={style.bloknet}
-              href="https://www.youtube.com/@pershin_detective"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={Youtube} alt="Youtube" className={style.socnet} />
-            </a>
+              <a
+                className={style.bloknet}
+                href="https://www.youtube.com/@pershin_detective"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={Youtube} alt="Youtube" className={style.socnet} />
+              </a>
 
-            <a
-              className={style.bloknet}
-              href="https://stavropol.profi.ru/profile/PershinKO/?mobileApp=1"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={Profi} alt="Profi" className={style.socnet} />
-            </a>
+              <a
+                className={style.bloknet}
+                href="https://stavropol.profi.ru/profile/PershinKO/?mobileApp=1"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={Profi} alt="Profi" className={style.socnet} />
+              </a>
             </div>
           </div>
         </div>
