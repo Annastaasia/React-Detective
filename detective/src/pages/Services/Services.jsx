@@ -26,7 +26,7 @@ export default function Services() {
               </li>
             </Link>
           </ul>
-          <Link to="/services">
+          <Link to="/services_for_individuals">
             <button type="submit" className={style.button}>
               Смотреть все
               <div className={style.vector}>

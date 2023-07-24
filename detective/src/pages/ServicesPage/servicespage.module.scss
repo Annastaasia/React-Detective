@@ -1,0 +1,66 @@
+.section_header {
+  display: flex;
+  padding: 40px 64px 0px 64px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  border-bottom: 1px solid #dcdcdc;
+  background: #fff;
+}
+
+.h1 {
+  color: #403531;
+  font-family: Geologica;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  text-transform: uppercase;
+}
+
+.icon * {
+  fill: #403531;
+}
+
+.services__tabs {
+  list-style-type: none;
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.tabs__person {
+  display: flex;
+  padding: 13px 0px;
+  align-items: center;
+  gap: 16px;
+  border-bottom: 2px solid #403531;
+  color: #403531;
+  font-family: Geologica;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.tabs__bisness {
+  display: flex;
+  padding: 13px 0px;
+  align-items: center;
+  gap: 16px;
+  color: rgba(64, 53, 49, 0.5);
+  font-family: Geologica;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.tabs__bisness:hover {
+  color: #403531;
+
+  icon * {
+    fill: #403531;
+    fill-opacity: 1;
+  }
+}
