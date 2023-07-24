@@ -1,0 +1,17 @@
+.breadcrumbs {
+  ol {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    list-style-type: none;
+    padding: 0;
+  }
+  li {
+    color: #484848;
+    font-family: Geologica;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%;
+  }
+}

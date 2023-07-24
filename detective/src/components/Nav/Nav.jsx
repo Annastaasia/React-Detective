@@ -53,7 +53,7 @@ const Nav = ({ open }) => {
   return (
     <nav className={style.nav}>
       <Ul open={open}>
-        <Link to="/">
+        <Link to="/services_for_individuals">
           <li className={style.li}>
             Для частных лиц
             <div className={style.vector}>
