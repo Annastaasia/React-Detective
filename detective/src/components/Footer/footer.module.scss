@@ -239,9 +239,9 @@
     padding: 0px 0px 10px 0px;
     opacity: 0.4000000059604645;
   }
-  .p {
-    text-align: center;
-  }
+  // .p {
+  //   text-align: center;
+  // }
 }
 
 .p {
@@ -298,7 +298,6 @@
 .section {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
   align-items: center;
   gap: 14px;
 }
