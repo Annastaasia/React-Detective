@@ -1,11 +1,22 @@
 import style from "./contacts.module.scss";
+import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 import { ReactComponent as Phone } from "../../assets/images/footer-phone.svg";
 import { ReactComponent as Location } from "../../assets/images/footer-location.svg";
 import { ReactComponent as Telegram } from "../../assets/images/contact-telegram.svg";
 import { ReactComponent as Whatsapp } from "../../assets/images/contact-whatsapp.svg";
-import { ReactComponent as Signal } from "../../assets/images/contact-signal.svg";
 
 export default function Contacts() {
+  const mapContainerStyle = {
+    width: "100%",
+    height: "100%",
+    saturation: -100,
+  };
+
+  const center = {
+    lat: -34.397,
+    lng: 150.644,
+  };
+
   return (
     <>
       <main className={style.container}>
@@ -29,24 +40,16 @@ export default function Contacts() {
           </div>
         </div>
 
-        <div className={style.blokspb}>
-          <h3 className={style.h3}>Санкт-Петербург</h3>
-
-          <div className={style.section}>
-            <div className={style.smallsection}>
-              <p className={style.title}>Телефон</p>
-              <p className={style.p}>+7 (968) 686-86-85</p>
-            </div>
-            <Phone alt="Phone" className={style.icon} />
-          </div>
-
-          <div className={style.section}>
-            <div className={style.smallsection2}>
-              <p className={style.title}>Адрес</p>
-              <p className={style.p}>Ул. Александра Солженицына 42</p>
-            </div>
-            <Location alt="Location" className={style.icon} />
-          </div>
+        <div className={style.blokmap}>
+          <LoadScript googleMapsApiKey="YOUR_API_KEY">
+            <GoogleMap
+              mapContainerStyle={mapContainerStyle}
+              center={center}
+              zoom={8}
+            >
+              <Marker position={center} />
+            </GoogleMap>
+          </LoadScript>
         </div>
 
         <div className={style.bloksms}>
@@ -76,19 +79,6 @@ export default function Contacts() {
             </div>
             <Whatsapp alt="Whatsapp" className={style.icon} />
           </a>
-
-          <a
-            className={style.section2}
-            href="https://t.me/pershin_detective"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <div className={style.smallsection2}>
-              <p className={style.title}>Signal</p>
-              <p className={style.p}>@detective</p>
-            </div>
-            <Signal alt="Signal" className={style.icon} />
-          </a>
         </div>
 
         <div className={style.blokblogs}>
@@ -117,19 +107,6 @@ export default function Contacts() {
               <p className={style.p}>+79686868685</p>
             </div>
             <Whatsapp alt="Whatsapp" className={style.icon} />
-          </a>
-
-          <a
-            className={style.section2}
-            href="https://t.me/pershin_detective"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <div className={style.smallsection2}>
-              <p className={style.title}>Signal</p>
-              <p className={style.p}>@detective</p>
-            </div>
-            <Signal alt="Signal" className={style.icon} />
           </a>
         </div>
       </main>

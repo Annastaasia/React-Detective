@@ -75,7 +75,7 @@ const Nav = ({ open }) => {
         <Link to="/blog">
           <li>Блог</li>
         </Link>
-        <Link to="/Rrview">
+        <Link to="/review">
           <li>Отзывы</li>
         </Link>
         <Link to="/contacts">
