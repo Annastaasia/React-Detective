@@ -33,7 +33,6 @@ const translateBreadcrumb = (breadcrumb) => {
   const translations = {
     home: "Главная",
     services_for_individuals: "Услуги для частных лиц",
-    persons: "Для частных лиц",
     blog: "Блог",
   };
 
