@@ -19,7 +19,7 @@ export default function Services() {
               <img src={Person} alt="person"></img>
               Для частных лиц
             </li>
-            <Link to="/business">
+            <Link to="/services_for_business">
               <li>
                 <img src={Business} alt="small suitcase"></img>
                 Для бизнеса

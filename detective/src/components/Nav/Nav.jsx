@@ -61,7 +61,7 @@ const Nav = ({ open }) => {
             </div>
           </li>
         </Link>
-        <Link to="/">
+        <Link to="/services_for_business">
           <li className={style.li}>
             Для бизнеса
             <div className={style.vector}>

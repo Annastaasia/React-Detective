@@ -1,9 +1,92 @@
+@media screen and (min-width: 1131px) {
+  .h2 {
+    margin: 32px 0;
+  }
+  .catalog {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 64px;
+    row-gap: 64px;
+    column-gap: 48px;
+  }
+
+  .catalog_mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  // .h2 {
+  //   margin: 0;
+  // }
+
+  .catalog {
+    display: none;
+  }
+
+  .catalog_mobile {
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .row:active {
+    .img * {
+      fill: #403531;
+    }
+  }
+
+  // .row:focus {
+  //   .img * {
+  //     fill: #403531;
+  //   }
+  // }
+
+  .blok {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0px;
+    gap: 24px;
+  }
+
+  .bloktext {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .bloksmall {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .large_icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .large_icon:focus {
+    .img * {
+      fill: #403531;
+    }
+  }
+}
+
 .section_header {
   display: flex;
   padding: 40px 64px 0px 64px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 24px;
   border-bottom: 1px solid #dcdcdc;
   background: #fff;
 }
@@ -16,10 +99,6 @@
   font-weight: 700;
   line-height: 140%;
   text-transform: uppercase;
-}
-
-.icon * {
-  fill: #403531;
 }
 
 .services__tabs {
@@ -43,7 +122,7 @@
   line-height: 140%;
 }
 
-.tabs__bisness {
+.tabs__business {
   display: flex;
   padding: 13px 0px;
   align-items: center;
@@ -56,11 +135,42 @@
   line-height: 140%;
 }
 
-.tabs__bisness:hover {
+.tabs__business:hover {
   color: #403531;
 
-  icon * {
+  .icon * {
     fill: #403531;
-    fill-opacity: 1;
+    opacity: 1;
   }
+}
+
+.button {
+  color: #497cff;
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: Geologica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  cursor: pointer;
+}
+
+.h2 {
+  color: #403531;
+  font-family: Geologica;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.text {
+  color: #484848;
+  font-family: Geologica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
 }

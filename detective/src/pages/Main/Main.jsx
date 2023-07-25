@@ -10,6 +10,7 @@ import Reviews from "../Reviews/Reviews.jsx";
 import Safety from "../Safety/Safety.jsx";
 import Services from "../Services/Services.jsx";
 import Youtube from "../Youtube/Youtube.jsx";
+// import Test from "../../style/Test.jsx";
 
 function Main() {
   return (
@@ -27,6 +28,7 @@ function Main() {
         <FAQ />
         <Blog />
         <Map />
+        {/* <Test /> */}
       </main>
     </>
   );
