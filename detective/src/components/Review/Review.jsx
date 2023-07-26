@@ -1,37 +1,95 @@
 import style from "./review.module.scss";
-import { Link } from "react-router-dom";
-import star from "../../assets/images/icon_star.svg";
-import emptyStar from "../../assets/images/icon_empty_star.svg";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+import "@splidejs/react-splide/css";
+import Review from "../ReviewCard/ReviewCard";
+import reviews from "./review-array";
 
-export default function Review(props) {
-  const stars = [];
-
-  const rand = function () {
-    return Math.random();
-  };
-
-  for (let i = 0; i < props.stars; i++) {
-    stars.push(<img src={star} alt="" key={rand()}></img>);
-  }
-
-  if (stars.length < 5) {
-    const emptyStars = 5 - stars.length;
-    for (let i = 0; i < emptyStars; i++) {
-      stars.push(<img src={emptyStar} alt="" key={rand()}></img>);
-    }
-  }
-
+export default function Reviews() {
   return (
-    <Link to="/">
-      <div className={`${style.review}`}>
-        <div className={`${style.review_stars}`}>
-          <span>{props.review}</span>
-          {stars}
+    <>
+      <div className={`${style.container}`}>
+        <div className={style.blok}>
+          <h3 className={style.h3}>Отзывы</h3>
+          <div className={`${style.blok_buttons}`}>
+            <a
+              className={style.a}
+              href="http://profi.ru/profile/PershinKO/?mobileApp=1"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Отзывы на Профи.ру
+              <img
+                src="images/biege_arrow_right.svg"
+                alt="Нажмите, чтобы перейти и узать подробнее"
+              />
+            </a>
+            <a
+              className={style.a}
+              href="http://profi.ru/profile/PershinKO/?mobileApp=1"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Отзывы на Яндекс.Карты
+              <img
+                src="images/biege_arrow_right.svg"
+                alt="Нажмите, чтобы перейти и узать подробнее"
+              />
+            </a>
+          </div>
         </div>
-        <p className={`${style.review_name}`}>{props.name}</p>
-        <p className={`${style.review_date}`}>{props.date}</p>
-        <p className={`${style.review_text}`}>{props.text}</p>
+        <Splide
+          options={{
+            perPage: 4,
+            perMove: 1,
+            breakpoints: {
+              1280: {
+                perPage: 3,
+              },
+              920: {
+                perPage: 2,
+                arrows: false,
+              },
+              480: {
+                perPage: 1,
+                height: 400,
+                gap: 16,
+                arrows: false,
+              },
+            },
+            rewind: false,
+            autoWidth: true,
+            height: 445,
+            pagination: false,
+            arrows: true,
+            type: "loop",
+            gap: 24,
+          }}
+          className={style.custom_splide}
+          aria-label="Rates"
+        >
+          {reviews.map((review, index) => (
+            <SplideSlide
+              key={index}
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                columnGap: 20,
+                alignItems: "center",
+              }}
+            >
+              <Review
+                isLink={true}
+                review={review.review}
+                name={review.name}
+                stars={review.stars}
+                date={review.date}
+                text={review.text}
+                readmore={review.readmore}
+              ></Review>
+            </SplideSlide>
+          ))}
+        </Splide>
       </div>
-    </Link>
+    </>
   );
 }
