@@ -1,0 +1,417 @@
+@media screen and (min-width: 1195px) {
+  .section_header {
+    background: #110f0f;
+    padding: 40px 64px 64px 64px;
+  }
+
+  .blok_header {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 80px;
+  }
+
+  .blok_price {
+    display: flex;
+    gap: 40px;
+    color: #fff;
+  }
+
+  .blok_buy {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .blokmobile_rating {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .h1 {
+    font-size: 40px;
+  }
+
+  .section_main {
+    padding: 64px;
+    gap: 80px;
+  }
+
+  .button_yet {
+    display: flex;
+    padding: 40px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 24px;
+    background: #fff;
+    box-shadow: 0px 4px 8px 0px rgba(20, 16, 15, 0.08);
+  }
+
+  .smallcontainer_yet {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+  }
+}
+
+@media screen and (max-width: 1195px) {
+  .section_header {
+    background: #110f0f;
+    padding: 40px 40px 64px 40px;
+  }
+
+  .blok_header {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .blok_price {
+    display: flex;
+    gap: 40px;
+    color: #fff;
+  }
+
+  .blok_buy {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .blokmobile_rating {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .h1 {
+    font-size: 40px;
+  }
+
+  .section_main {
+    padding: 64px 40px;
+    gap: 80px;
+  }
+
+  .button_yet {
+    display: flex;
+    padding: 40px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 24px;
+    background: #fff;
+    box-shadow: 0px 4px 8px 0px rgba(20, 16, 15, 0.08);
+  }
+
+  .smallcontainer_yet {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+  }
+}
+
+@media screen and (max-width: 637px) {
+  .section_header {
+    background: #110f0f;
+    padding: 24px 16px 40px 16px;
+  }
+
+  .blok_price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    color: #fff;
+  }
+
+  .blok_buy {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .blokmobile_rating {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .img {
+    height: 192px;
+    width: 100%;
+  }
+
+  .h1 {
+    font-size: 24px;
+  }
+
+  .button_buy {
+    width: 100%;
+  }
+
+  .section_main {
+    padding: 40px 16px;
+    gap: 48px;
+  }
+
+  .button_yet {
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    border-radius: 24px;
+    background: #fff;
+    box-shadow: 0px 4px 8px 0px rgba(20, 16, 15, 0.08);
+  }
+
+  .smallcontainer_yet {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .button_price {
+    margin: 0;
+  }
+
+  .button_text {
+    margin: 0;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.h1 {
+  color: #fff;
+  font-family: Geologica;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  text-transform: uppercase;
+}
+
+.blok_header_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 48px;
+  flex: 1 0 0;
+}
+
+.text_header {
+  color: #fff;
+  font-family: Geologica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  margin: 0;
+}
+
+.blok_price {
+  display: flex;
+  gap: 40px;
+  color: #fff;
+}
+
+.text_aboutprice {
+  font-family: Geologica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  margin: 0;
+}
+
+.text_price {
+  color: #fff;
+  font-family: Geologica;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 0;
+  margin-top: 12px;
+}
+
+.button_buy {
+  display: flex;
+  height: 56px;
+  padding: 16px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+  border-radius: 40px;
+  background: #fff;
+  color: #403531;
+  font-family: Geologica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+}
+
+.button_buy:hover {
+  background: #fff2d8;
+  cursor: pointer;
+  transition-duration: 0.3s;
+
+  .icon * {
+    fill: #403531;
+    transition-duration: 0.3s;
+  }
+}
+
+.text_rating {
+  color: #fff;
+  font-family: Geologica;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  margin: 12px 0;
+}
+
+.blok_star {
+  display: flex;
+  gap: 8px;
+}
+
+.section_main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.blok_main {
+  display: flex;
+  max-width: 900px;
+  flex-direction: column;
+  gap: 24px;
+  align-self: stretch;
+}
+
+.h2 {
+  color: #403531;
+  font-family: Geologica;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  margin: 0;
+}
+
+.text_main {
+  color: #484848;
+  font-family: Geologica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  margin: 0;
+}
+
+.ol_main {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  gap: 16px;
+  flex: 1 0 0;
+}
+
+.blok {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  grid-template-rows: 40% 1fr;
+  grid-template-areas:
+    "number title "
+    ". smalltext";
+  justify-items: start;
+  align-items: center;
+}
+
+.number {
+  grid-area: number;
+  margin: 0%;
+  color: #e9c394;
+  font-family: Geologica;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+.title {
+  grid-area: title;
+  margin: 0%;
+  color: #403531;
+  font-family: Geologica;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.smalltext {
+  grid-area: smalltext;
+  margin: 0%;
+  color: #484848;
+  font-family: Geologica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.button_yet:hover {
+  background: #fff2d8;
+
+  cursor: pointer;
+  transition-duration: 0.3s;
+
+  .iconbutton * {
+    fill: #403531;
+    transition-duration: 0.3s;
+  }
+
+  .button_price {
+    color: #403531;
+  }
+}
+
+.button_text {
+  color: #403531;
+  font-family: Geologica;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.button_price {
+  color: #e9c394;
+  font-family: Geologica;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+}
