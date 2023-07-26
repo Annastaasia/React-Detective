@@ -146,17 +146,6 @@
   align-items: flex-start;
   border-bottom: 1px solid #dcdcdc;
   background: #fff;
-
-  // nav {
-  //   color: #b0431b;
-  //   li {
-  //     color: #b0431b;
-
-  //     a {
-  //       color: #b0431b;
-  //     }
-  //   }
-  // }
 }
 
 .h1 {
@@ -235,4 +224,8 @@
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
+}
+
+.text:hover {
+  color: #e9c394;
 }

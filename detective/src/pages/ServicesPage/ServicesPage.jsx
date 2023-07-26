@@ -74,7 +74,7 @@ export default function ServicesPage() {
 
   return (
     <>
-      <div className={style.container}>
+      <main className={style.container}>
         <div className={style.section_header}>
           <Breadcrumbs />
           <h1 className={style.h1}>Услуги</h1>
@@ -92,7 +92,7 @@ export default function ServicesPage() {
           </div>
         </div>
         <div className={style.catalog}>
-          <div className={style.blokinfo}>
+          <section className={style.blokinfo}>
             <Info alt="Info" className={style.img} />
             <h2 className={style.h2}>Сбор информации</h2>
             <Link to="/">
@@ -104,7 +104,7 @@ export default function ServicesPage() {
             <Link to="/">
               <p className={style.text}>Организация слежки</p>
             </Link>
-            <Link to="/">
+            <Link to="/services_for_individuals/geolocation">
               <p className={style.text}>
                 Пробить геолокацию по номеру телефона
               </p>
@@ -125,9 +125,9 @@ export default function ServicesPage() {
             <button onClick={handleShowMore2} className={style.button}>
               {showMore2 ? "Скрыть" : "Ещё 2"}
             </button>
-          </div>
+          </section>
 
-          <div className={style.blokfamily}>
+          <section className={style.blokfamily}>
             <Family alt="Family" className={style.img} />
             <h2 className={style.h2}>Семейные вопросы</h2>
             <Link to="/">
@@ -145,9 +145,9 @@ export default function ServicesPage() {
             <Link to="/">
               <p className={style.text}>Слежка за мужем</p>
             </Link>
-          </div>
+          </section>
 
-          <div className={style.blokbinoculars}>
+          <section className={style.blokbinoculars}>
             <Binoculars alt="Binoculars" className={style.img} />
             <h2 className={style.h2}>Расследования</h2>
             <Link to="/">
@@ -159,9 +159,9 @@ export default function ServicesPage() {
             <Link to="/">
               <p className={style.text}>Расследование мошенничества</p>
             </Link>
-          </div>
+          </section>
 
-          <div className={style.bloksearch}>
+          <section className={style.bloksearch}>
             <Search alt="Search" className={style.img} />
             <h2 className={style.h2}>Розыск</h2>
             <Link to="/">
@@ -221,9 +221,9 @@ export default function ServicesPage() {
             <button onClick={handleShowMore} className={style.button}>
               {showMore ? "Скрыть" : "Ещё 11"}
             </button>
-          </div>
+          </section>
 
-          <div className={style.blokprotect}>
+          <section className={style.blokprotect}>
             <Protect alt="Protect" className={style.img} />
             <h2 className={style.h2}>Защита</h2>
             <Link to="/">
@@ -241,15 +241,15 @@ export default function ServicesPage() {
             <Link to="/">
               <p className={style.text}>Защита от буллинга</p>
             </Link>
-          </div>
+          </section>
 
-          <div className={style.blokjournalism}>
+          <section className={style.blokjournalism}>
             <Journalism alt="Journalism" className={style.img} />
             <h2 className={style.h2}>Журналистика</h2>
             <Link to="/">
               <p className={style.text}>Заказать расследование</p>
             </Link>
-          </div>
+          </section>
         </div>
         <div className={style.catalog_mobile}>
           <div className={style.blok}>
@@ -291,7 +291,7 @@ export default function ServicesPage() {
                 <Link to="/">
                   <p className={style.text}>Организация слежки</p>
                 </Link>
-                <Link to="/">
+                <Link to="/services_for_individuals/geolocation">
                   <p className={style.text}>
                     Пробить геолокацию по номеру телефона
                   </p>
@@ -581,7 +581,7 @@ export default function ServicesPage() {
             )}
           </div>
         </div>
-      </div>
+      </main>
     </>
   );
 }
