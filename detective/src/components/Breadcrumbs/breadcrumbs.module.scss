@@ -2,7 +2,8 @@
   ol {
     display: flex;
     flex-direction: row;
-    gap: 16px;
+    flex-wrap: wrap;
+    gap: 8px;
     list-style-type: none;
     padding: 0;
   }
@@ -16,6 +17,16 @@
 
     a {
       color: #484848;
+    }
+  }
+}
+
+.breadcrumbs:hover {
+  li {
+    color: #e9c394;
+
+    a {
+      color: #e9c394;
     }
   }
 }

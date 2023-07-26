@@ -9,7 +9,7 @@ const Breadcrumbs = () => {
     <nav aria-label="breadcrumb" className={style.breadcrumbs}>
       <ol>
         <li>
-          <Link to="/">Главная&nbsp;&nbsp;&nbsp; /</Link>
+          <Link to="/">Главная </Link>
         </li>
         {pathnames.map((pathname, index) => {
           const routeTo = `/${pathnames.slice(0, index + 1).join("/")}`;
@@ -32,8 +32,10 @@ const Breadcrumbs = () => {
 const translateBreadcrumb = (breadcrumb) => {
   const translations = {
     home: "Главная",
-    services_for_individuals: "Услуги для частных лиц",
-    blog: "Блог",
+    services_for_individuals: "/ Услуги для частных лиц",
+    blog: "/ Блог",
+    reviews: "/ Отзывы",
+    geolocation: "/ Пробить геолокацию по номеру телефона",
   };
 
   return translations[breadcrumb] || breadcrumb;

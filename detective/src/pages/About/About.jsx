@@ -4,7 +4,7 @@ import Img from "../../assets/images/about.png";
 export default function About() {
   return (
     <>
-      <div className={style.container}>
+      <section className={style.container}>
         <div className={style.left}>
           <h3 className={style.h3}>О нас</h3>
           <p className={style.p}>
@@ -29,10 +29,8 @@ export default function About() {
             принципах их оказания.
           </p>
         </div>
-
         <div className={style.right}>
           <img src={Img} alt="img" className={style.img} />
-
           <div className={style.about}>
             <div className={style.blok}>
               <p className={style.number}>1</p>
@@ -42,7 +40,6 @@ export default function About() {
                 нас от других детективных агентств.
               </p>
             </div>
-
             <div className={style.blok}>
               <p className={style.number}>2</p>
               <p className={style.title}>Мы - 100% конфиденциальность</p>
@@ -51,7 +48,6 @@ export default function About() {
                 конфиденциальности в нашей компании.
               </p>
             </div>
-
             <div className={style.blok}>
               <p className={style.number}>3</p>
               <p className={style.title}>Прагматичный подход</p>
@@ -60,7 +56,6 @@ export default function About() {
                 годами, мы за прагматизм дела.
               </p>
             </div>
-
             <div className={style.blok}>
               <p className={style.number}>4</p>
               <p className={style.title}>Эмпирический опыт</p>
@@ -69,7 +64,6 @@ export default function About() {
                 личные, семейные и бизнес проблемы
               </p>
             </div>
-
             <div className={style.blok}>
               <p className={style.number}>5</p>
               <p className={style.title}>Доверие к нашей компани</p>
@@ -80,7 +74,7 @@ export default function About() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }

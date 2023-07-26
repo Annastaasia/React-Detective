@@ -156,7 +156,7 @@ export default function Footer() {
             <Link to="/">
               <p className={style.p}>Блог</p>
             </Link>
-            <Link to="/">
+            <Link to="/reviews">
               <p className={style.p}>Отзывы</p>
             </Link>
             <Link to="/contacts">
