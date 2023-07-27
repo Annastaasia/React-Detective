@@ -1,0 +1,71 @@
+@media screen and (min-width: 1024px) {
+  .brzcarousel {
+    width: 900px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .brzcarousel {
+    width: 664px;
+    height: 373px;
+  }
+}
+
+@media screen and (max-width: 743px) {
+  .brzcarousel {
+    width: 343px;
+    height: 192px;
+  }
+}
+
+.splide__pagination li button {
+  width: 15px;
+  height: 15px;
+
+  margin: 0;
+  padding: 0;
+
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 2px solid;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+// .splide__pagination__page {
+//   background: #ccc;
+//   border: 0;
+//   border-radius: 50%;
+//   display: inline-block;
+//   height: 8px;
+//   margin: 3px;
+//   opacity: 0.7;
+//   padding: 0;
+//   position: relative;
+//   transition: transform 0.2s linear;
+//   width: 8px;
+// }
+
+// .splide__pagination {
+//   bottom: 0.5em;
+//   left: 0;
+//   padding: 0 1em;
+//   position: absolute;
+//   right: 0;
+//   z-index: 1;
+// }
+
+// .brzcarousel {
+// .splide__pagination {
+//   background: #000000 !important;
+//   background-color: #000000 !important;
+//   color: #000000 !important;
+
+//   li {
+// .your-class-pagination {
+//   background-color: #000000;
+//   background: #000000 !important;
+//   list-style: none;
+// }
+//   }
+// }
+// }
