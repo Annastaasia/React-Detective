@@ -1,8 +1,9 @@
 import style from "./post.module.scss";
+import { Link } from "react-router-dom";
 
 export default function Post(props) {
   return (
-    <a href={props.link} className={`${style.post}`}>
+    <Link to={props.link} className={`${style.post}`}>
       <img src={props.image} alt="post"></img>
       <span>{props.tag}</span>
       <div className={`${style.post_content}`}>
@@ -13,6 +14,6 @@ export default function Post(props) {
           <p className={`${style.post_date}`}>{props.date}</p>
         </div>
       </div>
-    </a>
+    </Link>
   );
 }

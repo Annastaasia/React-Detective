@@ -4,6 +4,7 @@ import style from "./pagination.module.scss";
 import ArrowLeft from "../../assets/images/white_arrow_left.svg";
 import ArrowRight from "../../assets/images/white_arrow_right.svg";
 import ArrowDown from "../../assets/images/biege_arrow_down.svg";
+import Post from "../Post/Post";
 
 const Pagination = (props) => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -32,18 +33,29 @@ const Pagination = (props) => {
   return (
     <>
       <div className={props.wrapper}>
-        {currentCards.map((card, index) => (
-          <Review
-            key={index}
-            isLink={false}
-            review={card.review}
-            name={card.name}
-            stars={card.stars}
-            date={card.date}
-            text={card.text}
-            readmore={card.readmore}
-          ></Review>
-        ))}
+        {currentCards.map((card, index) =>
+          card.stars ? (
+            <Review
+              key={index}
+              isLink={false}
+              review={card.review}
+              name={card.name}
+              stars={card.stars}
+              date={card.date}
+              text={card.text}
+            ></Review>
+          ) : (
+            <Post
+              key={index}
+              link={card.link}
+              image={card.image}
+              tag={card.tag}
+              title={card.title}
+              text={card.text}
+              date={card.date}
+            ></Post>
+          )
+        )}
       </div>
       <div className={style.pagination_wrapper}>
         <button

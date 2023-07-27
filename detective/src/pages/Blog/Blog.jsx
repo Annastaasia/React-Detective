@@ -47,9 +47,9 @@ export default function Blog() {
           className={style.custom_splide}
           aria-label="Blog Posts"
         >
-          {posts.map((post) => (
+          {posts.map((post, index) => (
             <SplideSlide
-              key={post.id}
+              key={index}
               style={{
                 display: "flex",
                 justifyContent: "center",

@@ -47,6 +47,14 @@
   z-index: 0;
   margin-right: -64px;
   margin-left: -1px;
+
+  a {
+    width: 400px;
+
+    img {
+      height: 300px;
+    }
+  }
 }
 
 @media screen and (max-width: 744px) {

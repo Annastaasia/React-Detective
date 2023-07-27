@@ -1,6 +1,4 @@
 .post {
-  height: 600px;
-  width: 400px;
   text-decoration: none;
   border-radius: 24px;
   overflow: hidden;
@@ -8,8 +6,11 @@
   position: relative;
   transition-duration: 0.3s;
   margin-top: 12px;
-  margin-bottom: 7px;
   border: 1px solid #e7e7e7;
+
+  img {
+    width: 100%;
+  }
 
   .post_title,
   span {
@@ -47,7 +48,7 @@
     margin-top: 16px;
     margin-bottom: 0;
     display: -webkit-box;
-    max-width: 320px;
+    max-width: 502px;
     -webkit-line-clamp: 6;
     -webkit-box-orient: vertical;
     overflow: hidden;
@@ -92,10 +93,16 @@
   transform: translateY(-12px);
 }
 
+@media screen and (max-width: 750px) {
+  .post {
+    .post_content {
+      padding: 24px;
+    }
+  }
+}
+
 @media screen and (max-width: 480px) {
   .post {
-    width: 320px;
-    height: 563px;
     margin-top: 0;
     margin-bottom: 0;
 
