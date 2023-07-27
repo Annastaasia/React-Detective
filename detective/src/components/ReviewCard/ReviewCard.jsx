@@ -33,9 +33,6 @@ export default function Review(props) {
             <p className={`${style.review_name}`}>{props.name}</p>
             <p className={`${style.review_date}`}>{props.date}</p>
             <p className={`${style.review_text}`}>{props.text}</p>
-            {props.readmore && (
-              <span className={style.review_link}>Читать целиком</span>
-            )}
           </div>
         </Link>
       </>
@@ -55,9 +52,6 @@ export default function Review(props) {
           <p className={`${style.review_name}`}>{props.name}</p>
           <p className={`${style.review_date}`}>{props.date}</p>
           <p className={`${style.review_text}`}>{props.text}</p>
-          {props.readmore && (
-            <span className={style.review_link}>Читать целиком</span>
-          )}
         </div>
       </a>
     );
