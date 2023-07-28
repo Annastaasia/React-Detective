@@ -1,28 +1,253 @@
-.vector {
-  cursor: pointer;
-  overflow: hidden;
-}
-
-.li:hover {
-  .vector {
-    & path {
-      fill: #fff2d8;
-    }
-    .profile {
-      display: block;
-    }
-  }
-}
-
 @media screen and (min-width: 1880px) {
   .nav {
     padding-right: 40rem;
+  }
+
+  .limobile {
+    display: none;
+  }
+
+  .li {
+    display: flex;
+    flex-flow: row nowrap;
+    column-gap: 0.5rem;
+    padding: 18px 10px;
+    color: #fff;
+    font-family: "Geologica";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    cursor: pointer;
+  }
+
+  .li:hover {
+    color: #fff2d8;
   }
 }
 
 @media screen and (max-width: 1879px) {
   .nav {
     padding-right: 4rem;
+  }
+
+  .limobile {
+    display: none;
+  }
+
+  .li {
+    display: flex;
+    flex-flow: row nowrap;
+    column-gap: 0.5rem;
+    color: #fff;
+    font-family: "Geologica";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    cursor: pointer;
+  }
+
+  .li:hover {
+    color: #fff2d8;
+  }
+}
+
+@media (min-width: 1230px) {
+  .navcontainer {
+    display: none;
+  }
+
+  .right {
+    display: none;
+  }
+
+  .vector {
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+  .limob {
+    display: none;
+  }
+
+  .li:hover {
+    .vector {
+      & path {
+        fill: #fff2d8;
+      }
+      .profile {
+        display: block;
+      }
+    }
+  }
+
+  .li {
+    display: flex;
+    flex-flow: row nowrap;
+    column-gap: 0.5rem;
+    padding: 18px 10px;
+    color: #fff;
+    font-family: "Geologica";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    cursor: pointer;
+  }
+
+  .liservices {
+    display: flex;
+    flex-flow: row nowrap;
+    column-gap: 0.5rem;
+    padding: 18px 10px;
+    color: #fff;
+    font-family: "Geologica";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    cursor: pointer;
+  }
+
+  .li:hover {
+    color: #fff2d8;
+  }
+
+  .liservices:hover {
+    color: #fff2d8;
+  }
+}
+
+@media (max-width: 1230px) {
+  .phon {
+    position: fixed;
+    z-index: 40;
+    top: 88px;
+    left: 0;
+    height: 100vh;
+    width: 100vh;
+    background-color: rgba(17, 15, 15, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .vector {
+    display: none;
+  }
+
+  .navcontainer {
+    display: none;
+  }
+
+  .li {
+    display: flex;
+    height: 56px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    color: #403531;
+    font-family: Geologica;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+  }
+
+  .limob {
+    display: flex;
+    height: 56px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    color: #403531;
+    font-family: Geologica;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+  }
+
+  a {
+    color: #403531;
+    font-family: Geologica;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+  }
+
+  .liservices {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .navcontainer {
+    display: flex;
+    align-items: baseline;
+    padding: 330px 16px 2px 16px;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .header {
+    height: 64px;
+    background-color: #110f0f;
+    border-color: #110f0f;
+    padding: 12px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    padding: 15px 0;
+    max-width: 55px;
+    min-height: 64px;
+  }
+
+  .number {
+    color: #403531;
+    font-family: "Geologica";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    margin: 0%;
+  }
+
+  .timevisit {
+    color: #403531;
+    font-family: Geologica;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    margin: 0%;
+  }
+
+  .container_medium {
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.5rem;
+    box-sizing: border-box;
+  }
+
+  .container_small {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .telegram {
+    max-width: 48px;
+    min-width: 48px;
+  }
+
+  .whatsapp {
+    max-width: 48px;
+    min-width: 48px;
   }
 }
 
