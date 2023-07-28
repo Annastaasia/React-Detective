@@ -1,8 +1,11 @@
 import React from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import Vectordown from "../../assets/svg/Vectordown.jsx";
+import { ReactComponent as Vectordown } from "../../assets/images/vectordown.svg";
+import { ReactComponent as Vectordown2 } from "../../assets/images/bxs_chevron-down.svg";
 import styled from "styled-components";
 import style from "./nav.module.scss";
+import ModalServices from "../../components/ModalServices/ModalServices";
 
 const Ul = styled.ul`
   list-style: none;
@@ -25,6 +28,7 @@ const Ul = styled.ul`
     font-style: normal;
     font-weight: 400;
     line-height: 140%;
+    cursor: pointer;
   }
 
   li:hover {
@@ -50,25 +54,37 @@ const Ul = styled.ul`
 `;
 
 const Nav = ({ open }) => {
+  const [showModal, setShowModal] = useState(false);
+  const [isIconModalUp, setIsIconModalUp] = useState(false);
+
+  const handleModalClick = () => {
+    setShowModal(!showModal);
+    setIsIconModalUp(!isIconModalUp);
+  };
+
   return (
     <nav className={style.nav}>
       <Ul open={open}>
-        <Link to="/services_for_individuals">
-          <li className={style.li}>
-            Для частных лиц
-            <div className={style.vector}>
-              <Vectordown />
-            </div>
-          </li>
-        </Link>
-        <Link to="/services_for_business">
-          <li className={style.li}>
-            Для бизнеса
-            <div className={style.vector}>
-              <Vectordown />
-            </div>
-          </li>
-        </Link>
+        <li className={style.li} onClick={handleModalClick}>
+          Для частных лиц
+          <div className={style.vector}>
+            <Vectordown
+              style={{
+                transform: isIconModalUp ? "rotate(0deg)" : "rotate(180deg)",
+                transition: "transform 0.3s ease",
+              }}
+            />
+          </div>
+        </li>
+        {showModal && <ModalServices />}
+
+        <li className={style.li}>
+          Для бизнеса
+          <div className={style.vector}>
+            <Vectordown2 />
+          </div>
+        </li>
+
         <Link to="/price">
           <li>Цены</li>
         </Link>
