@@ -12,7 +12,8 @@ export default function Form(props) {
   } = useForm();
 
   const onSubmit = (data) => {
-    alert(JSON.stringify(data));
+    props.isPopup ? props.onButtonClick() : alert(JSON.stringify(data)) ;
+
   };
   return (
     <>
@@ -81,7 +82,9 @@ export default function Form(props) {
           </div>
         </button>
       </form>
-
+      {/* <div className={style.test} >
+        Thanks!
+      </div> */}
     </>
   )
 }
