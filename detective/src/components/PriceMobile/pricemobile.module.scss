@@ -1,0 +1,63 @@
+@media screen and (max-width: 1117px) {
+  .blok_tablemobile {
+    display: flex;
+    padding: 32px 40px;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .title {
+    color: #403531;
+    font-family: Geologica;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    margin: 0;
+  }
+
+  .blok_price {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .text {
+    color: #484848;
+    font-family: Geologica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%;
+    margin: 0;
+  }
+
+  .price {
+    color: #403531;
+    font-family: Geologica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    margin: 0;
+  }
+
+  .blok > .blok_tablemobile:nth-child(even) {
+    background-color: #f8f8f8;
+  }
+
+  .section_price {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 8px;
+  }
+}
+
+@media screen and (max-width: 604px) {
+  .blok_tablemobile {
+    display: flex;
+    padding: 32px 16px;
+    flex-direction: column;
+    gap: 24px;
+  }
+}
