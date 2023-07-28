@@ -37,6 +37,7 @@ const translateBreadcrumb = (breadcrumb) => {
     reviews: "/ Отзывы",
     geolocation: "/ Пробить геолокацию по номеру телефона",
     article1: "/ Розыск человека и автомобиля",
+    price: "/ Цены",
   };
 
   return translations[breadcrumb] || breadcrumb;

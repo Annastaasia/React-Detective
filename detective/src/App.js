@@ -13,6 +13,7 @@ import Reviews from "./pages/ReviewsPage/ReviewPage.jsx";
 import GeoLocationPage from "./pages/GeoLocationPage/GeoLocationPage.jsx";
 import ArticlePage from "./pages/ArticlePage/ArticlePage.jsx";
 import Blog from "./pages/BlogPage/BlogPage.jsx"
+import PricePage from "./pages/PricePage/PricePage.jsx";
 
 
 
@@ -29,6 +30,7 @@ function App() {
         <Route exact path="/reviews" element={<Reviews />} />
         <Route exact path="/blog/article1" element={<ArticlePage />} />
         <Route exact path="/blog" element={<Blog />} />
+        <Route exact path="/price" element={<PricePage />} />
       </Routes>
       <Footer />
     </div>

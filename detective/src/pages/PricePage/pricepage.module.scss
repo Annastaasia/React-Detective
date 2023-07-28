@@ -1,0 +1,182 @@
+@media screen and (min-width: 1117px) {
+  .container {
+    display: flex;
+    padding: 64px 0px;
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .container_mobile {
+    display: none;
+  }
+
+  .h2 {
+    display: flex;
+    padding: 16px 64px;
+    color: #403531;
+    font-family: Geologica;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+  }
+
+  .price_header {
+    padding: 40px 64px 0px 64px;
+    gap: 24px;
+  }
+
+  .h1 {
+    font-size: 40px;
+  }
+
+  .tabs__person {
+    font-size: 21px;
+  }
+
+  .tabs__business {
+    font-size: 21px;
+  }
+
+  .services__tabs {
+    gap: 40px;
+  }
+}
+
+@media screen and (max-width: 1117px) {
+  .container {
+    display: none;
+  }
+
+  .container_mobile {
+    display: flex;
+    padding: 64px 0px;
+    flex-direction: column;
+  }
+
+  .h2 {
+    display: flex;
+    padding: 0px 40px;
+    align-items: center;
+    gap: 8px;
+    color: #403531;
+    font-family: Geologica;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    margin: 0;
+  }
+
+  .price_header {
+    padding: 40px 40px 0px 40px;
+    gap: 24px;
+  }
+
+  .h1 {
+    font-size: 40px;
+  }
+
+  .tabs__person {
+    font-size: 21px;
+  }
+
+  .tabs__business {
+    font-size: 21px;
+  }
+
+  .services__tabs {
+    gap: 40px;
+  }
+}
+
+@media screen and (max-width: 604px) {
+  .price_header {
+    padding: 24px 16px 0px 16px;
+    gap: 8px;
+  }
+
+  .container {
+    display: none;
+  }
+
+  .container_mobile {
+    display: flex;
+    padding: 40px 0px;
+    flex-direction: column;
+  }
+
+  .h1 {
+    font-size: 24px;
+  }
+
+  .tabs__person {
+    font-size: 16px;
+  }
+
+  .tabs__business {
+    font-size: 16px;
+  }
+
+  .services__tabs {
+    gap: 24px;
+  }
+}
+
+.price_header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-bottom: 1px solid #dcdcdc;
+  background: #fff;
+}
+
+.h1 {
+  color: #403531;
+  font-family: Geologica;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.services__tabs {
+  list-style-type: none;
+  display: flex;
+  align-items: flex-start;
+}
+
+.tabs__person {
+  display: flex;
+  padding: 13px 0px;
+  align-items: center;
+  gap: 16px;
+  border-bottom: 2px solid #403531;
+  color: #403531;
+  font-family: Geologica;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.tabs__business {
+  display: flex;
+  padding: 13px 0px;
+  align-items: center;
+  gap: 16px;
+  color: rgba(64, 53, 49, 0.5);
+  font-family: Geologica;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.tabs__business:hover {
+  color: #403531;
+
+  .icon * {
+    fill: #403531;
+    opacity: 1;
+  }
+}
