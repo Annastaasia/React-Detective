@@ -60,7 +60,9 @@ const Nav = ({ open }) => {
 
   return (
     <nav className={style.nav}>
-      <div className={style.phon}>
+      <div
+        className={`${style["menu-background"]} ${open ? style["dark"] : ""}`}
+      >
         <Ul open={open}>
           <li className={style.liservices} onClick={handleModalClick}>
             Для частных лиц

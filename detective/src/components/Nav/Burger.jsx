@@ -34,6 +34,25 @@ const StyledBurger = styled.div`
     right: 15%;
   }
 
+  @media (max-width: 1230px) {
+    .menu_background {
+      position: fixed;
+      z-index: 40;
+      top: 88px;
+      left: 0;
+      height: 100vh;
+      width: 100vh;
+      background-color: rgba(17, 15, 15, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+  }
+
+  .dark {
+    background-color: rgba(17, 15, 15, 0.5);
+  }
+
   div {
     &:nth-child(1) {
       transform: ${({ open }) => (open ? "rotate(38deg)" : "rotate(0)")};

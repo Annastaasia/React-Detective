@@ -120,19 +120,6 @@
 }
 
 @media (max-width: 1230px) {
-  .phon {
-    position: fixed;
-    z-index: 40;
-    top: 88px;
-    left: 0;
-    height: 100vh;
-    width: 100vh;
-    background-color: rgba(17, 15, 15, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-  }
-
   .vector {
     display: none;
   }
@@ -279,4 +266,20 @@
   background-color: #fff;
   transform-origin: 1px;
   transition: all 0.3s linear;
+}
+.menu-background {
+  background-color: rgba(17, 15, 15, 0.5);
+}
+.dark {
+  background-color: rgba(17, 15, 15, 0.5);
+  position: fixed;
+  top: 88px;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 35;
 }
