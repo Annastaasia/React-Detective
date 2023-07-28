@@ -1,22 +1,9 @@
 import React, { useState, useRef, useEffect } from "react";
-import { useForm } from "react-hook-form";
-import InputMask from "react-input-mask";
-import Vectorright from "../../assets/svg/Vectorright.jsx";
-import FormError from "../../assets/svg/FormError.jsx";
-import "./faq.scss";
 import { FiPlus } from "react-icons/fi";
 import FormPhoto from "../../assets/images/form-foto.png";
+import Form from "../../components/Form/Form.jsx";
 
 export default function FAQ() {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
-
-  const onSubmit = (data) => {
-    alert(JSON.stringify(data));
-  };
 
   const [active, setActive] = useState(false);
   const contentRef = useRef(null);
@@ -309,70 +296,7 @@ export default function FAQ() {
                 <span className="textdirector">Першин Кирилл Олегович</span>
               </p>
             </div>
-            <form className="form" onSubmit={handleSubmit(onSubmit)}>
-              <div className="wrapper">
-                <input
-                  {...register("name", {
-                    required: true,
-                  })}
-                  className="name"
-                  type="text"
-                  placeholder="Как к вам обращаться?"
-                ></input>
-                {errors?.name?.type === "required" && (
-                  <div className="icon">
-                    <FormError />
-                  </div>
-                )}
-              </div>
-
-              <div className="wrapper">
-                <InputMask
-                  {...register("number", {
-                    required: true,
-                    minLength: 18,
-                  })}
-                  className="number"
-                  type="text"
-                  placeholder="Номер телефона"
-                  mask="+7 (999) 999-99-99"
-                  maskChar=""
-                />
-                {errors?.number?.type === "required" && (
-                  <div className="icon">
-                    <FormError />
-                  </div>
-                )}
-                {errors?.number?.type === "minLength" && (
-                  <div className="iconnumber">
-                    <FormError />
-                  </div>
-                )}
-              </div>
-
-              <div className="wrapper">
-                <input
-                  {...register("question", {
-                    required: true,
-                  })}
-                  className="question"
-                  type="text"
-                  placeholder="Какой вопрос вас беспокоит?"
-                ></input>
-                {errors?.question?.type === "required" && (
-                  <div className="icon">
-                    <FormError />
-                  </div>
-                )}
-              </div>
-
-              <button type="submit" className="button">
-                Оставить заявку
-                <div className="vector">
-                  <Vectorright />
-                </div>
-              </button>
-            </form>
+            <Form />
           </div>
         </div>
       </div>
