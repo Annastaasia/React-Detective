@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { FiPlus } from "react-icons/fi";
 import FormPhoto from "../../assets/images/form-foto.png";
 import Form from "../../components/Form/Form.jsx";
+import "./faq.scss";
 
 export default function FAQ() {
 
