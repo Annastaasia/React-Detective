@@ -9,7 +9,10 @@ import { ReactComponent as Search } from "../../assets/images/services-search.sv
 import { ReactComponent as Protect } from "../../assets/images/services-protect.svg";
 import { ReactComponent as Journalism } from "../../assets/images/services-journalism.svg";
 
-export default function ModalServices() {
+export default function ModalServices(props) {
+  const Check = () => {
+    props.stateMenu();
+  };
   const [showMore, setShowMore] = useState(false);
 
   const handleShowMore = () => {
@@ -44,7 +47,10 @@ export default function ModalServices() {
                 <Link to="/">
                   <p className={style.text}>Организация слежки</p>
                 </Link>
-                <Link to="/services_for_individuals/geolocation">
+                <Link
+                  onClick={() => Check()}
+                  to="/services_for_individuals/geolocation"
+                >
                   <p className={style.text}>
                     Пробить геолокацию по номеру телефона
                   </p>
