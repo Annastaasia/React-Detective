@@ -76,7 +76,7 @@ const Nav = ({ open }) => {
             />
           </div>
         </li>
-        {showModal && <ModalServices />}
+        {showModal && <ModalServices stateMenu={setShowModal} />}
 
         <li className={style.li}>
           Для бизнеса
