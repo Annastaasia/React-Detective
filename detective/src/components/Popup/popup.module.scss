@@ -8,20 +8,66 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 35;
+
 
   .popup_inner {
+    z-index: 40;
     position: relative;
     width: 100%;
     max-width: 581px;
     background-color: transparent;
   }
 
-  .popup_inner .close_btn {
+  .close_btn {
+    font-family: Geologica;
     position: absolute;
     top: 16px;
     right: 16px;
     background-color: transparent;
     border: none;
     cursor: pointer;
+    font-size: 0;
+  }
+}
+
+.popup_logo {
+  display: none;
+}
+
+@media screen and (max-width: 425px) {
+  .popup_header {
+    padding: 12px 24px;
+    background-color: #110F0F;
+
+    // svg {
+    //   display: none;
+    // }
+
+    .close_btn {
+      font-size: 16px;
+      display: flex;
+      justify-content: space-around;
+      flex-flow: row nowrap;
+      height: 48px;
+      padding: 16px;
+      align-items: center;
+      gap: 8px;
+      position: fixed;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%;
+      border-radius: 48px;
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+    }
+  }
+
+  .popup_inner {
+    height: 100%;
+  }
+
+  .popup_logo {
+    display: block;
   }
 }

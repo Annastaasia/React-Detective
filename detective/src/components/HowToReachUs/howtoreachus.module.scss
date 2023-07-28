@@ -12,6 +12,10 @@
   section>p {
     margin: 0 0 24px 0;
   }
+
+  form>button {
+    margin-top: 24px;
+  }
 }
 
 .reach_us_title {
@@ -24,6 +28,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
   gap: 16px;
 }
 
@@ -53,5 +58,13 @@
     font-size: 16px;
     color: #403531;
     font-weight: 700;
+  }
+}
+
+
+@media screen and (max-width: 425px) {
+  .reach_us_wrapper {
+    padding: 40px 16px;
+    height: 100%;
   }
 }

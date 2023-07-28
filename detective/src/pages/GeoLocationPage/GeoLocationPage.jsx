@@ -15,6 +15,10 @@ export default function GeoLocationPage() {
   const [buttonPopup, setButtonPopup] = useState(false);
   return (
     <>
+      <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
+        <HowToReachUs />
+      </Popup>
+
       <main className={style.container}>
         <section className={style.section_header}>
           <Breadcrumbs />
@@ -56,10 +60,6 @@ export default function GeoLocationPage() {
                   Заказать услугу
                   <VectorRight alt="vector" className={style.icon} />
                 </button>
-
-                <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
-                  <HowToReachUs />
-                </Popup>
 
                 <div className={style.blokmobile_rating}>
                   <p className={style.text_rating}>5.0</p>

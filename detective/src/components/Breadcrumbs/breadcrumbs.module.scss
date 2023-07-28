@@ -7,8 +7,8 @@
     list-style-type: none;
     padding: 0;
   }
+
   li {
-    color: #484848;
     font-family: Geologica;
     font-size: 14px;
     font-style: normal;
@@ -16,17 +16,17 @@
     line-height: 140%;
 
     a {
-      color: #484848;
+      color: #403531;
+      transition-duration: 0.3s;
+    }
+
+    a:hover {
+      color: #E9C394;
     }
   }
-}
 
-.breadcrumbs:hover {
-  li {
-    color: #e9c394;
-
-    a {
-      color: #e9c394;
-    }
+  li:last-child {
+    color: rgba(64, 53, 49, 0.50);
   }
+
 }

@@ -7,6 +7,7 @@ import Form from "../Form/Form";
 export default function HowToReachUs() {
   return (
     <div className={style.reach_us_wrapper}>
+
       <h4 className={style.reach_us_title}>
         Как с нами связаться?
       </h4>

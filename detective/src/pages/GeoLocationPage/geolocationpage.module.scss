@@ -414,3 +414,23 @@
   font-weight: 500;
   line-height: 140%;
 }
+
+.section_header {
+  nav {
+    li {
+      a {
+        color: #FFFFFF;
+        transition-duration: 0.3s;
+      }
+
+      a:hover {
+        color: #FFF2D8;
+      }
+    }
+
+    li:last-child {
+      color: rgba(255, 255, 255, 0.50);
+    }
+  }
+
+}
