@@ -1,5 +1,6 @@
 import style from "./geolocationpage.module.scss";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import Breadcrumbs from "../../components/Breadcrumbs/Breadcrumbs.jsx";
 import GeoLocationImg from "../../assets/images/geolocation-photo.png";
 import Star from "../../assets/images/icon_star.svg";
@@ -7,8 +8,11 @@ import { ReactComponent as VectorRight } from "../../assets/images/vectorright.s
 import { ReactComponent as Binoculars } from "../../assets/images/services-binoculars.svg";
 import FAQ from "../FAQ/FAQ";
 import Blog from "../Blog/Blog";
+import Popup from "../../components/Popup/Popup";
+import HowToReachUs from "../../components/HowToReachUs/HowToReachUs";
 
 export default function GeoLocationPage() {
+  const [buttonPopup, setButtonPopup] = useState(false);
   return (
     <>
       <main className={style.container}>
@@ -48,10 +52,15 @@ export default function GeoLocationPage() {
                 </div>
               </div>
               <div className={style.blok_buy}>
-                <button className={style.button_buy} type="button">
+                <button onClick={() => setButtonPopup(true)} className={style.button_buy} type="button">
                   Заказать услугу
                   <VectorRight alt="vector" className={style.icon} />
                 </button>
+
+                <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
+                  <HowToReachUs />
+                </Popup>
+
                 <div className={style.blokmobile_rating}>
                   <p className={style.text_rating}>5.0</p>
                   <div className={style.blok_star}>
