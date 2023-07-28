@@ -4,7 +4,7 @@ import { ReactComponent as WhatsApp } from "../../assets/images/popup-whatsapp.s
 import { ReactComponent as Phone } from "../../assets/images/popup-phone.svg";
 import Form from "../Form/Form";
 
-export default function HowToReachUs() {
+export default function HowToReachUs(props) {
   return (
     <div className={style.reach_us_wrapper}>
 
@@ -41,7 +41,7 @@ export default function HowToReachUs() {
       </section>
       <section>
         <p>Или оставить заявку. Мы перезвоним вам в ближайшее время</p>
-        <Form isPopup={true} />
+        <Form isPopup={true} onButtonClick={props.onButtonClickShow} />
       </section>
     </div>
   )

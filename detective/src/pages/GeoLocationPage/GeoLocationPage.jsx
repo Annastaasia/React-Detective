@@ -9,14 +9,14 @@ import { ReactComponent as Binoculars } from "../../assets/images/services-binoc
 import FAQ from "../FAQ/FAQ";
 import Blog from "../Blog/Blog";
 import Popup from "../../components/Popup/Popup";
-import HowToReachUs from "../../components/HowToReachUs/HowToReachUs";
+import SecondModal from "../../components/SecondModal/SecondModal";
 
 export default function GeoLocationPage() {
   const [buttonPopup, setButtonPopup] = useState(false);
   return (
     <>
       <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
-        <HowToReachUs />
+        <SecondModal />
       </Popup>
 
       <main className={style.container}>
