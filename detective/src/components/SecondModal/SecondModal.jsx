@@ -16,7 +16,7 @@ const SecondModal = (props) => {
     <div>
       {showFirstModal && (
         props.HowToReachUs ? <HowToReachUs onButtonClickShow={handleFirstModalButtonClick} />
-          : <Form onButtonClickShow={handleFirstModalButtonClick} isOnMain={`${props.isOnMain}`} />
+          : <Form onButtonClickShow={handleFirstModalButtonClick} isOnMain={props.isOnMain} />
       )}
       {showSecondModal && (props.HowToReachUs ? <Thanks bg={"#110F0F"} />
         : <Thanks />)}

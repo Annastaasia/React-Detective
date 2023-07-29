@@ -41,7 +41,7 @@ export default function HowToReachUs(props) {
       </section>
       <section>
         <p>Или оставить заявку. Мы перезвоним вам в ближайшее время</p>
-        <Form isPopup={true} onButtonClick={props.onButtonClickShow} />
+        <Form isPopup={true} onButtonClick={props.onButtonClickShow} isOnMain={false} />
       </section>
     </div>
   )

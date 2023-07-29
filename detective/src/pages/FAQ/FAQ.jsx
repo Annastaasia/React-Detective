@@ -299,7 +299,6 @@ export default function FAQ() {
               </p>
             </div>
             <SecondModal>
-              <Form />
             </SecondModal>
           </div>
         </div>
