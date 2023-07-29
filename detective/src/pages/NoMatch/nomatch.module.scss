@@ -1,0 +1,115 @@
+@media screen and (min-width: 1228px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    padding: 96px 64px;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    border-bottom: 1px solid #dcdcdc;
+    background: #eee;
+  }
+
+  .h1 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 1228px) {
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 64px 64px;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    border-bottom: 1px solid #dcdcdc;
+    background: #eee;
+  }
+
+  .h1 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 743px) {
+  .img_nomatch {
+    width: 100%;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 32px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    border-bottom: 1px solid #dcdcdc;
+    background: #eee;
+  }
+
+  .h1 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 605px) {
+  .h1 {
+    font-size: 28px;
+  }
+}
+
+.blok_nomatch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.h1 {
+  color: #403531;
+  font-family: Geologica;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  margin: 0;
+}
+
+.p {
+  color: #403531;
+  font-family: Geologica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.button_nomatch {
+  display: flex;
+  height: 56px;
+  padding: 16px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+  background-color: 1px solid #403531;
+  border-radius: 40px;
+  background: #eee;
+  color: #403531;
+  font-family: Geologica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  margin-top: 32px;
+}
+
+.button_nomatch:hover {
+  background: #fff2d8;
+  cursor: pointer;
+  transition-duration: 0.3s;
+
+  .icon_nomatch * {
+    fill: #403531;
+    transition-duration: 0.3s;
+  }
+}
