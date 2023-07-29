@@ -7,7 +7,7 @@ import Star from "../../assets/images/icon_star.svg";
 import { ReactComponent as VectorRight } from "../../assets/images/vectorright.svg";
 import { ReactComponent as Binoculars } from "../../assets/images/services-binoculars.svg";
 import FAQ from "../FAQ/FAQ";
-import Blog from "../Blog/Blog";
+import Blog from "../../components/Blog/Blog";
 import Popup from "../../components/Popup/Popup";
 import SecondModal from "../../components/SecondModal/SecondModal";
 
@@ -56,7 +56,11 @@ export default function GeoLocationPage() {
                 </div>
               </div>
               <div className={style.blok_buy}>
-                <button onClick={() => setButtonPopup(true)} className={style.button_buy} type="button">
+                <button
+                  onClick={() => setButtonPopup(true)}
+                  className={style.button_buy}
+                  type="button"
+                >
                   Заказать услугу
                   <VectorRight alt="vector" className={style.icon} />
                 </button>

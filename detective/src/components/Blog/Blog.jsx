@@ -1,6 +1,6 @@
 import style from "./blog.module.scss";
-import posts from "../../components/Post/posts";
-import Post from "../../components/Post/Post";
+import posts from "../Post/posts";
+import Post from "../Post/Post";
 import { Link } from "react-router-dom";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";

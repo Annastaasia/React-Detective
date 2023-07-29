@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import Blog from "../Blog/Blog.jsx";
+import Blog from "../../components/Blog/Blog";
 import { Carousel } from "../../components/Carousel/Carousel.jsx";
 import style from "./articlepage.module.scss";
 import Breadcrumbs from "../../components/Breadcrumbs/Breadcrumbs.jsx";
