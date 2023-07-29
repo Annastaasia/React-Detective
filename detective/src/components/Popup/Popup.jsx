@@ -2,9 +2,6 @@ import style from "./popup.module.scss"
 import { ReactComponent as Cross } from "../../assets/images/icon-white-cross.svg";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/images/logo.svg";
-// import { useState } from 'react';
-// import FirstModal from './FirstModal';
-// import SecondModal from './SecondModal';
 
 export default function Popup(props) {
 

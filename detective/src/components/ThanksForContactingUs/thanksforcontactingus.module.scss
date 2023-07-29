@@ -2,12 +2,13 @@
   font-family: Geologica;
   padding: 40px;
   color: #fff;
-  background-color: #110F0F;
+  background-color: transparent;
   font-weight: 400;
   display: flex;
   flex-direction: column;
   gap: 24px;
   border-radius: 8px;
+  height: 100%;
 
   p {
     margin: 0;

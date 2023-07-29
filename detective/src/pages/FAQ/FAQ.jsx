@@ -3,6 +3,7 @@ import { FiPlus } from "react-icons/fi";
 import FormPhoto from "../../assets/images/form-foto.png";
 import Form from "../../components/Form/Form.jsx";
 import "./faq.scss";
+import SecondModal from "../../components/SecondModal/SecondModal";
 
 export default function FAQ() {
 
@@ -297,7 +298,9 @@ export default function FAQ() {
                 <span className="textdirector">Першин Кирилл Олегович</span>
               </p>
             </div>
-            <Form />
+            <SecondModal>
+              <Form />
+            </SecondModal>
           </div>
         </div>
       </div>

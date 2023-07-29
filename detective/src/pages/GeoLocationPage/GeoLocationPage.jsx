@@ -16,7 +16,7 @@ export default function GeoLocationPage() {
   return (
     <>
       <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
-        <SecondModal />
+        <SecondModal HowToReachUs={true} />
       </Popup>
 
       <main className={style.container}>
