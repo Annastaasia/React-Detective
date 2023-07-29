@@ -14,7 +14,7 @@ import GeoLocationPage from "./pages/GeoLocationPage/GeoLocationPage.jsx";
 import ArticlePage from "./pages/ArticlePage/ArticlePage.jsx";
 import Blog from "./pages/BlogPage/BlogPage.jsx"
 import PricePage from "./pages/PricePage/PricePage.jsx";
-
+import NoMatch from "./pages/NoMatch/NoMatch.jsx";
 
 
 function App() {
@@ -31,6 +31,8 @@ function App() {
         <Route exact path="/blog/article1" element={<ArticlePage />} />
         <Route exact path="/blog" element={<Blog />} />
         <Route exact path="/price" element={<PricePage />} />
+
+        <Route path="*" element={<NoMatch />} />
       </Routes>
       <Footer />
     </div>
