@@ -1,11 +1,18 @@
 import style from "./director.module.scss";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import WorkHistory from "../../assets/images/work-history.svg";
 import Vectorright from "../../assets/svg/Vectorright.jsx";
+import Popup from "../../components/Popup/Popup.jsx";
+import SecondModal from "../../components/SecondModal/SecondModal.jsx";
+import { useState } from "react";
 
 export default function Director() {
+  const [buttonPopup, setButtonPopup] = useState(false);
   return (
     <>
+      <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
+        <SecondModal HowToReachUs={true} />
+      </Popup>
       <div className={style.container}>
         <div className={style.backgroundsmall}></div>
         <div className={style.blok}>
@@ -32,14 +39,14 @@ export default function Director() {
             <img src={WorkHistory} alt="work-history" className={style.img} />
             <p className={style.p}>Стаж в частной практике более 15 лет</p>
           </div>
-          <Link to="/form">
-            <button type="submit" className={style.button}>
-              Записаться на консультацию
-              <div className={style.vector}>
-                <Vectorright />
-              </div>
-            </button>
-          </Link>
+          {/* <Link to="/form"> */}
+          <button type="submit" className={style.button} onClick={() => setButtonPopup(true)}>
+            Записаться на консультацию
+            <div className={style.vector}>
+              <Vectorright />
+            </div>
+          </button>
+          {/* </Link> */}
         </div>
 
         <div className={style.background}></div>
