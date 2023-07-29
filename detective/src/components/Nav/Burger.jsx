@@ -83,7 +83,7 @@ const Burger = () => {
         </section>
         Меню
       </StyledBurger>
-      <Nav open={open} />
+      <Nav open={open} closeMenu={() => setOpen(false)} />
     </>
   );
 };

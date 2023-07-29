@@ -31,6 +31,7 @@ export default function ModalServices(props) {
           <Scrollbar
             style={{
               width: "93vw",
+              height: "33vw",
             }}
           >
             <div className={style.catalog_inner2}>

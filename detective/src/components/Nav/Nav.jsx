@@ -49,13 +49,17 @@ const Ul = styled.ul`
   }
 `;
 
-const Nav = ({ open }) => {
+const Nav = ({ open, closeMenu }) => {
   const [showModal, setShowModal] = useState(false);
   const [isIconModalUp, setIsIconModalUp] = useState(false);
 
   const handleModalClick = () => {
     setShowModal(!showModal);
     setIsIconModalUp(!isIconModalUp);
+  };
+
+  const Check = () => {
+    setShowModal();
   };
 
   return (
@@ -78,7 +82,13 @@ const Nav = ({ open }) => {
           {showModal && <ModalServices stateMenu={setShowModal} />}
 
           <Link to="/services_for_individuals">
-            <li className={(style.li, style.limob)}>
+            <li
+              className={(style.li, style.limob)}
+              onClick={() => {
+                Check();
+                closeMenu();
+              }}
+            >
               Для частных лиц{" "}
               <div className={style.right}>
                 <Vectorright />
@@ -87,7 +97,13 @@ const Nav = ({ open }) => {
           </Link>
 
           <Link to="/">
-            <li className={style.li}>
+            <li
+              className={style.li}
+              onClick={() => {
+                Check();
+                closeMenu();
+              }}
+            >
               Для бизнеса
               <div className={style.vector}>
                 <Vectordown2 />
@@ -98,7 +114,13 @@ const Nav = ({ open }) => {
             </li>
           </Link>
           <Link to="/price">
-            <li className={style.li}>
+            <li
+              className={style.li}
+              onClick={() => {
+                Check();
+                closeMenu();
+              }}
+            >
               Цены{" "}
               <div className={style.right}>
                 <Vectorright />
@@ -106,7 +128,13 @@ const Nav = ({ open }) => {
             </li>
           </Link>
           <Link to="/blog">
-            <li className={style.li}>
+            <li
+              className={style.li}
+              onClick={() => {
+                Check();
+                closeMenu();
+              }}
+            >
               Блог{" "}
               <div className={style.right}>
                 <Vectorright />
@@ -114,7 +142,13 @@ const Nav = ({ open }) => {
             </li>
           </Link>
           <Link to="/reviews">
-            <li className={style.li}>
+            <li
+              className={style.li}
+              onClick={() => {
+                Check();
+                closeMenu();
+              }}
+            >
               Отзывы{" "}
               <div className={style.right}>
                 <Vectorright />
@@ -122,7 +156,13 @@ const Nav = ({ open }) => {
             </li>
           </Link>
           <Link to="/contacts">
-            <li className={style.li}>
+            <li
+              className={style.li}
+              onClick={() => {
+                Check();
+                closeMenu();
+              }}
+            >
               Контакты{" "}
               <div className={style.right}>
                 <Vectorright />
