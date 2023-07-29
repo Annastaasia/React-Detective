@@ -4,9 +4,11 @@ import Vectorright from "../../assets/svg/Vectorright.jsx";
 import style from "./mainbg.module.scss";
 import Form from "../Form/Form.jsx";
 import SecondModal from "../SecondModal/SecondModal.jsx";
+import Popup from "../Popup/Popup.jsx";
+import { useState } from "react";
 
 function MainBG() {
-
+  const [buttonPopup, setButtonPopup] = useState(false);
   return (
     <>
       <div className={style.background}>
@@ -15,18 +17,18 @@ function MainBG() {
           <h2 className={style.h2}>детективное агентство в москве</h2>
 
           <SecondModal isOnMain={true} >
-            {/* <Form isOnMain={true} /> */}
           </SecondModal>
 
           <div className={style.button_mobile}>
-            <Link to="/form">
-              <button type="submit" className={style.button}>
-                Оставить заявку
-                <div className={style.vector}>
-                  <Vectorright />
-                </div>
-              </button>
-            </Link>
+            <button type="submit" className={style.button} onClick={() => setButtonPopup(true)}>
+              Оставить заявку
+              <div className={style.vector}>
+                <Vectorright />
+              </div>
+            </button>
+            <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
+              <SecondModal isMainMobile={true} />
+            </Popup>
           </div>
         </div>
       </div>
