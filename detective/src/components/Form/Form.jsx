@@ -8,7 +8,7 @@ import Vectorright from "../../assets/svg/Vectorright.jsx";
 import { useState } from "react";
 
 export default function Form(props) {
-  const isMobile = useMediaQuery({ query: `(max-width: 376px)` });
+  const isMobile = useMediaQuery({ query: `(max-width: 520px)` });
 
   const {
     register,
