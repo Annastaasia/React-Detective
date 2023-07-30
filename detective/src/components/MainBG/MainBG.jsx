@@ -6,6 +6,7 @@ import Form from "../Form/Form.jsx";
 import SecondModal from "../SecondModal/SecondModal.jsx";
 import Popup from "../Popup/Popup.jsx";
 import { useState } from "react";
+import SocialMediaButtons from "../SocialMediaButtons/SocialMediaButtons.jsx";
 
 function MainBG() {
   const [buttonPopup, setButtonPopup] = useState(false);
@@ -16,11 +17,14 @@ function MainBG() {
           <h1 className={style.h1}>perhin & partners</h1>
           <h2 className={style.h2}>детективное агентство в москве</h2>
 
-          <SecondModal isOnMain={true} >
-          </SecondModal>
+          <SecondModal isOnMain={true}></SecondModal>
 
           <div className={style.button_mobile}>
-            <button type="submit" className={style.button} onClick={() => setButtonPopup(true)}>
+            <button
+              type="submit"
+              className={style.button}
+              onClick={() => setButtonPopup(true)}
+            >
               Оставить заявку
               <div className={style.vector}>
                 <Vectorright />
@@ -30,6 +34,7 @@ function MainBG() {
               <SecondModal isMainMobile={true} />
             </Popup>
           </div>
+          <SocialMediaButtons />
         </div>
       </div>
     </>

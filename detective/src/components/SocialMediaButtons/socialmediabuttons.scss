@@ -1,0 +1,37 @@
+@media screen and (min-width: 600px) {
+  .socmedia_container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .social-buttons {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: opacity 0.3s, height 0.3s;
+  }
+
+  .social-buttons.show {
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    position: fixed;
+    z-index: 10;
+    height: auto;
+    right: 14px;
+    bottom: 74px;
+  }
+
+  .socmedia_button {
+    position: fixed;
+    z-index: 10;
+    right: 16px;
+    bottom: 24px;
+    padding: 13px 11px 7px 13px;
+    border-radius: 44px;
+    border: 1px solid #e7e7e7;
+    background: #fff;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+}
