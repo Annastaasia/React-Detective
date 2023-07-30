@@ -153,7 +153,7 @@ export default function Footer() {
 
           <div className={style.blokmain4}>
             <p className={style.title}>Меню</p>
-            <Link to="/">
+            <Link to="/blog">
               <p className={style.p}>Блог</p>
             </Link>
             <Link to="/reviews">
@@ -165,7 +165,7 @@ export default function Footer() {
             <Link to="/services_for_individuals">
               <p className={style.p}>Услуги</p>
             </Link>
-            <Link to="/">
+            <Link to="/price">
               <p className={style.p}>Цены</p>
             </Link>
           </div>
