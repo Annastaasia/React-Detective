@@ -3,7 +3,9 @@ import { useForm } from "react-hook-form";
 import { useMediaQuery } from 'react-responsive';
 import InputMask from "react-input-mask";
 import FormError from "../../assets/svg/FormError.jsx";
+import FormCheck from "../../assets/svg/FormCheck.jsx";
 import Vectorright from "../../assets/svg/Vectorright.jsx";
+import { useState } from "react";
 
 export default function Form(props) {
   const isMobile = useMediaQuery({ query: `(max-width: 376px)` });
@@ -12,11 +14,32 @@ export default function Form(props) {
     register,
     handleSubmit,
     formState: { errors },
+    trigger,
   } = useForm();
 
   const onSubmit = (data) => {
     props.isPopup ? props.onButtonClick() : props.onButtonClickShow();
   };
+
+  const [isFocusName, setIsFocusName] = useState(false);
+  const [isFocusNumber, setIsFocusNumber] = useState(false);
+  const [isFocusQuestion, setIsFocusQuestion] = useState(false);
+
+
+  const handleFocusName = () => {
+    setIsFocusName(true);
+    trigger("name");
+  }
+
+  const handleFocusNumber = () => {
+    setIsFocusNumber(true);
+    trigger("number");
+  }
+
+  const handleFocusQuestion = () => {
+    setIsFocusQuestion(true);
+    trigger("question");
+  }
 
   if (props.isOnMain && isMobile) {
     return (null)
@@ -28,7 +51,10 @@ export default function Form(props) {
             <input
               {...register("name", {
                 required: true,
+                minLength: 2
               })}
+              onFocus={() => handleFocusName()}
+              onBlur={() => handleFocusName()}
               className={style.name}
               type="text"
               placeholder="Как к вам обращаться?"
@@ -36,6 +62,11 @@ export default function Form(props) {
             {errors?.name?.type === "required" && (
               <div className={style.icon}>
                 <FormError />
+              </div>
+            )}
+            {!errors?.name && isFocusName && (
+              <div className={style.icon}>
+                <FormCheck />
               </div>
             )}
           </div>
@@ -51,6 +82,8 @@ export default function Form(props) {
               placeholder="Номер телефона"
               mask="+7 (999) 999-99-99"
               maskChar=""
+              onFocus={() => handleFocusNumber()}
+              onBlur={() => handleFocusNumber()}
             />
             {errors?.number?.type === "required" && (
               <div className={style.icon}>
@@ -62,21 +95,35 @@ export default function Form(props) {
                 <FormError />
               </div>
             )}
+            {!errors?.number && isFocusNumber && (
+              <div className={style.icon}>
+                <FormCheck />
+              </div>
+            )}
           </div>
 
           {props.isPopup ? "" : (
             <div className={style.wrapper}>
+              {/* <input onChange={trigger("question")} */}
               <input
                 {...register("question", {
                   required: true,
+                  minLength: 2
                 })}
                 className={style.question}
                 type="text"
                 placeholder="Какой вопрос вас беспокоит?"
+                onFocus={() => handleFocusQuestion()}
+                onBlur={() => handleFocusQuestion()}
               ></input>
               {errors?.question?.type === "required" && (
                 <div className={style.icon}>
                   <FormError />
+                </div>
+              )}
+              {!errors?.question && isFocusQuestion && (
+                <div className={style.icon}>
+                  <FormCheck />
                 </div>
               )}
             </div>
@@ -87,7 +134,7 @@ export default function Form(props) {
               <Vectorright />
             </div>
           </button>
-        </form>
+        </form >
       </>
 
     )

@@ -1,0 +1,33 @@
+.mainmobile_container {
+  font-family: Geologica;
+  line-height: 140%;
+  padding: 40px;
+  color: #fff;
+  background-color: #110F0F;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  border-radius: 8px;
+
+  form>button {
+    margin-top: 24px;
+  }
+
+}
+
+
+.mainmobile_title {
+  font-size: 28px;
+  font-weight: 500;
+  margin: 0;
+}
+
+
+@media screen and (max-width: 450px) {
+  .mainmobile_container {
+    padding: 40px 16px;
+    height: 100vh;
+    border-radius: 0;
+  }
+}
