@@ -1,8 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Vectorright from "../../assets/svg/Vectorright.jsx";
 import style from "./mainbg.module.scss";
-import Form from "../Form/Form.jsx";
 import SecondModal from "../SecondModal/SecondModal.jsx";
 import Popup from "../Popup/Popup.jsx";
 import { useState } from "react";

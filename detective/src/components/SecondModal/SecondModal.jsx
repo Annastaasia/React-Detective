@@ -14,15 +14,15 @@ const SecondModal = (props) => {
   };
 
   return (
-    <div>
+    <>
       {showFirstModal && (
         props.HowToReachUs ? <HowToReachUs onButtonClickShow={handleFirstModalButtonClick} />
           : props.isMainMobile ? <MainMobilePopup onButtonClickShow={handleFirstModalButtonClick} /> : <Form onButtonClickShow={handleFirstModalButtonClick} isOnMain={props.isOnMain} />
       )}
       {showSecondModal && (
-        props.HowToReachUs || props.isMainMobile ? <Thanks bg={"#110F0F"} />
+        props.HowToReachUs || props.isMainMobile ? <Thanks bg={"#110F0F"} width={"95%"} />
           : <Thanks />)}
-    </div>
+    </>
   );
 };
 

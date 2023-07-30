@@ -6,9 +6,10 @@ import FormError from "../../assets/svg/FormError.jsx";
 import FormCheck from "../../assets/svg/FormCheck.jsx";
 import Vectorright from "../../assets/svg/Vectorright.jsx";
 import { useState } from "react";
+import mainstyles from "../MainBG/mainbg.module.scss";
 
 export default function Form(props) {
-  const isMobile = useMediaQuery({ query: `(max-width: 376px)` });
+  const isMobile = useMediaQuery({ query: `(max-width: 580px)` });
 
   const {
     register,
@@ -45,97 +46,94 @@ export default function Form(props) {
     return (null)
   } else {
     return (
-      <>
-        <form className={style.form} onSubmit={handleSubmit(onSubmit)}>
+      <form className={props.isOnMain ? mainstyles.form : style.form} onSubmit={handleSubmit(onSubmit)}>
+        <div className={style.wrapper}>
+          <input
+            {...register("name", {
+              required: true,
+              minLength: 2
+            })}
+            onFocus={() => handleFocusName()}
+            onBlur={() => handleFocusName()}
+            className={style.name}
+            type="text"
+            placeholder="Как к вам обращаться?"
+          ></input>
+          {errors?.name?.type === "required" && (
+            <div className={style.icon}>
+              <FormError />
+            </div>
+          )}
+          {!errors?.name && isFocusName && (
+            <div className={style.icon}>
+              <FormCheck />
+            </div>
+          )}
+        </div>
+
+        <div className={style.wrapper}>
+          <InputMask
+            {...register("number", {
+              required: true,
+              minLength: 18,
+            })}
+            className={style.number}
+            type="text"
+            placeholder="Номер телефона"
+            mask="+7 (999) 999-99-99"
+            maskChar=""
+            onFocus={() => handleFocusNumber()}
+            onBlur={() => handleFocusNumber()}
+          />
+          {errors?.number?.type === "required" && (
+            <div className={style.icon}>
+              <FormError />
+            </div>
+          )}
+          {errors?.number?.type === "minLength" && (
+            <div className={style.iconnumber}>
+              <FormError />
+            </div>
+          )}
+          {!errors?.number && isFocusNumber && (
+            <div className={style.icon}>
+              <FormCheck />
+            </div>
+          )}
+        </div>
+
+        {props.isPopup ? "" : (
           <div className={style.wrapper}>
             <input
-              {...register("name", {
+              {...register("question", {
                 required: true,
                 minLength: 2
               })}
-              onFocus={() => handleFocusName()}
-              onBlur={() => handleFocusName()}
-              className={style.name}
+              className={style.question}
               type="text"
-              placeholder="Как к вам обращаться?"
+              placeholder="Какой вопрос вас беспокоит?"
+              onFocus={() => handleFocusQuestion()}
+              onBlur={() => handleFocusQuestion()}
             ></input>
-            {errors?.name?.type === "required" && (
+            {errors?.question?.type === "required" && (
               <div className={style.icon}>
                 <FormError />
               </div>
             )}
-            {!errors?.name && isFocusName && (
+            {!errors?.question && isFocusQuestion && (
               <div className={style.icon}>
                 <FormCheck />
               </div>
             )}
           </div>
-
-          <div className={style.wrapper}>
-            <InputMask
-              {...register("number", {
-                required: true,
-                minLength: 18,
-              })}
-              className={style.number}
-              type="text"
-              placeholder="Номер телефона"
-              mask="+7 (999) 999-99-99"
-              maskChar=""
-              onFocus={() => handleFocusNumber()}
-              onBlur={() => handleFocusNumber()}
-            />
-            {errors?.number?.type === "required" && (
-              <div className={style.icon}>
-                <FormError />
-              </div>
-            )}
-            {errors?.number?.type === "minLength" && (
-              <div className={style.iconnumber}>
-                <FormError />
-              </div>
-            )}
-            {!errors?.number && isFocusNumber && (
-              <div className={style.icon}>
-                <FormCheck />
-              </div>
-            )}
+        )}
+        <button type="submit" className={props.isOnMain ? mainstyles.button : style.button}>
+          {props.isOnMain ? "Отправить заявку" : "Отправить"}
+          <div className={style.vector}>
+            <Vectorright />
           </div>
-
-          {props.isPopup ? "" : (
-            <div className={style.wrapper}>
-              {/* <input onChange={trigger("question")} */}
-              <input
-                {...register("question", {
-                  required: true,
-                  minLength: 2
-                })}
-                className={style.question}
-                type="text"
-                placeholder="Какой вопрос вас беспокоит?"
-                onFocus={() => handleFocusQuestion()}
-                onBlur={() => handleFocusQuestion()}
-              ></input>
-              {errors?.question?.type === "required" && (
-                <div className={style.icon}>
-                  <FormError />
-                </div>
-              )}
-              {!errors?.question && isFocusQuestion && (
-                <div className={style.icon}>
-                  <FormCheck />
-                </div>
-              )}
-            </div>
-          )}
-          <button type="submit" className={style.button}>
-            {props.isOnMain ? "Отправить заявку" : "Отправить"}
-            <div className={style.vector}>
-              <Vectorright />
-            </div>
-          </button>
-        </form >
-      </>
+        </button>
+      </form >
 
     )
   }

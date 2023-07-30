@@ -49,7 +49,7 @@ export default function Services() {
               },
               480: {
                 perPage: 1,
-                height: 475,
+                height: 490,
                 gap: 16,
                 arrows: false,
               },
@@ -86,13 +86,13 @@ export default function Services() {
           ))}
         </Splide>
         <Link to="/services">
-            <button type="submit" className={style.buttonmobile}>
-              Смотреть все
-              <div className={style.vector}>
-                <Vectorright />
-              </div>
-            </button>
-          </Link>
+          <button type="submit" className={style.buttonmobile}>
+            Смотреть все
+            <div className={style.vector}>
+              <Vectorright />
+            </div>
+          </button>
+        </Link>
       </div>
     </>
   );

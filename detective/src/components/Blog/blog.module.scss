@@ -50,10 +50,6 @@
 
   a {
     width: 400px;
-
-    img {
-      height: 300px;
-    }
   }
 }
 
@@ -112,6 +108,10 @@
     .custom_splide {
       margin-right: -16px;
       margin-left: -1px;
+
+      a {
+        width: 320px;
+      }
     }
   }
 }

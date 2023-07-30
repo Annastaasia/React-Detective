@@ -35,7 +35,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 40px;
-    margin-bottom: 49px;
+    margin-bottom: 10px;
 
     ul {
       margin: 10px;
@@ -146,7 +146,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 40px;
-    margin-bottom: 49px;
+    margin-bottom: 10px;
 
     ul {
       margin: 10px;
@@ -257,7 +257,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 40px;
-    margin-bottom: 19px;
+    // margin-bottom: 10px;
 
     ul {
       margin: 10px 0px;
@@ -365,11 +365,9 @@
 .container {
   width: auto;
   height: 629px;
-  background-image: linear-gradient(
-      360deg,
+  background-image: linear-gradient(360deg,
       rgba(0, 0, 0, 0.8) 0%,
-      rgba(0, 0, 0, 0) 15%
-    ),
+      rgba(0, 0, 0, 0) 15%),
     linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 15%),
     url(../../assets/images/services-bg.png);
   background-repeat: no-repeat;
@@ -395,8 +393,7 @@
 }
 
 .custom_splide button {
-  filter: invert(90%) sepia(31%) saturate(2%) hue-rotate(194deg)
-    brightness(107%) contrast(100%);
+  filter: invert(90%) sepia(31%) saturate(2%) hue-rotate(194deg) brightness(107%) contrast(100%);
   opacity: 0.5;
   background-color: transparent;
   height: 100%;
@@ -487,6 +484,7 @@ a {
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
+    margin-bottom: 0;
 
     h3 {
       font-size: 24px;
@@ -511,7 +509,12 @@ a {
   }
 
   .custom_splide {
+    // height: 500px;
     margin-right: -16px;
     margin-left: -14px;
+
+    a {
+      margin-top: auto;
+    }
   }
 }
