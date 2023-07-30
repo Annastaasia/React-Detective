@@ -16,9 +16,8 @@ const SocialMediaButtons = () => {
       <button onClick={handleButtonClick} className="socmedia_button">
         <MediaButttons
           alt="socmedia"
-          className="socmedia_icon"
+          className={`socmedia_icon ${showButtons ? "clicked" : ""}`}
           style={{
-            // backgroundColor: showButtons ? "black" : "yellow",
             transition: "transform 0.3s ease",
           }}
         />
