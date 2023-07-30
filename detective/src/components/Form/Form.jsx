@@ -7,6 +7,7 @@ import FormCheck from "../../assets/svg/FormCheck.jsx";
 import Vectorright from "../../assets/svg/Vectorright.jsx";
 import { useState } from "react";
 import mainstyles from "../MainBG/mainbg.module.scss";
+import "../../pages/FAQ/faq.scss";
 
 export default function Form(props) {
   const isMobile = useMediaQuery({ query: `(max-width: 580px)` });
@@ -46,7 +47,7 @@ export default function Form(props) {
     return (null)
   } else {
     return (
-      <form className={props.isOnMain ? mainstyles.form : style.form} onSubmit={handleSubmit(onSubmit)}>
+      <form className={props.isOnMain ? mainstyles.form : props.isPopup ? style.form : "form"} onSubmit={handleSubmit(onSubmit)}>
         <div className={style.wrapper}>
           <input
             {...register("name", {
@@ -127,7 +128,7 @@ export default function Form(props) {
             )}
           </div>
         )}
-        <button type="submit" className={props.isOnMain ? mainstyles.button : style.button}>
+        <button type="submit" className={props.isOnMain ? mainstyles.button : props.isPopup ? style.button : "button"}>
           {props.isOnMain ? "Отправить заявку" : "Отправить"}
           <div className={style.vector}>
             <Vectorright />

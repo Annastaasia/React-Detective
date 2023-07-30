@@ -20,8 +20,8 @@ const SecondModal = (props) => {
           : props.isMainMobile ? <MainMobilePopup onButtonClickShow={handleFirstModalButtonClick} /> : <Form onButtonClickShow={handleFirstModalButtonClick} isOnMain={props.isOnMain} />
       )}
       {showSecondModal && (
-        props.HowToReachUs || props.isMainMobile ? <Thanks bg={"#110F0F"} width={"95%"} />
-          : <Thanks />)}
+        props.HowToReachUs || props.isMainMobile ? <Thanks bg={"#110F0F"} />
+          : <Thanks width={"95%"} />)}
     </>
   );
 };
