@@ -6,8 +6,8 @@ import Breadcrumbs from "../../components/Breadcrumbs/Breadcrumbs.jsx";
 export default function Reviews(props) {
   return (
     <>
-      <div className={style.page_container}>
-        <div className={style.page_header}>
+      <main className={style.page_container}>
+        <section className={style.page_header}>
           <Breadcrumbs />
           <h3 className={style.page_title}>
             отзывы о компании pershin & partners
@@ -21,10 +21,10 @@ export default function Reviews(props) {
             Оставить отзыв
             <img src="./images/biege_arrow_right.svg" alt="отзыв"></img>
           </a>
-        </div>
+        </section>
 
         <Pagination array={reviews} wrapper={style.page_block} />
-      </div>
+      </main>
     </>
   );
 }

@@ -6,13 +6,13 @@ import Breadcrumbs from "../../components/Breadcrumbs/Breadcrumbs";
 export default function BlogPage() {
   return (
     <>
-      <div className={style.page_container}>
-        <div className={style.page_header}>
+      <main className={style.page_container}>
+        <section className={style.page_header}>
           <Breadcrumbs />
           <h3 className={style.page_title}>Блог</h3>
-        </div>
+        </section>
         <Pagination array={posts} wrapper={style.block_container} />
-      </div>
+      </main>
     </>
   );
 }

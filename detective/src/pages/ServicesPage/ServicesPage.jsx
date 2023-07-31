@@ -75,7 +75,7 @@ export default function ServicesPage() {
   return (
     <>
       <main className={style.container}>
-        <div className={style.section_header}>
+        <section className={style.section_header}>
           <Breadcrumbs />
           <h1 className={style.h1}>Услуги</h1>
           <div className={style.services__tabs}>
@@ -90,8 +90,8 @@ export default function ServicesPage() {
               </div>
             </Link>
           </div>
-        </div>
-        <div className={style.catalog}>
+        </section>
+        <section className={style.catalog}>
           <section className={style.blokinfo}>
             <Info alt="Info" className={style.img} />
             <h2 className={style.h2}>Сбор информации</h2>
@@ -250,8 +250,8 @@ export default function ServicesPage() {
               <p className={style.text}>Заказать расследование</p>
             </Link>
           </section>
-        </div>
-        <div className={style.catalog_mobile}>
+        </section>
+        <section className={style.catalog_mobile}>
           <div className={style.blok}>
             <div className={style.row}>
               <div className={style.bloksmall}>
@@ -580,7 +580,7 @@ export default function ServicesPage() {
               </div>
             )}
           </div>
-        </div>
+        </section>
       </main>
     </>
   );

@@ -16,7 +16,7 @@ import Mastercard from "../../assets/images/footer-mastercard.png";
 export default function Footer() {
   return (
     <>
-      <div className={style.container}>
+      <footer className={style.container}>
         <div className={style.blokheader}>
           <img src={Logo} alt="logo" className={style.logo} />
           <div className={style.bloksocnet}>
@@ -187,7 +187,7 @@ export default function Footer() {
             </Link>
           </div>
         </div>
-      </div>
+      </footer>
     </>
   );
 }

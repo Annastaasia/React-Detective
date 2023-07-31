@@ -20,7 +20,7 @@ export default function Contacts() {
   return (
     <>
       <main className={style.container}>
-        <div className={style.blokmoscow}>
+        <section className={style.blokmoscow}>
           <h3 className={style.h3}>Москва</h3>
 
           <div className={style.section}>
@@ -38,9 +38,9 @@ export default function Contacts() {
             </div>
             <Location alt="Location" className={style.icon} />
           </div>
-        </div>
+        </section>
 
-        <div className={style.blokmap}>
+        <section className={style.blokmap}>
           <LoadScript googleMapsApiKey="YOUR_API_KEY">
             <GoogleMap
               mapContainerStyle={mapContainerStyle}
@@ -50,9 +50,9 @@ export default function Contacts() {
               <Marker position={center} />
             </GoogleMap>
           </LoadScript>
-        </div>
+        </section>
 
-        <div className={style.bloksms}>
+        <section className={style.bloksms}>
           <h1 className={style.h1}>Написать в мессенджер</h1>
 
           <a
@@ -79,9 +79,9 @@ export default function Contacts() {
             </div>
             <Whatsapp alt="Whatsapp" className={style.icon} />
           </a>
-        </div>
+        </section>
 
-        <div className={style.blokblogs}>
+        <section className={style.blokblogs}>
           <h2 className={style.h2}>Наши блоги</h2>
 
           <a
@@ -108,7 +108,7 @@ export default function Contacts() {
             </div>
             <Whatsapp alt="Whatsapp" className={style.icon} />
           </a>
-        </div>
+        </section>
       </main>
     </>
   );
