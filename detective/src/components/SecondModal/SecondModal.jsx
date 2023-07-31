@@ -21,7 +21,7 @@ const SecondModal = (props) => {
       )}
       {showSecondModal && (
         props.HowToReachUs || props.isMainMobile ? <Thanks bg={"#110F0F"} />
-          : <Thanks width={"95%"} />)}
+          : <Thanks width={"95%"} height={"260px"} />)}
     </>
   );
 };
