@@ -31,6 +31,44 @@
   cursor: pointer;
 }
 
+.brzcarousel {
+  .splide__pagination {
+    bottom: -20px !important;
+
+    li {
+      .splide__pagination__page.is-active {
+        background: #000000 !important;
+      }
+
+      .splide__pagination__page {
+        border: 1px solid #000000 !important;
+      }
+    }
+  }
+}
+
+// .splide__pagination {
+//   background: #000000 !important;
+//   background-color: #000000 !important;
+//   color: #000000 !important;
+// }
+
+// .brzcarousel {
+//   .splide__pagination {
+//     background: #000000 !important;
+//     background-color: #000000 !important;
+//     color: #000000 !important;
+
+//     li {
+//       .your-class-pagination {
+//         background-color: #000000;
+//         background: #000000 !important;
+//         list-style: none;
+//       }
+//     }
+//   }
+// }
+
 // .splide__pagination__page {
 //   background: #ccc;
 //   border: 0;
@@ -52,20 +90,4 @@
 //   position: absolute;
 //   right: 0;
 //   z-index: 1;
-// }
-
-// .brzcarousel {
-// .splide__pagination {
-//   background: #000000 !important;
-//   background-color: #000000 !important;
-//   color: #000000 !important;
-
-//   li {
-// .your-class-pagination {
-//   background-color: #000000;
-//   background: #000000 !important;
-//   list-style: none;
-// }
-//   }
-// }
 // }

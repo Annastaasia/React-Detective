@@ -1,5 +1,5 @@
 import { Splide, SplideSlide } from "@splidejs/react-splide";
-import "@splidejs/react-splide/css";
+import "@splidejs/splide/dist/css/splide.min.css";
 import React from "react";
 import style from "./carousel.module.scss";
 
