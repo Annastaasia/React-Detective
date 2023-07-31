@@ -14,7 +14,7 @@ export default function Blog() {
           <Link to="/blog">
             Смотреть все
             <img
-              src="../images/biege_arrow_right.svg"
+              src={process.env.PUBLIC_URL + "/images/biege_arrow_right.svg"}
               alt="Нажмите, чтобы перейти и посмотреть все посты"
             />
           </Link>

@@ -19,7 +19,7 @@ export default function Reviews() {
             >
               Отзывы на Профи.ру
               <img
-                src="images/biege_arrow_right.svg"
+                src={process.env.PUBLIC_URL + "/images/biege_arrow_right.svg"}
                 alt="Нажмите, чтобы перейти и узать подробнее"
               />
             </a>
@@ -31,7 +31,7 @@ export default function Reviews() {
             >
               Отзывы на Яндекс.Карты
               <img
-                src="images/biege_arrow_right.svg"
+                src={process.env.PUBLIC_URL + "/images/biege_arrow_right.svg"}
                 alt="Нажмите, чтобы перейти и узать подробнее"
               />
             </a>

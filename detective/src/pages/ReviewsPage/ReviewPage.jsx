@@ -19,7 +19,7 @@ export default function Reviews(props) {
             className={style.page_link}
           >
             Оставить отзыв
-            <img src="./images/biege_arrow_right.svg" alt="отзыв"></img>
+            <img src={process.env.PUBLIC_URL + "/images/biege_arrow_right.svg"} alt="отзыв"></img>
           </a>
         </section>
 

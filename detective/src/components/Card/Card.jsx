@@ -3,7 +3,7 @@ import style from "./card.module.scss";
 export default function Card(props) {
   return (
     <a href="/" className={`${style.card}`} key={`${props.id}`}>
-      <img src={props.icon} className={`${style.card_icon}`} alt="" />
+      <img src={process.env.PUBLIC_URL + props.icon} className={`${style.card_icon}`} alt="" />
       <p className={`${style.card_title}`}>{props.title}</p>
       <p className={`${style.card_text}`}>{props.text}</p>
       <div className={`${style.card_price_container}`}>
@@ -11,7 +11,7 @@ export default function Card(props) {
         <div>
           <span>Подробнее</span>
           <img
-            src="images/biege_arrow_right.svg"
+            src={process.env.PUBLIC_URL + "/images/biege_arrow_right.svg"}
             alt="Нажмите, чтобы узнать подробнее"
           />
         </div>

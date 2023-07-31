@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function Post(props) {
   return (
     <Link to={props.link} className={`${style.post}`}>
-      <img src={props.image} alt="post"></img>
+      <img src={process.env.PUBLIC_URL + props.image} alt="post"></img>
       <span>{props.tag}</span>
       <div className={`${style.post_content}`}>
         <p className={`${style.post_title}`}>{props.title}</p>
