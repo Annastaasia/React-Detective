@@ -5,7 +5,7 @@ import {
 } from "react-router-dom";
 import Header from "./components/Header/Header.jsx";
 import Main from "./pages/Main/Main.jsx";
-import FAQ from "./pages/FAQ/FAQ";
+import FAQ from "./components/FAQ/FAQ.jsx";
 import Footer from "./components/Footer/Footer";
 import Contacts from "./pages/Contacts/Contacts.jsx";
 import ServicesPage from "./pages/ServicesPage/ServicesPage.jsx";

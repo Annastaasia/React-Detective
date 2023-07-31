@@ -2,8 +2,8 @@ import style from "./director.module.scss";
 // import { Link } from "react-router-dom";
 import WorkHistory from "../../assets/images/work-history.svg";
 import Vectorright from "../../assets/svg/Vectorright.jsx";
-import Popup from "../../components/Popup/Popup.jsx";
-import SecondModal from "../../components/SecondModal/SecondModal.jsx";
+import Popup from "../Popup/Popup.jsx";
+import SecondModal from "../SecondModal/SecondModal.jsx";
 import { useState } from "react";
 
 export default function Director() {
@@ -40,7 +40,11 @@ export default function Director() {
             <p className={style.p}>Стаж в частной практике более 15 лет</p>
           </div>
           {/* <Link to="/form"> */}
-          <button type="submit" className={style.button} onClick={() => setButtonPopup(true)}>
+          <button
+            type="submit"
+            className={style.button}
+            onClick={() => setButtonPopup(true)}
+          >
             Записаться на консультацию
             <div className={style.vector}>
               <Vectorright />

@@ -1,13 +1,13 @@
-import style from "./form.module.scss"
+import style from "./form.module.scss";
 import { useForm } from "react-hook-form";
-import { useMediaQuery } from 'react-responsive';
+import { useMediaQuery } from "react-responsive";
 import InputMask from "react-input-mask";
 import FormError from "../../assets/svg/FormError.jsx";
 import FormCheck from "../../assets/svg/FormCheck.jsx";
 import Vectorright from "../../assets/svg/Vectorright.jsx";
 import { useState } from "react";
 import mainstyles from "../MainBG/mainbg.module.scss";
-import "../../pages/FAQ/faq.scss";
+import "../../components/FAQ/faq.scss";
 
 export default function Form(props) {
   const isMobile = useMediaQuery({ query: `(max-width: 580px)` });
@@ -27,32 +27,36 @@ export default function Form(props) {
   const [isFocusNumber, setIsFocusNumber] = useState(false);
   const [isFocusQuestion, setIsFocusQuestion] = useState(false);
 
-
   const handleFocusName = () => {
     setIsFocusName(true);
     trigger("name");
-  }
+  };
 
   const handleFocusNumber = () => {
     setIsFocusNumber(true);
     trigger("number");
-  }
+  };
 
   const handleFocusQuestion = () => {
     setIsFocusQuestion(true);
     trigger("question");
-  }
+  };
 
   if (props.isOnMain && isMobile) {
-    return (null)
+    return null;
   } else {
     return (
-      <form className={props.isOnMain ? mainstyles.form : props.isPopup ? style.form : "form"} onSubmit={handleSubmit(onSubmit)}>
+      <form
+        className={
+          props.isOnMain ? mainstyles.form : props.isPopup ? style.form : "form"
+        }
+        onSubmit={handleSubmit(onSubmit)}
+      >
         <div className={style.wrapper}>
           <input
             {...register("name", {
               required: true,
-              minLength: 2
+              minLength: 2,
             })}
             onFocus={() => handleFocusName()}
             onBlur={() => handleFocusName()}
@@ -103,12 +107,14 @@ export default function Form(props) {
           )}
         </div>
 
-        {props.isPopup ? "" : (
+        {props.isPopup ? (
+          ""
+        ) : (
           <div className={style.wrapper}>
             <input
               {...register("question", {
                 required: true,
-                minLength: 2
+                minLength: 2,
               })}
               className={style.question}
               type="text"
@@ -128,14 +134,22 @@ export default function Form(props) {
             )}
           </div>
         )}
-        <button type="submit" className={props.isOnMain ? mainstyles.button : props.isPopup ? style.button : "button"}>
+        <button
+          type="submit"
+          className={
+            props.isOnMain
+              ? mainstyles.button
+              : props.isPopup
+              ? style.button
+              : "button"
+          }
+        >
           {props.isOnMain ? "Отправить заявку" : "Отправить"}
           <div className={style.vector}>
             <Vectorright />
           </div>
         </button>
-      </form >
-
-    )
+      </form>
+    );
   }
 }

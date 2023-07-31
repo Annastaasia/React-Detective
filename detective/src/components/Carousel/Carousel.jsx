@@ -12,10 +12,6 @@ export const Carousel = (props) => {
         rewind: true,
         type: "loop",
         pagination: true,
-        // classes: {
-        //   pagination: "splidepagination your-class-pagination",
-        //   paginationDirection: "ltr",
-        // },
         arrows: false,
         autoWidth: true,
         perPage: 1,
@@ -36,7 +32,7 @@ export const Carousel = (props) => {
       className={style.brzcarousel}
     >
       {React.Children.map(children, (item, index) => {
-        return <SplideSlide>{item}</SplideSlide>;
+        return <SplideSlide key={index}>{item}</SplideSlide>;
       })}
     </Splide>
   );

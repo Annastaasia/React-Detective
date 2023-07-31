@@ -1,12 +1,10 @@
 import React, { useState, useRef, useEffect } from "react";
 import { FiPlus } from "react-icons/fi";
 import FormPhoto from "../../assets/images/form-foto.png";
-import Form from "../../components/Form/Form.jsx";
 import "./faq.scss";
 import SecondModal from "../../components/SecondModal/SecondModal";
 
 export default function FAQ() {
-
   const [active, setActive] = useState(false);
   const contentRef = useRef(null);
 
@@ -298,8 +296,7 @@ export default function FAQ() {
                 <span className="textdirector">Першин Кирилл Олегович</span>
               </p>
             </div>
-            <SecondModal>
-            </SecondModal>
+            <SecondModal></SecondModal>
           </div>
         </div>
       </div>
