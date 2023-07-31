@@ -7,7 +7,7 @@ import reviews from "./review-array";
 export default function Reviews() {
   return (
     <>
-      <div className={`${style.container}`}>
+      <section className={`${style.container}`}>
         <div className={style.blok}>
           <h3 className={style.h3}>Отзывы</h3>
           <div className={`${style.blok_buttons}`}>
@@ -88,7 +88,7 @@ export default function Reviews() {
             </SplideSlide>
           ))}
         </Splide>
-      </div>
+      </section>
     </>
   );
 }

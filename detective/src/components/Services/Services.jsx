@@ -11,7 +11,7 @@ import "@splidejs/react-splide/css";
 export default function Services() {
   return (
     <>
-      <div className={style.container}>
+      <section className={style.container}>
         <div className={style.services__header}>
           <h3>Услуги</h3>
           <ul>
@@ -93,7 +93,7 @@ export default function Services() {
             </div>
           </button>
         </Link>
-      </div>
+      </section>
     </>
   );
 }

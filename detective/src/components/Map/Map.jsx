@@ -17,7 +17,7 @@ export default function Map() {
   };
   return (
     <>
-      <div className={style.container}>
+      <section className={style.container}>
         <div className={style.blok}>
           <h3 className={style.h3}>Где мы находимся?</h3>
           <Link to="/contacts">
@@ -39,7 +39,7 @@ export default function Map() {
             <Marker position={center} />
           </GoogleMap>
         </LoadScript>
-      </div>
+      </section>
     </>
   );
 }

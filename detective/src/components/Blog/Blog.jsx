@@ -8,7 +8,7 @@ import "@splidejs/react-splide/css";
 export default function Blog() {
   return (
     <>
-      <div className={`${style.container}`}>
+      <section className={`${style.container}`}>
         <div className={style.header_blog}>
           <h3>Блог</h3>
           <Link to="/blog">
@@ -68,7 +68,7 @@ export default function Blog() {
             </SplideSlide>
           ))}
         </Splide>
-      </div>
+      </section>
     </>
   );
 }

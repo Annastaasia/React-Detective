@@ -7,7 +7,7 @@ import VideoChat from "../../assets/images/videochat.svg";
 export default function FirstVisit() {
   return (
     <>
-      <div className={style.container}>
+      <section className={style.container}>
         <h3 className={style.h3}>Первичное взаимодействие с нами</h3>
         <div className={style.right}>
           <div className={style.about}>
@@ -31,7 +31,7 @@ export default function FirstVisit() {
                 Личная консультация в офисе агентства
               </p>
               <ul>
-                <li >Нет необходимости в документах при посещении</li>
+                <li>Нет необходимости в документах при посещении</li>
                 <li>Возможность прийти в маске с целью скрыть лицо</li>
                 <li>Никаких подписаний документов</li>
                 <li>Отсутствие аудио-видео фиксации</li>
@@ -80,7 +80,7 @@ export default function FirstVisit() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }

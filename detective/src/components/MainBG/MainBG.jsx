@@ -10,7 +10,7 @@ function MainBG() {
   const [buttonPopup, setButtonPopup] = useState(false);
   return (
     <>
-      <div className={style.background}>
+      <section className={style.background}>
         <div className={style.container}>
           <h1 className={style.h1}>perhin & partners</h1>
           <h2 className={style.h2}>детективное агентство в москве</h2>
@@ -34,7 +34,7 @@ function MainBG() {
           </div>
           <SocialMediaButtons />
         </div>
-      </div>
+      </section>
     </>
   );
 }

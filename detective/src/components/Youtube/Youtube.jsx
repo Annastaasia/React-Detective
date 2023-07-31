@@ -9,7 +9,7 @@ import play from "../../assets/images/play_button.svg";
 
 export default function Youtube() {
   return (
-    <div className={`${style.container}`}>
+    <section className={`${style.container}`}>
       <div className={`${style.youtube_header}`}>
         <h3 className={style.h3}>ПОЗНАКОМЬТЕСЬ С P&P НА YOUTUBE</h3>
         <a
@@ -108,6 +108,6 @@ export default function Youtube() {
           </a>
         </SplideSlide>
       </Splide>
-    </div>
+    </section>
   );
 }

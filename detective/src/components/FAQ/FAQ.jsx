@@ -90,7 +90,7 @@ export default function FAQ() {
 
   return (
     <>
-      <div className="container">
+      <section className="container">
         <h3 className="h3">ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</h3>
 
         <div className="blok">
@@ -299,7 +299,7 @@ export default function FAQ() {
             <SecondModal></SecondModal>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }

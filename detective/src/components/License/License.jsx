@@ -4,7 +4,7 @@ import LicenseImg from "../../assets/images/license.png";
 export default function License() {
   return (
     <>
-      <div className={style.container}>
+      <section className={style.container}>
         <img src={LicenseImg} alt="license" className={style.img} />
         <div className={style.blok}>
           <h3 className={style.h3}>Лицензия</h3>
@@ -19,7 +19,7 @@ export default function License() {
             профессионализма.
           </p>
         </div>
-      </div>
+      </section>
     </>
   );
 }

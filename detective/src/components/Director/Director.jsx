@@ -1,5 +1,4 @@
 import style from "./director.module.scss";
-// import { Link } from "react-router-dom";
 import WorkHistory from "../../assets/images/work-history.svg";
 import Vectorright from "../../assets/svg/Vectorright.jsx";
 import Popup from "../Popup/Popup.jsx";
@@ -13,7 +12,7 @@ export default function Director() {
       <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
         <SecondModal HowToReachUs={true} />
       </Popup>
-      <div className={style.container}>
+      <section className={style.container}>
         <div className={style.backgroundsmall}></div>
         <div className={style.blok}>
           <div className={style.about}>
@@ -39,7 +38,6 @@ export default function Director() {
             <img src={WorkHistory} alt="work-history" className={style.img} />
             <p className={style.p}>Стаж в частной практике более 15 лет</p>
           </div>
-          {/* <Link to="/form"> */}
           <button
             type="submit"
             className={style.button}
@@ -50,11 +48,10 @@ export default function Director() {
               <Vectorright />
             </div>
           </button>
-          {/* </Link> */}
         </div>
 
         <div className={style.background}></div>
-      </div>
+      </section>
     </>
   );
 }

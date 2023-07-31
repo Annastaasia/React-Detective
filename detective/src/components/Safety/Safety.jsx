@@ -3,7 +3,7 @@ import style from "./safety.module.scss";
 export default function Safety() {
   return (
     <>
-      <div className={style.container}>
+      <section className={style.container}>
         <h3 className={style.h3}>Мы гарантируем сохранять в тайне</h3>
         <div className={style.blok}>
           <ul className={style.ul}>
@@ -25,7 +25,7 @@ export default function Safety() {
             </li>
           </ul>
         </div>
-      </div>
+      </section>
     </>
   );
 }
