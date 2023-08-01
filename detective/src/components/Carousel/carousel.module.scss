@@ -31,21 +31,32 @@
   cursor: pointer;
 }
 
-.brzcarousel {
-  .splide__pagination {
-    bottom: -20px !important;
+.splide__pagination.mypagination {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  margin-top: 24px;
+  justify-content: center;
+  align-items: flex-start;
 
-    li {
-      .splide__pagination__page.is-active {
-        background: #000000 !important;
-      }
-
-      .splide__pagination__page {
-        border: 1px solid #000000 !important;
-      }
-    }
-  }
 }
+
+.splide__pagination__page.mypage {
+  background-color: #fff;
+  border: 1px solid #403531;
+  width: 8px;
+  height: 8px;
+}
+
+.splide__pagination__page.mypage:active,
+.splide__pagination__page.mypage:focus {
+  background-color: #403531;
+}
+
+// }
+// }
 
 // .splide__pagination {
 //   background: #000000 !important;
