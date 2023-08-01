@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/React-Detective/static/css/main.a8aafa59.css",
-    "main.js": "/React-Detective/static/js/main.667fdf74.js",
+    "main.css": "/React-Detective/static/css/main.04f7da81.css",
+    "main.js": "/React-Detective/static/js/main.c69432ba.js",
     "static/js/787.e8b20a49.chunk.js": "/React-Detective/static/js/787.e8b20a49.chunk.js",
     "static/media/main-bg-1920.png": "/React-Detective/static/media/main-bg-1920.54e6c3a3885e14d46702.png",
     "static/media/services-bg.png": "/React-Detective/static/media/services-bg.b001939591fb99ee2acb.png",
@@ -87,12 +87,12 @@
     "static/media/bxs_chevron-down.svg": "/React-Detective/static/media/bxs_chevron-down.561aa0a9835a5109875678cee0f042a2.svg",
     "static/media/play_button.svg": "/React-Detective/static/media/play_button.ef644eeedec66f36498493be66729e4c.svg",
     "static/media/vectorright.svg": "/React-Detective/static/media/vectorright.2bfc5422c5cae28325db57c5ec04e49d.svg",
-    "main.a8aafa59.css.map": "/React-Detective/static/css/main.a8aafa59.css.map",
-    "main.667fdf74.js.map": "/React-Detective/static/js/main.667fdf74.js.map",
+    "main.04f7da81.css.map": "/React-Detective/static/css/main.04f7da81.css.map",
+    "main.c69432ba.js.map": "/React-Detective/static/js/main.c69432ba.js.map",
     "787.e8b20a49.chunk.js.map": "/React-Detective/static/js/787.e8b20a49.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a8aafa59.css",
-    "static/js/main.667fdf74.js"
+    "static/css/main.04f7da81.css",
+    "static/js/main.c69432ba.js"
   ]
 }
