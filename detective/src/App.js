@@ -22,7 +22,7 @@ function App() {
     <div className="App">
       <Header />
       <Routes>
-        <Route exact path="/" element={<Main />} />
+        <Route exact path="/React-Detective" element={<Main />} />
         <Route exact path="/form" element={<FAQ />} />
         <Route exact path="/contacts" element={<Contacts />} />
         <Route exact path="/services_for_individuals" element={<ServicesPage />} />

@@ -34,7 +34,7 @@ function Header() {
     <>
       <header ref={headerRef}>
         <div className={style.header}>
-          <Link to="/">
+          <Link to="/React-Detective">
             <img src={Logo} alt="logo" className={style.logo} />
           </Link>
           <Burger />
