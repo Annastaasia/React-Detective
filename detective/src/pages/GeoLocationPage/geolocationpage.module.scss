@@ -115,7 +115,7 @@
 @media screen and (max-width: 637px) {
   .section_header {
     background: #110f0f;
-    padding: 24px 16px 40px 16px;
+    padding: 8px 16px 40px 16px;
   }
 
   .blok_price {
@@ -419,18 +419,17 @@
   nav {
     li {
       a {
-        color: #FFFFFF;
+        color: #ffffff;
         transition-duration: 0.3s;
       }
 
       a:hover {
-        color: #FFF2D8;
+        color: #fff2d8;
       }
     }
 
     li:last-child {
-      color: rgba(255, 255, 255, 0.50);
+      color: rgba(255, 255, 255, 0.5);
     }
   }
-
 }

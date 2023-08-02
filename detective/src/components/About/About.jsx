@@ -40,7 +40,7 @@ export default function About() {
                 нас от других детективных агентств.
               </p>
             </div>
-            <div className={style.blok}>
+            <div className={style.blok2}>
               <p className={style.number}>2</p>
               <p className={style.title}>Мы - 100% конфиденциальность</p>
               <p className={style.smalltext}>

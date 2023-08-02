@@ -31,6 +31,10 @@
     padding: 40px;
     gap: 32px;
   }
+
+  .question-icon {
+    font-size: 24px;
+  }
 }
 
 @media screen and (max-width: 1133px) {
@@ -51,6 +55,10 @@
   .blokform {
     padding: 40px;
     gap: 32px;
+  }
+
+  .question-icon {
+    font-size: 24px;
   }
 }
 
@@ -76,6 +84,10 @@
 
   .button {
     align-self: stretch;
+  }
+
+  .question-icon {
+    font-size: 36px;
   }
 }
 
@@ -124,7 +136,6 @@
   border: none;
   color: #484848;
   cursor: pointer;
-  font-size: 24px;
   margin-left: auto;
 }
 
