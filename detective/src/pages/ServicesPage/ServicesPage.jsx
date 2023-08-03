@@ -10,6 +10,7 @@ import { ReactComponent as Binoculars } from "../../assets/images/services-binoc
 import { ReactComponent as Search } from "../../assets/images/services-search.svg";
 import { ReactComponent as Protect } from "../../assets/images/services-protect.svg";
 import { ReactComponent as Journalism } from "../../assets/images/services-journalism.svg";
+import { ReactComponent as ArrowDown } from "../../assets/images/biege_arrow_down.svg";
 
 export default function ServicesPage() {
   const [showMore, setShowMore] = useState(false);
@@ -260,25 +261,17 @@ export default function ServicesPage() {
                   className={style.img}
                   style={{
                     filter: isIconUp ? "brightness(0%) saturate(100%)" : "none",
+                    transitionDuration: "0.2s",
                   }}
                 />
                 <h2 className={style.h2}>Сбор информации</h2>
               </div>
-              <svg
-                className={style.large_icon}
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
+              <ArrowDown
                 onClick={handleItemClick}
                 style={{
                   transform: isIconUp ? "rotate(180deg)" : "rotate(0deg)",
                   transition: "transform 0.3s ease",
-                }}
-              >
-                <path fill="#E9C394" d="M7 10l5 5 5-5z " />
-              </svg>
+                }} />
             </div>
             {showItems && (
               <div className={style.bloktext}>
@@ -319,25 +312,18 @@ export default function ServicesPage() {
                     filter: isIconUp2
                       ? "brightness(0%) saturate(100%)"
                       : "none",
+                    transitionDuration: "0.2s",
                   }}
                 />
                 <h2 className={style.h2}>Розыск</h2>
               </div>
-              <svg
-                className={style.large_icon}
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
+              <ArrowDown
                 onClick={handleItemClick2}
                 style={{
                   transform: isIconUp2 ? "rotate(180deg)" : "rotate(0deg)",
                   transition: "transform 0.3s ease",
                 }}
-              >
-                <path fill="#E9C394" d="M7 10l5 5 5-5z " />
-              </svg>
+              />
             </div>
             {showItems2 && (
               <div className={style.bloktext}>
@@ -405,25 +391,18 @@ export default function ServicesPage() {
                     filter: isIconUp3
                       ? "brightness(0%) saturate(100%)"
                       : "none",
+                    transitionDuration: "0.2s",
                   }}
                 />
                 <h2 className={style.h2}>Семейные вопросы</h2>
               </div>
-              <svg
-                className={style.large_icon}
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
+              <ArrowDown
                 onClick={handleItemClick3}
                 style={{
                   transform: isIconUp3 ? "rotate(180deg)" : "rotate(0deg)",
                   transition: "transform 0.3s ease",
                 }}
-              >
-                <path fill="#E9C394" d="M7 10l5 5 5-5z " />
-              </svg>
+              />
             </div>
             {showItems3 && (
               <div className={style.bloktext}>
@@ -456,25 +435,18 @@ export default function ServicesPage() {
                     filter: isIconUp4
                       ? "brightness(0%) saturate(100%)"
                       : "none",
+                    transitionDuration: "0.2s",
                   }}
                 />
                 <h2 className={style.h2}>Защита</h2>
               </div>
-              <svg
-                className={style.large_icon}
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
+              <ArrowDown
                 onClick={handleItemClick4}
                 style={{
                   transform: isIconUp4 ? "rotate(180deg)" : "rotate(0deg)",
                   transition: "transform 0.3s ease",
                 }}
-              >
-                <path fill="#E9C394" d="M7 10l5 5 5-5z " />
-              </svg>
+              />
             </div>
             {showItems4 && (
               <div className={style.bloktext}>
@@ -507,25 +479,18 @@ export default function ServicesPage() {
                     filter: isIconUp5
                       ? "brightness(0%) saturate(100%)"
                       : "none",
+                    transitionDuration: "0.2s",
                   }}
                 />
                 <h2 className={style.h2}>Расследования</h2>
               </div>
-              <svg
-                className={style.large_icon}
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
+              <ArrowDown
                 onClick={handleItemClick5}
                 style={{
                   transform: isIconUp5 ? "rotate(180deg)" : "rotate(0deg)",
                   transition: "transform 0.3s ease",
                 }}
-              >
-                <path fill="#E9C394" d="M7 10l5 5 5-5z " />
-              </svg>
+              />
             </div>
             {showItems5 && (
               <div className={style.bloktext}>
@@ -552,25 +517,18 @@ export default function ServicesPage() {
                     filter: isIconUp6
                       ? "brightness(0%) saturate(100%)"
                       : "none",
+                    transitionDuration: "0.2s",
                   }}
                 />
                 <h2 className={style.h2}>Журналистика</h2>
               </div>
-              <svg
-                className={style.large_icon}
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
+              <ArrowDown
                 onClick={handleItemClick6}
                 style={{
                   transform: isIconUp6 ? "rotate(180deg)" : "rotate(0deg)",
                   transition: "transform 0.3s ease",
                 }}
-              >
-                <path fill="#E9C394" d="M7 10l5 5 5-5z " />
-              </svg>
+              />
             </div>
             {showItems6 && (
               <div className={style.bloktext}>

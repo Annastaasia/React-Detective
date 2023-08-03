@@ -7,6 +7,7 @@
     margin: 32px 0;
     font-size: 28px;
   }
+
   .catalog {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -40,6 +41,7 @@
   .h1 {
     font-size: 40px;
   }
+
   .h2 {
     font-size: 28px;
   }
@@ -138,6 +140,11 @@
   .text {
     font-size: 16px;
   }
+
+  .img {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .section_header {
@@ -167,25 +174,27 @@
   display: flex;
   padding: 13px 0px;
   align-items: center;
-  gap: 16px;
+  gap: 8px;
   border-bottom: 2px solid #403531;
   color: #403531;
   font-family: Geologica;
   font-style: normal;
   font-weight: 500;
-  line-height: 140%;
+  // line-height: 140%;
+  flex-shrink: 0;
 }
 
 .tabs__business {
   display: flex;
   padding: 13px 0px;
   align-items: center;
-  gap: 16px;
+  gap: 8px;
   color: rgba(64, 53, 49, 0.5);
   font-family: Geologica;
   font-style: normal;
   font-weight: 500;
-  line-height: 140%;
+  // line-height: 140%;
+  flex-shrink: 0;
 }
 
 .tabs__business:hover {
