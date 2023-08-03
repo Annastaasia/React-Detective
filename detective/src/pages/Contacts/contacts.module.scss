@@ -25,11 +25,10 @@
 
   .blokmoscow {
     background-image: url("../../assets/images/moscow.png");
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-position: top center;
     grid-area: blokmoscow;
     box-sizing: border-box;
-    max-width: 960px;
     height: 472px;
     overflow: hidden;
     display: flex;
@@ -68,14 +67,12 @@
 
   .blokmap {
     grid-area: blokmap;
-    max-width: 960px;
     max-height: 472px;
   }
 
   .bloksms {
     grid-area: bloksms;
     background: #110f0f;
-    max-width: 960px;
     box-sizing: border-box;
     overflow: hidden;
     display: flex;
@@ -115,7 +112,6 @@
   .blokblogs {
     grid-area: blokblogs;
     background: #110f0f;
-    max-width: 960px;
     box-sizing: border-box;
     overflow: hidden;
     display: flex;
