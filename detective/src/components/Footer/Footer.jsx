@@ -69,7 +69,7 @@ export default function Footer() {
 
               <div className={style.section}>
                 <img src={Location} alt="Location" className={style.icon} />
-                <p className={style.p}>
+                <p className={style.adress}>
                   г. Москва, Ул. Александра Солженицына 42
                 </p>
               </div>

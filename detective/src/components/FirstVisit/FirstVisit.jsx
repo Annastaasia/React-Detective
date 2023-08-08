@@ -30,7 +30,7 @@ export default function FirstVisit() {
               <p className={style.title}>
                 Личная консультация в офисе агентства
               </p>
-              <ul>
+              <ul className={style.ul}>
                 <li>Нет необходимости в документах при посещении</li>
                 <li>Возможность прийти в маске с целью скрыть лицо</li>
                 <li>Никаких подписаний документов</li>
