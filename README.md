@@ -17,6 +17,11 @@
 <img  alt="Блог" src="https://github.com/Annastaasia/React-Detective/assets/108290014/f50568d9-e90d-46ae-964d-2aef71124343.png">
 <img " alt="Отзывы" src="https://github.com/Annastaasia/React-Detective/assets/108290014/29b85a86-39df-4425-b87c-9ba0e7240396.png">
 
+## Getting started
+
+Чтобы запустить проект тебе нужно:
+<p> `npm install`
+<p> `npm run start`
 
 <h2>Technologies</h2>
 
