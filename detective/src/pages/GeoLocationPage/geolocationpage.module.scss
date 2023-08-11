@@ -53,6 +53,23 @@
     align-items: center;
     gap: 24px;
   }
+
+  .blok_img {
+    position: relative;
+    width: 560px;
+    height: 314px;
+
+    .play {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      background: transparent;
+      border: 0;
+      cursor: pointer;
+    }
+  }
 }
 
 @media screen and (max-width: 1195px) {
@@ -110,12 +127,37 @@
     align-items: center;
     gap: 24px;
   }
+
+  .blok_img {
+    position: relative;
+    width: 100%;
+
+    .img {
+      width: 100%;
+      height: auto;
+    }
+
+    .play {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      background: transparent;
+      border: 0;
+      cursor: pointer;
+    }
+  }
 }
 
 @media screen and (max-width: 637px) {
   .section_header {
     background: #110f0f;
     padding: 8px 16px 40px 16px;
+  }
+
+  .blok_header {
+    gap: 24px;
   }
 
   .blok_price {
@@ -218,7 +260,6 @@
 
 .blok_price {
   display: flex;
-  gap: 40px;
   color: #fff;
 }
 

@@ -10,7 +10,6 @@
   align-items: center;
   z-index: 35;
 
-
   .popup_inner {
     z-index: 40;
     position: relative;
@@ -23,7 +22,7 @@
     font-family: Geologica;
     position: absolute;
     top: 16px;
-    right: 16px;
+    right: 26px;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -38,19 +37,19 @@
 @media screen and (max-width: 450px) {
   .popup_header {
     padding: 12px 24px;
-    background-color: #110F0F;
+    background-color: #110f0f;
 
-    // svg {
-    //   display: none;
-    // }
+    .popup_img {
+      max-height: 39px;
+    }
 
     .close_btn {
       font-size: 16px;
       display: flex;
       justify-content: space-around;
       flex-flow: row nowrap;
-      height: 48px;
-      padding: 16px;
+      height: 42px;
+      padding: 16px 16px;
       align-items: center;
       gap: 8px;
       position: fixed;

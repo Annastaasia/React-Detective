@@ -4,8 +4,8 @@ import style from "./nav.module.scss";
 import Nav from "./Nav";
 
 const StyledBurger = styled.div`
-  height: 48px;
-  padding: 4px 20px;
+  height: 30px;
+  padding: 4px 15px;
   align-items: center;
   gap: 8px;
   position: fixed;
@@ -31,7 +31,7 @@ const StyledBurger = styled.div`
     display: flex;
     justify-content: space-around;
     flex-flow: row nowrap;
-    right: 15%;
+    right: 7%;
   }
 
   @media (max-width: 1230px) {
@@ -55,7 +55,7 @@ const StyledBurger = styled.div`
 
   div {
     &:nth-child(1) {
-      transform: ${({ open }) => (open ? "rotate(38deg)" : "rotate(0)")};
+      transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};
     }
 
     &:nth-child(2) {
@@ -65,7 +65,7 @@ const StyledBurger = styled.div`
 
     &:nth-child(3) {
       transform: ${({ open }) =>
-        open ? "rotate(-38deg) scaleX(2)" : "rotate(0) scaleX(1)"};
+        open ? "rotate(-45deg) scaleX(2)" : "rotate(0) scaleX(1)"};
     }
   }
 `;

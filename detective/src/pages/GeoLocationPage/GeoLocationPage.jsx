@@ -6,6 +6,7 @@ import GeoLocationImg from "../../assets/images/geolocation-photo.png";
 import Star from "../../assets/images/icon_star.svg";
 import { ReactComponent as VectorRight } from "../../assets/images/vectorright.svg";
 import { ReactComponent as Binoculars } from "../../assets/images/services-binoculars.svg";
+import { ReactComponent as Play } from "../../assets/images/play.svg";
 import FAQ from "../../components/FAQ/FAQ";
 import Blog from "../../components/Blog/Blog";
 import Popup from "../../components/Popup/Popup";
@@ -24,17 +25,23 @@ export default function GeoLocationPage() {
           <Breadcrumbs />
           <h1 className={style.h1}>Пробить геолокацию по номеру телефона</h1>
           <div className={style.blok_header}>
-            <a
-              href="https://www.youtube.com/watch?v=kjUEZeDWfHQ"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <div className={style.blok_img}>
               <img
                 src={GeoLocationImg}
                 alt="geolocation"
                 className={style.img}
               />
-            </a>
+              <button className={style.play}>
+                <a
+                  href="https://www.youtube.com/watch?v=kjUEZeDWfHQ"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Play alt="play" />
+                </a>
+              </button>
+            </div>
+
             <div className={style.blok_header_text}>
               <p className={style.text_header}>
                 Досье на человека — полная информация о конкретной личности,

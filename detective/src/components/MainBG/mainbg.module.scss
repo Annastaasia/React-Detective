@@ -155,7 +155,7 @@
     background-image: url("../../assets/images/main-bg-375.png");
     background-color: #110f0f;
     max-width: 100%;
-    height: 513px;
+    height: 483px;
     background-repeat: no-repeat;
     background-position: top center;
     overflow: hidden;
@@ -169,7 +169,7 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    margin-top: 310px;
+    margin-top: 250px;
     margin-left: 0px;
   }
 
@@ -189,14 +189,13 @@
 
   .button_mobile {
     display: flex;
-    width: 94%;
+    // width: 94%;
     background: #110f0f;
     padding: 24px 16px;
-    margin-top: 20px;
+    // margin-top: 20px;
     flex-direction: column;
     align-items: flex-start;
     gap: 48px;
-    // align-self: stretch;
   }
 
   .button {

@@ -40,12 +40,13 @@ const Ul = styled.ul`
     position: fixed;
     z-index: 30;
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
-    top: 88px;
+    top: 65px;
     left: 0;
     right: 0;
     padding: 24px 16px;
     height: 812px;
     transition: transform 0.3s ease-in-out;
+    margin: 0;
   }
 `;
 
