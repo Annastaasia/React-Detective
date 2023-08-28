@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/React-Detective/static/css/main.064db7bc.css",
-    "main.js": "/React-Detective/static/js/main.80ac297f.js",
+    "main.css": "/React-Detective/static/css/main.65b5f53a.css",
+    "main.js": "/React-Detective/static/js/main.c7a94efa.js",
     "static/js/787.e8b20a49.chunk.js": "/React-Detective/static/js/787.e8b20a49.chunk.js",
     "static/media/main-bg-1920.png": "/React-Detective/static/media/main-bg-1920.54e6c3a3885e14d46702.png",
     "static/media/services-bg.png": "/React-Detective/static/media/services-bg.b001939591fb99ee2acb.png",
+    "static/media/main-bg-375.png": "/React-Detective/static/media/main-bg-375.d47d2b5e6b2cb10dd586.png",
     "static/media/main-bg-1280.png": "/React-Detective/static/media/main-bg-1280.6859066697e42e91b87a.png",
     "static/media/director-bg-1920.png": "/React-Detective/static/media/director-bg-1920.a228db88dd4d8bc20f0d.png",
     "static/media/main-bg-744.png": "/React-Detective/static/media/main-bg-744.42c925cb7656744b4ca7.png",
@@ -23,9 +24,8 @@
     "static/media/bg-footer-744.png": "/React-Detective/static/media/bg-footer-744.6afdc76aa8077aa3a8f0.png",
     "static/media/safety-bg-744.png": "/React-Detective/static/media/safety-bg-744.6afdc76aa8077aa3a8f0.png",
     "static/media/bg-footer-375.png": "/React-Detective/static/media/bg-footer-375.6a2fdb69b32c5d7287fd.png",
-    "static/media/main-bg-375.png": "/React-Detective/static/media/main-bg-375.da16eaeb5442658417fe.png",
     "static/media/license.png": "/React-Detective/static/media/license.c3a4db9e4102531d23d7.png",
-    "static/media/geolocation-photo.png": "/React-Detective/static/media/geolocation-photo.6ab21800e814b2d98463.png",
+    "static/media/geolocation-photo.png": "/React-Detective/static/media/geolocation-photo.7a483e439a3ad01a3b25.png",
     "static/media/director-bg-375.png": "/React-Detective/static/media/director-bg-375.d985adc1a4fc0a38bb38.png",
     "static/media/nomatch-404.png": "/React-Detective/static/media/nomatch-404.247030bdac082398b3e8.png",
     "static/media/logo.svg": "/React-Detective/static/media/logo.f54530239f659b01ba179a7b6db51ff6.svg",
@@ -52,6 +52,7 @@
     "static/media/icon_star.svg": "/React-Detective/static/media/icon_star.a0dc2e2afeade7b04d658f38aa01363c.svg",
     "static/media/footer-phone.svg": "/React-Detective/static/media/footer-phone.08b818792223068b0e038da7d666c955.svg",
     "static/media/article-cat.svg": "/React-Detective/static/media/article-cat.392b0362f3dd02e1561ba7c9b15c7af9.svg",
+    "static/media/play.svg": "/React-Detective/static/media/play.3679634741c579963d6c70c4d93f7253.svg",
     "static/media/work-history.svg": "/React-Detective/static/media/work-history.9b38a60419592d79359f289b0fa8b903.svg",
     "static/media/article-vk.svg": "/React-Detective/static/media/article-vk.5feaf60c787f908ac671b5771dd5da33.svg",
     "static/media/services-search.svg": "/React-Detective/static/media/services-search.3d01aa8e8f30e9eedd2985057c3d007d.svg",
@@ -75,7 +76,7 @@
     "static/media/white_check.svg": "/React-Detective/static/media/white_check.b02d8b822389c8cd96328a26d66e0c73.svg",
     "static/media/icon_person.svg": "/React-Detective/static/media/icon_person.769f155c05b6dde5eb808c01b57d01e2.svg",
     "static/media/article-info.svg": "/React-Detective/static/media/article-info.af81d6c0fb51f1a97402734571c0a68c.svg",
-    "static/media/bxs_chat.svg": "/React-Detective/static/media/bxs_chat.4fab79fd141c9d5a16b7534439b2d880.svg",
+    "static/media/bxs_chat.svg": "/React-Detective/static/media/bxs_chat.86b5bb0e7d2d14725c0793d428da921a.svg",
     "static/media/icon-white-cross.svg": "/React-Detective/static/media/icon-white-cross.e61457c43627fe004190cf97ea342dd9.svg",
     "static/media/footer-time.svg": "/React-Detective/static/media/footer-time.5cc426c19f62630379934bd36a521191.svg",
     "static/media/biege_arrow_down.svg": "/React-Detective/static/media/biege_arrow_down.afee59f90907b7328a6616827af2d97d.svg",
@@ -87,12 +88,12 @@
     "static/media/bxs_chevron-down.svg": "/React-Detective/static/media/bxs_chevron-down.561aa0a9835a5109875678cee0f042a2.svg",
     "static/media/play_button.svg": "/React-Detective/static/media/play_button.ef644eeedec66f36498493be66729e4c.svg",
     "static/media/vectorright.svg": "/React-Detective/static/media/vectorright.2bfc5422c5cae28325db57c5ec04e49d.svg",
-    "main.064db7bc.css.map": "/React-Detective/static/css/main.064db7bc.css.map",
-    "main.80ac297f.js.map": "/React-Detective/static/js/main.80ac297f.js.map",
+    "main.65b5f53a.css.map": "/React-Detective/static/css/main.65b5f53a.css.map",
+    "main.c7a94efa.js.map": "/React-Detective/static/js/main.c7a94efa.js.map",
     "787.e8b20a49.chunk.js.map": "/React-Detective/static/js/787.e8b20a49.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.064db7bc.css",
-    "static/js/main.80ac297f.js"
+    "static/css/main.65b5f53a.css",
+    "static/js/main.c7a94efa.js"
   ]
 }
